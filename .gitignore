@@ -11,3 +11,4 @@ lib
 .DS_Store
 **/fixtures/**/dist
 .now
+yarn.lock
