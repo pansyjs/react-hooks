@@ -19,15 +19,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: c-hive/gha-yarn-cache@v1
-
       - name: "Setup Node.js"
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 12
 
       - name: "Install dependencies"
-        run: yarn install --frozen-lockfile
+        run: yarn
 
       - name: "Test"
         run: yarn test
