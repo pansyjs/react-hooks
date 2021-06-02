@@ -1693,7 +1693,7 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@testing-library/react-hooks@^7.0.0":
+"@testing-library/react-hooks@7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-7.0.0.tgz#dd6d37a7e018f147a3b9153137f10e013be8472b"
   integrity sha512-WFBGH8DWdIGGBHt6PBtQPe2v4Kbj9vQ1sQ9qLBTmwn1PNggngint4MTE/IiWCYhPbyTW3oc/7X62DObMn/AjQQ==
@@ -1934,7 +1934,7 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
-"@types/react-dom@>=16.9.0", "@types/react-dom@^17.0.5":
+"@types/react-dom@17.0.5", "@types/react-dom@>=16.9.0":
   version "17.0.5"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.5.tgz#df44eed5b8d9e0b13bb0cd38e0ea6572a1231227"
   integrity sha512-ikqukEhH4H9gr4iJCmQVNzTB307kROe3XFfHAOTxOXPOw7lAoEXnM5KWTkzeANGL5Ce6ABfiMl/zJBYNi7ObmQ==
@@ -1989,7 +1989,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@>=16.9.0", "@types/react@^17.0.8":
+"@types/react@*", "@types/react@17.0.8", "@types/react@>=16.9.0":
   version "17.0.8"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.8.tgz#fe76e3ba0fbb5602704110fd1e3035cf394778e3"
   integrity sha512-3sx4c0PbXujrYAKwXxNONXUtRp9C+hE2di0IuxFyf5BELD+B+AXL8G7QrmSKhVwKZDbv0igiAjQAMhXj8Yg3aw==
@@ -2320,7 +2320,7 @@
   dependencies:
     "@umijs/deps" "3.4.23"
 
-"@walrus/test@^1.2.0":
+"@walrus/test@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@walrus/test/-/test-1.2.0.tgz#026f88023d0622d451a9b7a911362de0aaa5ceea"
   integrity sha512-7vgfv+rUeQhjXkKbM3pNlfW127Klulx24f0xU+hoEhsMuWI17w7uztGksToBdX9BPsQiZ83GNsZWIj5LCvblIQ==
@@ -3755,7 +3755,7 @@ dumi-theme-default@1.1.1:
     prismjs "^1.21.0"
     rc-tabs "^11.7.1"
 
-dumi@^1.1.18:
+dumi@1.1.18:
   version "1.1.18"
   resolved "https://registry.yarnpkg.com/dumi/-/dumi-1.1.18.tgz#2ed4eb2797753f5dc35ce9033d683280a4e2860e"
   integrity sha512-x3biGoYYBcCfQWYt9WPRjeFI+p7XOw8NpvApQJHLiWL7thErmwXhpby8XoYGtbasp63IBnY/dNuXrSCBUGMRkw==
@@ -7389,7 +7389,7 @@ react-dom@16.x:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-dom@^17.0.2:
+react-dom@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -7465,7 +7465,7 @@ react@16.x:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-react@^17.0.2:
+react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -8452,7 +8452,7 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.3.2:
+typescript@4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
   integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
