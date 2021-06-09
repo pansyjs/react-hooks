@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.0",
-    "@types/react": "17.0.8",
+    "@types/react": "17.0.11",
     "@types/react-dom": "17.0.5",
     "@walrus/test": "1.2.0",
     "dumi": "1.1.18",
