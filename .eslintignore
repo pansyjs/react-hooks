@@ -1,0 +1,7 @@
+lib/
+cjs/
+esm/
+esnext/
+coverage/
+node_modules/
+__docs__
