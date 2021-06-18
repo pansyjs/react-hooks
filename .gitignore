@@ -7,6 +7,10 @@
 
 dist
 lib
+cjs
+esm
+esnext
+dist
 
 .DS_Store
 **/fixtures/**/dist

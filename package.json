@@ -1,25 +1,55 @@
 {
   "name": "@pansy/react-hooks",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "cjs/index.js",
+  "esnext": "esnext/index.js",
+  "types": "cjs/index.d.ts",
+  "module": "esm/index.js",
+  "keywords": [
+    "react",
+    "hook",
+    "react-hook",
+    "browser",
+    "ssr"
+  ],
   "repository": "git@github.com:pansyjs/react-hooks.git",
   "author": "wangxingkang <wang_xingkang@qq.com>",
   "license": "MIT",
+  "files": [
+    "cjs",
+    "esm",
+    "esnext"
+  ],
   "scripts": {
     "start": "dumi dev",
     "site": "dumi build",
+    "build": "npm run entry && npm run build:clean && npm run build:all",
+    "build:all": "npm run build:cjs && npm run build:esm && npm run build:esnext",
+    "build:clean": "rimraf ./cjs ./esm ./esnext",
+    "build:cjs": "tsc -p ./tsconfig.build.json --module CommonJS --target ES5 --outDir ./cjs",
+    "build:esm": "tsc -p ./tsconfig.build.json --module ES6 --target ES5 --outDir ./esm",
+    "build:esnext": "tsc -p ./tsconfig.build.json --module ESNext --target ESNext --outDir ./esnext",
+    "entry": "walrus entry",
     "test": "walrus-test",
-    "release": "release"
+    "chmod": "sudo chmod -R 777 ./node_modules/.bin",
+    "release": "release --skip-git-status-check"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.0",
     "@types/react": "17.0.11",
     "@types/react-dom": "17.0.8",
+    "@walrus/cli": "^1.3.4",
+    "@walrus/plugin-entry": "^0.2.1",
     "@walrus/release-cli": "^0.3.0",
     "@walrus/test": "1.3.0",
     "dumi": "1.1.20",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "rimraf": "^3.0.2",
     "typescript": "4.3.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
