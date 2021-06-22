@@ -16,3 +16,4 @@ dist
 **/fixtures/**/dist
 .now
 yarn.lock
+.umi
