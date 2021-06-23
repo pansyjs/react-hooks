@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://react-hooks-chi.vercel.app">
-    <img width="200" src="/logo.svg">
+    <img width="200" src="https://cdn.jsdelivr.net/gh/wangxingkang/pictures@latest/imgs/20210623172110.svg">
   </a>
 </p>
 
