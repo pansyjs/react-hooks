@@ -1,7 +1,7 @@
 ---
 name: "📝 Documentation (文档相关)"
 about: 修复或补充文档
-labels: 'documentation'
+labels: '📝 Documentation'
 ---
 
 <!--
