@@ -1,7 +1,7 @@
 ---
 title: phooks - React Hooks Library
 hero:
-  title: a hooks library
+  title: a react hooks library
   desc: 
   actions:
     - text: 快速上手
