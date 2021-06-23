@@ -1,8 +1,57 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useModal } from '../index';
 
+const setUp = <T>() => renderHook(() => useModal<T>());
+
 describe('useModal', () => {
-  it('应已定义', () => {
+  it('should be defined', () => {
     expect(useModal).toBeDefined();
   });
+
+  it('should default state', () => {
+    const { result } = setUp();
+
+    expect(result.current.visible).toBe(false);
+    expect(result.current.initValue).toBe(undefined);
+    expect(typeof result.current.open).toBe('function');
+    expect(typeof result.current.close).toBe('function');
+  });
+
+  it('should work open() and close()', () => {
+    const { result } = setUp();
+
+    expect(result.current.visible).toBe(false);
+
+    act(() => {
+      result.current.open();
+    });
+
+    expect(result.current.visible).toBe(true);
+
+    act(() => {
+      result.current.close();
+    });
+
+    expect(result.current.visible).toBe(false);
+  });
+
+  it('should work open() with initValue', () => {
+    const { result } = setUp<string>();
+
+    expect(result.current.visible).toBe(false);
+
+    act(() => {
+      result.current.open('Tom');
+    });
+
+    expect(result.current.visible).toBe(true);
+    expect(result.current.initValue).toEqual('Tom');
+
+    act(() => {
+      result.current.close();
+    });
+
+    expect(result.current.visible).toBe(false);
+    expect(result.current.initValue).toEqual(undefined);
+  })
 })
