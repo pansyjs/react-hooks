@@ -22,7 +22,7 @@ group:
 
 <code src="./__demo__/demo02.tsx" />
 
-### initValue
+### initialValue
 
 <code src="./__demo__/demo03.tsx" />
 

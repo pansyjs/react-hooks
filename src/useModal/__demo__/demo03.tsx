@@ -26,7 +26,7 @@
          visible={modal.visible}
          onCancel={modal.close}
        >
-         <p>{modal.initValue}</p>
+         <p>{modal.initialValue}</p>
          <p>Some contents...</p>
          <p>Some contents...</p>
        </Modal>
