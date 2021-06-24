@@ -12,7 +12,7 @@ describe('useModal', () => {
     const { result } = setUp();
 
     expect(result.current.visible).toBe(false);
-    expect(result.current.initValue).toBe(undefined);
+    expect(result.current.initialValue).toBe(undefined);
     expect(typeof result.current.open).toBe('function');
     expect(typeof result.current.close).toBe('function');
   });
@@ -45,13 +45,13 @@ describe('useModal', () => {
     });
 
     expect(result.current.visible).toBe(true);
-    expect(result.current.initValue).toEqual('Tom');
+    expect(result.current.initialValue).toEqual('Tom');
 
     act(() => {
       result.current.close();
     });
 
     expect(result.current.visible).toBe(false);
-    expect(result.current.initValue).toEqual(undefined);
+    expect(result.current.initialValue).toEqual(undefined);
   })
 })

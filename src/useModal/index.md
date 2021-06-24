@@ -29,7 +29,7 @@ group:
 ## API
 
 ```ts
-const { initValue, visible, open, close } = useModal<T>();
+const { visible, initialValue, open, close } = useModal<T>();
 ```
 
 ### 参数
@@ -41,7 +41,7 @@ const { initValue, visible, open, close } = useModal<T>();
 
 |参数|说明|类型|
 |---|---|---|
-|initValue|需要传入的值|`any`|
+|initialValue|需要传入的值|`any`|
 |visible|控制显示隐藏|`boolean`|
 |open|打开对话框|`(initValue: T) => void`|
 |close|关闭对话框|`() => void`|

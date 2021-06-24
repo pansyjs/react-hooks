@@ -3,21 +3,21 @@ import { useBoolean } from '../useBoolean';
 
 export function useModal<T = undefined>() {
   const [visible, { toggle }] = useBoolean();
-  const [initValue, setInitValue] = useState<T>();
+  const [initialValue, setInitialValue] = useState<T>();
 
   const open = (initValue?: T) => {
     toggle(true);
-    setInitValue(initValue);
+    setInitialValue(initValue);
   };
 
   const close = () => {
     toggle(false);
-    setInitValue(undefined);
+    setInitialValue(undefined);
   };
 
   return {
-    initValue,
     visible,
+    initialValue,
     open,
     close,
   };
