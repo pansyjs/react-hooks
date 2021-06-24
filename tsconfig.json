@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "strict": true,
     "alwaysStrict": true,
     "module": "ESNext",
@@ -13,6 +14,11 @@
     "strictBindCallApply": true,
     "noEmit": true,
     "jsx": "react",
+    "paths": {
+      "@pansy/react-hooks": [
+        "src/index.ts"
+      ]
+    },
     "allowSyntheticDefaultImports": true
   },
   "exclude": [
