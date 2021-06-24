@@ -22,7 +22,7 @@ group:
 
 <code src="./__demo__/demo02.tsx" />
 
-### Drawer组件
+### initValue
 
 <code src="./__demo__/demo03.tsx" />
 
@@ -34,13 +34,13 @@ const { initValue, visible, open, close } = useModal<T>();
 
 ### 参数
 
-|---|---|---|---|
 |参数|说明|类型|默认值|
+|---|---|---|---|
 
 ### 结果
 
-|---|---|---|
 |参数|说明|类型|
+|---|---|---|
 |initValue|需要传入的值|`any`|
 |visible|控制显示隐藏|`boolean`|
 |open|打开对话框|`(initValue: T) => void`|
