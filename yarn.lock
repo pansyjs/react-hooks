@@ -2309,7 +2309,7 @@ __metadata:
   resolution: "@pansy/react-hooks@workspace:."
   dependencies:
     "@testing-library/react-hooks": 7.0.1
-    "@types/react": 17.0.13
+    "@types/react": 17.0.30
     "@types/react-dom": 17.0.8
     "@typescript-eslint/eslint-plugin": 4.28.1
     "@typescript-eslint/parser": 4.28.1
@@ -2950,14 +2950,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.13":
-  version: 17.0.13
-  resolution: "@types/react@npm:17.0.13"
+"@types/react@npm:17.0.30":
+  version: 17.0.30
+  resolution: "@types/react@npm:17.0.30"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: baa5a699b72ec9ce85e56755078b375ebefd9557b4d2b506c7f39e8aa50a769aa7f3d33684667ed67c436344b5c4c6272285fd3330b14296f0f25328972bc26a
+  checksum: 81749c8061db3f724a09e65ebf8adb3d6dde1d356f5ec13fbca8b3376613ee61cb0c9265380f3410b8bf6daa2f10aa94b38af3069f7dc0a90cee2ca86543d55f
   languageName: node
   linkType: hard
 
