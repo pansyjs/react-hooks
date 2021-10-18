@@ -2321,7 +2321,7 @@ __metadata:
     antd: 4.16.6
     dumi: 1.1.23
     eslint: 7.29.0
-    eslint-config-alloy: 4.1.0
+    eslint-config-alloy: 4.4.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-react: 7.24.0
     eslint-plugin-react-hooks: 4.2.0
@@ -6261,10 +6261,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-alloy@npm:4.1.0":
-  version: 4.1.0
-  resolution: "eslint-config-alloy@npm:4.1.0"
-  checksum: 445bfe5e1b4e308c7cdc52e7804d2cbe9b128e8740fc02eef903cd5ac74766087c9613e025c88043debc47390772999d33b8dedafc309971c2f39a5448d07c2e
+"eslint-config-alloy@npm:4.4.0":
+  version: 4.4.0
+  resolution: "eslint-config-alloy@npm:4.4.0"
+  checksum: ae3522162f176792fb57420a8c4f40419c2b490612576bae4a3cbdf1a4f1daafb9972d127306858fed75141206b7fa43627fe5a82aa057d548d1797e74a71639
   languageName: node
   linkType: hard
 
