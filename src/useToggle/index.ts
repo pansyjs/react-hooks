@@ -1,14 +1,17 @@
 import { useState, useMemo } from 'react';
-import { Actions, State } from './types';
 
-function useToggle<T = boolean | undefined>(): [boolean, Actions<T>];
+export interface Actions<T> {
+  setLeft: () => void;
+  setRight: () => void;
+  toggle: () => void;
+  set: (value: T) => void;
+}
 
-function useToggle<T = State>(defaultValue: T): [T, Actions<T>];
+export function useToggle<T = boolean>(): [boolean, Actions<T>];
 
-function useToggle<T = State, U = State>(
-  defaultValue: T,
-  reverseValue: U,
-): [T | U, Actions<T | U>];
+export function useToggle<T>(defaultValue: T): [T, Actions<T>];
+
+export function useToggle<T, U>(defaultValue: T, reverseValue: U): [T | U, Actions<T | U>];
 
 /**
  * 用于在两个状态值间切换的 Hook
@@ -16,9 +19,9 @@ function useToggle<T = State, U = State>(
  * @param reverseValue 取反的状态值
  * @returns
  */
-function useToggle<D extends State = State, R extends State = State>(
-  defaultValue: D = false as D,
-  reverseValue?: R,
+export function useToggle<D, R>(
+  defaultValue: D = false as unknown as D,
+  reverseValue?: R
 ) {
   const [state, setState] = useState<D | R>(defaultValue);
 
@@ -27,13 +30,8 @@ function useToggle<D extends State = State, R extends State = State>(
       // 取反的状态值
       const reverseValueOrigin = (reverseValue === undefined ? !defaultValue : reverseValue) as D | R;
 
-      const toggle = (value?: D | R) => {
-        if (value !== undefined) {
-          setState(value);
-          return;
-        }
-        setState((s) => (s === defaultValue ? reverseValueOrigin : defaultValue));
-      };
+      const toggle = () => setState((s) => (s === defaultValue ? reverseValueOrigin : defaultValue));
+      const set = (value: D | R) => setState(value);
       // 设置默认状态值
       const setLeft = () => setState(defaultValue);
       // 设置取反状态值
@@ -41,15 +39,13 @@ function useToggle<D extends State = State, R extends State = State>(
 
       return {
         toggle,
+        set,
         setLeft,
         setRight,
       };
     },
-    [defaultValue, reverseValue]
+    []
   );
 
   return [state, actions];
 }
-
-export { useToggle };
-export default useToggle;

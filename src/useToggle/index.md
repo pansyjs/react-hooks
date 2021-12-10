@@ -25,35 +25,33 @@ group:
 ## API
 
 ```ts
-const [state, { toggle, setLeft, setRight }] = useToggle(
-  defaultValue?: boolean,
-);
+const [state, { toggle, set, setLeft, setRight }] = useToggle(defaultValue?: boolean);
 
-const [state,{ toggle, setLeft, setRight }] = useToggle(
-  defaultValue: any = false,
-  reverseValue?: any,
-);
+const [state, { toggle, set, setLeft, setRight }] = useToggle<T>(defaultValue: T);
+
+const [state, { toggle, set, setLeft, setRight }] = useToggle<T, U>(defaultValue: T, reverseValue: U);
 ```
 
 ### Params
 
 | 参数         | 说明                     | 类型      | 默认值  |
 |--------------|--------------------------|-----------|---------|
-| defaultValue | 可选项，传入默认的状态值 | `number` \| `string` \| `boolean` \| `undefined` | `false` |
-| reverseValue | 可选项，传入取反的状态值 | `number` \| `string` \| `boolean` \| `undefined` | -- |
+| defaultValue | 可选项，传入默认的状态值 | `T` | `false` |
+| reverseValue | 可选项，传入取反的状态值 | `U` | -- |
 
 
 ### Result
 
 | 参数    | 说明     | 类型      |
 |---------|----------|-----------|
-| state   | 状态值   | `boolean` |
+| state   | 状态值   | -- |
 | actions | 操作集合 | `Actions` |
 
 ### Actions
 
 | 参数    | 说明     | 类型      |
 |---------|----------|-----------|
-| toggle   | 触发状态更改的函数，可以接受两个可选参数修改状态值   | `(state?: any) => void` |
+| toggle   | 切换 state          | `() => void`            |
+| set      | 修改 state          | `(state: T \| U) => void` |
 | setLeft | 设置为 defaultValue | `() => void` |
 | setRight | 设置为 reverseValue | `() => void` |
