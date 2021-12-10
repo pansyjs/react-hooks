@@ -6,12 +6,12 @@ nav:
 group:
   title: State
   path: /state
-  order: 11
+  order: 1
 ---
 
 # useBoolean
 
-优雅的管理 boolean 值的 Hook。
+优雅的管理 boolean 状态的 Hook。
 
 ## 代码演示
 

@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 默认切换布尔值状态，也可以接收一个参数作为新的值。
+ * desc: 切换 boolean，可以接收默认值。
  */
 import React from 'react';
 import { Button } from 'antd';

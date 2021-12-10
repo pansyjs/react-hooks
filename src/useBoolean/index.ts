@@ -4,22 +4,27 @@ import { useToggle } from '../useToggle';
 export interface Actions {
   setTrue: () => void;
   setFalse: () => void;
-  toggle: (value?: boolean | undefined) => void;
+  set: (value: boolean) => void;
+  toggle: () => void;
 }
 
 export function useBoolean(defaultValue = false): [boolean, Actions] {
-  const [state, { toggle }] = useToggle(defaultValue);
+  const [state, { toggle, set }] = useToggle(defaultValue);
 
   const actions: Actions = useMemo(
     () => {
-      const setTrue = () => toggle(true);
-      const setFalse = () => toggle(false);
-      return { toggle, setTrue, setFalse };
+      const setTrue = () => set(true);
+      const setFalse = () => set(false);
+
+      return {
+        toggle,
+        set: (v) => set(!!v),
+        setTrue,
+        setFalse,
+      };
     },
-    [toggle]
+    []
   );
 
   return [state, actions];
 };
-
-export default useBoolean;
