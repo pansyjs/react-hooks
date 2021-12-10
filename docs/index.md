@@ -1,8 +1,8 @@
 ---
-title: phooks - React Hooks Library
+title: Pansy Hooks - React Hooks Library
 hero:
-  title: a react hooks library
-  desc: 
+  title: Pansy Hooks
+  desc: 一套高质量可靠的 React Hooks 库
   actions:
     - text: 快速上手
       link: /zh-CN/docs/getting-started

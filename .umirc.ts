@@ -4,7 +4,7 @@ const logo = 'https://cdn.jsdelivr.net/gh/wangxingkang/pictures@latest/imgs/2021
 
 export default {
   mode: 'site',
-  title: 'phooks',
+  title: 'Pansy Hooks',
   dynamicImport: {},
   favicon: logo,
   logo,
