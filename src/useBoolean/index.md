@@ -22,9 +22,7 @@ group:
 ## API
 
 ```typescript
-const [ state, { toggle, setTrue, setFalse }] = useBoolean(
-  defaultValue?: boolean,
-);
+const [ state, { toggle, set, setTrue, setFalse }] = useBoolean(defaultValue?: boolean);
 ```
 
 ### Params
@@ -45,6 +43,7 @@ const [ state, { toggle, setTrue, setFalse }] = useBoolean(
 
 | 参数     | 说明                                              | 类型                        |
 |----------|---------------------------------------------------|-----------------------------|
-| toggle   | 触发状态更改的函数,可以接受一个可选参数修改状态值 | `(value?: boolean) => void` |
+| toggle   | 切换 state | `() => void` |
+| toggle   | 设置 state | `(value: boolean) => void` |
 | setTrue  | 设置状态值为 true                                 | `() => void`                |
 | setFalse | 设置状态值为 false                                | `() => void`                |
