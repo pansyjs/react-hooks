@@ -10,15 +10,15 @@ group:
 
 # useModal
 
-优雅的使用 Modal、Drawer 等相似组件的 Hook。
+优雅的使用 Modal、Drawer 等类弹层的 Hook。
 
 ## 代码演示
 
-### Modal组件
+### Modal
 
 <code src="./__demo__/demo01.tsx" />
 
-### Drawer组件
+### Drawer
 
 <code src="./__demo__/demo02.tsx" />
 
@@ -29,19 +29,14 @@ group:
 ## API
 
 ```ts
-const { visible, initialValue, open, close } = useModal<T>();
+const { visible, initialValue, open, close } = useModal<T>(initialValue?: T);
 ```
 
-### 参数
-
-|参数|说明|类型|默认值|
-|---|---|---|---|
-
-### 结果
+### Result
 
 |参数|说明|类型|
 |---|---|---|
-|initialValue|需要传入的值|`any`|
+|initialValue|需要传入的值|`T`|
 |visible|控制显示隐藏|`boolean`|
-|open|打开对话框|`(initValue: T) => void`|
+|open|打开对话框|`(value?: T) => void`|
 |close|关闭对话框|`() => void`|
