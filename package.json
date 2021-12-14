@@ -34,7 +34,7 @@
     "commit": "commit",
     "entry": "walrus entry",
     "test": "walrus-test",
-    "release": "release",
+    "release": "walrus release --commit-message '🔖 chore(release): publish %v'",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
