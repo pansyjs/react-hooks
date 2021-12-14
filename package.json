@@ -49,7 +49,6 @@
     "@walrus/commit": "1.2.2",
     "@walrus/plugin-entry": "0.2.1",
     "@walrus/plugin-release": "1.14.2",
-    "@walrus/release-cli": "1.0.5",
     "@walrus/test": "1.3.0",
     "antd": "4.17.3",
     "dumi": "1.1.36",

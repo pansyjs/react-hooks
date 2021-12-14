@@ -3343,7 +3343,6 @@ __metadata:
     "@walrus/commit": 1.2.2
     "@walrus/plugin-entry": 0.2.1
     "@walrus/plugin-release": 1.14.2
-    "@walrus/release-cli": 1.0.5
     "@walrus/test": 1.3.0
     antd: 4.17.3
     dumi: 1.1.36
@@ -4712,32 +4711,6 @@ __metadata:
   dependencies:
     "@walrus/types": 1.3.4
   checksum: 8ce048fe065d96a5b7f2c39ad4fec80ed7bdad2f7767a64c3eb82ed66e1c92fa22cdc886d7f4ad8e445220099ad25d888484295003bf65dc2923133c69bf4822
-  languageName: node
-  linkType: hard
-
-"@walrus/release-cli@npm:1.0.5":
-  version: 1.0.5
-  resolution: "@walrus/release-cli@npm:1.0.5"
-  dependencies:
-    "@walrus/release": 1.0.5
-  bin:
-    release: lib/index.js
-  checksum: 4a3bb7258edcdfb861caf3939d9afb2c4c8229aab4c15bbb94192e393aa311c3a4d38f160ae17f9cabba46e638e1cc5b80a536c8ef8b9c24437a4dce528264bc
-  languageName: node
-  linkType: hard
-
-"@walrus/release@npm:1.0.5":
-  version: 1.0.5
-  resolution: "@walrus/release@npm:1.0.5"
-  dependencies:
-    "@lerna/filter-packages": 4.0.0
-    "@lerna/package": 4.0.0
-    "@lerna/project": 4.0.0
-    "@pansy/types": 0.2.0
-    "@walrus/cli-utils": 1.5.0
-    lerna: 4.0.0
-    semver: 7.3.5
-  checksum: 03e0ba1db7e8743f0b67f71491d194df777c6dce5ce2ab506136bbb923bb0a76b9a8051236743253fdc86572d16b76be3749f5eb700d3274b52beed216e12578
   languageName: node
   linkType: hard
 
