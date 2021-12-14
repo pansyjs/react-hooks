@@ -21,7 +21,7 @@ group:
 
 ## API
 
-```typescript
+```ts
 const [ state, { toggle, set, setTrue, setFalse }] = useBoolean(defaultValue?: boolean);
 ```
 
