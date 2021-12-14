@@ -2,7 +2,8 @@ import { Config } from '@walrus/types';
 
 const config: Config = {
   entry: {
-    format: 'littleCamelCase'
+    format: 'littleCamelCase',
+    defaultExport: false,
   }
 };
 
