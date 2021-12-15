@@ -7,17 +7,17 @@
  import { useModal } from '@pansy/react-hooks';
 
  export default () => {
-   const [initialValue, setInitialValue] = useState<string>('Tom');
+   const [data, setData] = useState<string>('Tom');
    const modal = useModal<string>();
 
    const handleOpenModal = () => {
-     modal.open(initialValue);
+     modal.open(data);
    }
 
    return (
     <>
       <Space>
-        <Input value={initialValue} onChange={(e) => { setInitialValue(e.target.value) }} />
+        <Input value={data} onChange={(e) => { setData(e.target.value) }} />
         <Button onClick={handleOpenModal}>Open Modal</Button>
       </Space>
 
@@ -26,7 +26,7 @@
          visible={modal.visible}
          onCancel={modal.close}
        >
-         <p>{modal.initialValue}</p>
+         <p>{modal.data}</p>
          <p>Some contents...</p>
          <p>Some contents...</p>
        </Modal>
