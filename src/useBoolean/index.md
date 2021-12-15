@@ -44,6 +44,6 @@ const [ state, { toggle, set, setTrue, setFalse }] = useBoolean(defaultValue?: b
 | 参数     | 说明                                              | 类型                        |
 |----------|---------------------------------------------------|-----------------------------|
 | toggle   | 切换 state | `() => void` |
-| toggle   | 设置 state | `(value: boolean) => void` |
+| set   | 设置 state | `(value: boolean) => void` |
 | setTrue  | 设置状态值为 true                                 | `() => void`                |
 | setFalse | 设置状态值为 false                                | `() => void`                |
