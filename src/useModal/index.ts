@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useBoolean } from '../useBoolean';
+import { useMemoizedFn } from '../useMemoizedFn';
 
 export interface UseModalResult<T = undefined> {
   /** 弹层的开关状态 */
@@ -37,8 +38,8 @@ export function useModal<T = undefined>(
   return {
     visible,
     data,
-    open,
-    close,
+    open: useMemoizedFn(open),
+    close: useMemoizedFn(close),
   };
 }
 
