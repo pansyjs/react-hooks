@@ -7,6 +7,7 @@ import { useModal } from './useModal';
 import { useSelections } from './useSelections';
 import { useTimeout } from './useTimeout';
 import { useToggle } from './useToggle';
+import { useUnmount } from './useUnmount';
 
 export {
   useBoolean,
@@ -16,7 +17,8 @@ export {
   useModal,
   useSelections,
   useTimeout,
-  useToggle
+  useToggle,
+  useUnmount
 };
 
 export default {
@@ -27,5 +29,6 @@ export default {
   useModal,
   useSelections,
   useTimeout,
-  useToggle
+  useToggle,
+  useUnmount
 };
