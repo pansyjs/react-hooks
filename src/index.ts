@@ -4,6 +4,7 @@ import { useInterval } from './useInterval';
 import { useLatest } from './useLatest';
 import { useMemoizedFn } from './useMemoizedFn';
 import { useModal } from './useModal';
+import { useRafState } from './useRafState';
 import { useSelections } from './useSelections';
 import { useTimeout } from './useTimeout';
 import { useToggle } from './useToggle';
@@ -15,6 +16,7 @@ export {
   useLatest,
   useMemoizedFn,
   useModal,
+  useRafState,
   useSelections,
   useTimeout,
   useToggle,
@@ -27,6 +29,7 @@ export default {
   useLatest,
   useMemoizedFn,
   useModal,
+  useRafState,
   useSelections,
   useTimeout,
   useToggle,
