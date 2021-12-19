@@ -10,6 +10,7 @@ import { useSize } from './useSize';
 import { useTimeout } from './useTimeout';
 import { useToggle } from './useToggle';
 import { useUnmount } from './useUnmount';
+import { useUpdateEffect } from './useUpdateEffect';
 
 export {
   useBoolean,
@@ -22,7 +23,8 @@ export {
   useSize,
   useTimeout,
   useToggle,
-  useUnmount
+  useUnmount,
+  useUpdateEffect
 };
 
 export default {
@@ -36,5 +38,6 @@ export default {
   useSize,
   useTimeout,
   useToggle,
-  useUnmount
+  useUnmount,
+  useUpdateEffect
 };
