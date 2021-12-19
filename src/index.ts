@@ -6,6 +6,7 @@ import { useMemoizedFn } from './useMemoizedFn';
 import { useModal } from './useModal';
 import { useRafState } from './useRafState';
 import { useSelections } from './useSelections';
+import { useSize } from './useSize';
 import { useTimeout } from './useTimeout';
 import { useToggle } from './useToggle';
 import { useUnmount } from './useUnmount';
@@ -18,6 +19,7 @@ export {
   useModal,
   useRafState,
   useSelections,
+  useSize,
   useTimeout,
   useToggle,
   useUnmount
@@ -31,6 +33,7 @@ export default {
   useModal,
   useRafState,
   useSelections,
+  useSize,
   useTimeout,
   useToggle,
   useUnmount

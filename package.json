@@ -39,6 +39,9 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
+  "dependencies": {
+    "@juggle/resize-observer": "^3.3.1"
+  },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.2",
     "@types/react": "^17",
