@@ -11,6 +11,7 @@ import { useTimeout } from './useTimeout';
 import { useToggle } from './useToggle';
 import { useUnmount } from './useUnmount';
 import { useUpdateEffect } from './useUpdateEffect';
+import { useUpdateLayoutEffect } from './useUpdateLayoutEffect';
 
 export {
   useBoolean,
@@ -24,7 +25,8 @@ export {
   useTimeout,
   useToggle,
   useUnmount,
-  useUpdateEffect
+  useUpdateEffect,
+  useUpdateLayoutEffect
 };
 
 export default {
@@ -39,5 +41,6 @@ export default {
   useTimeout,
   useToggle,
   useUnmount,
-  useUpdateEffect
+  useUpdateEffect,
+  useUpdateLayoutEffect
 };
