@@ -5,6 +5,11 @@ import { useUnmount } from '../useUnmount';
 export function useRafState<S>(initialState: S | (() => S)): [S, Dispatch<SetStateAction<S>>];
 export function useRafState<S = undefined>(): [S | undefined, Dispatch<SetStateAction<S | undefined>>];
 
+/**
+ * 只在 requestAnimationFrame callback 时更新 state
+ * @param initialState
+ * @returns
+ */
 export function useRafState<S>(initialState?: S | (() => S)) {
   const ref = useRef(0);
   const [state, setState] = useState(initialState);
