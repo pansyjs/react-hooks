@@ -5,7 +5,8 @@ nav:
   path: /hooks
 group:
   title: Effect
-  path: /Effect
+  path: /effect
+  order: 300
 ---
 
 # useInterval

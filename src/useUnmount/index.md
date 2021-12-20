@@ -6,7 +6,7 @@ nav:
 group:
   title: LifeCycle
   path: /LifeCycle
-  order: 1
+  order: 80
 ---
 
 # useUnmount

@@ -6,7 +6,7 @@ nav:
 group:
   title: Scene
   path: /scene
-  order: 1
+  order: 10
 ---
 
 # useModal

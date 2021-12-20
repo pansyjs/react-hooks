@@ -5,8 +5,7 @@ nav:
   path: /hooks
 group:
   title: Effect
-  path: /Effect
-  order: 20
+  path: /effect
 ---
 
 # useTimeout

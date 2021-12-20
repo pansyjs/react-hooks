@@ -6,7 +6,7 @@ nav:
 group:
   title: Advanced
   path: /advanced
-  order: 11
+  order: 500
 ---
 
 # useMemoizedFn
