@@ -26,4 +26,11 @@ describe('useUpdate', () => {
     act(hooks.result.current.onChange);
     expect(hooks.result.current.count).toEqual(1);
   });
+
+  it('should return same update function', () => {
+    const hooks = renderHook(() => useUpdate());
+    const preUpdate = hooks.result.current;
+    hooks.rerender();
+    expect(hooks.result.current).toEqual(preUpdate);
+  });
 });
