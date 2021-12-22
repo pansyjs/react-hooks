@@ -40,7 +40,8 @@
     "postpublish": "pinst --enable"
   },
   "dependencies": {
-    "@juggle/resize-observer": "^3.3.1"
+    "@juggle/resize-observer": "^3.3.1",
+    "@pansy/watermark": "^2.0.2"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.2",

@@ -3342,6 +3342,7 @@ __metadata:
   resolution: "@pansy/react-hooks@workspace:."
   dependencies:
     "@juggle/resize-observer": ^3.3.1
+    "@pansy/watermark": ^2.0.2
     "@testing-library/react-hooks": 7.0.2
     "@types/react": ^17
     "@types/react-dom": ^17
@@ -3372,6 +3373,13 @@ __metadata:
   version: 0.2.0
   resolution: "@pansy/types@npm:0.2.0"
   checksum: 26bac761e1949d2f241d3ce4ae4d25073eee549f3a90027197d4eb8bdc9656be1297720b19cb406b61f6e461cc68927292171f7376f7ceb4b96f5f91d95bacd2
+  languageName: node
+  linkType: hard
+
+"@pansy/watermark@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@pansy/watermark@npm:2.0.2"
+  checksum: b926005c93d777f1afc51da413fe5354df3b1cfff688a4dcfd760ed15afcc479ebd4fe1e980d50653b75d3c08361361967c95e78d8dff0cbc07547a6f30be591
   languageName: node
   linkType: hard
 
