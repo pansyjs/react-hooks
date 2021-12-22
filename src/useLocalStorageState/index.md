@@ -6,7 +6,6 @@ nav:
 group:
   title: State
   path: /state
-  order: 100
 ---
 
 # useLocalStorageState
