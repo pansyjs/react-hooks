@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@juggle/resize-observer": "^3.3.1",
-    "@pansy/watermark": "^2.0.2"
+    "@pansy/watermark": "^2.0.3"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.2",

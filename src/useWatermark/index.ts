@@ -4,9 +4,16 @@ import { getTargetElement } from '../utils/domTarget';
 import type { BasicTarget } from '../utils/domTarget';
 import { useEffectWithTarget } from '../utils/useEffectWithTarget';
 import { useUnmount } from '../useUnmount';
+import { useMemoizedFn } from '../useMemoizedFn';
 
 export type BaseWatermarkOptions = Omit<WatermarkOptions, 'container'>
 
+/**
+ * 优雅的为页面添加水印的 Hook。
+ * @param target 水印挂载的节点
+ * @param options 水印配置
+ * @returns
+ */
 export function useWatermark(
   target: BasicTarget,
   options: BaseWatermarkOptions = {},
@@ -56,8 +63,8 @@ export function useWatermark(
   }
 
   return {
-    update: handleUpdate,
-    show: handleShow,
-    hide: handleHide,
+    update: useMemoizedFn(handleUpdate),
+    show: useMemoizedFn(handleShow),
+    hide: useMemoizedFn(handleHide),
   }
 }
