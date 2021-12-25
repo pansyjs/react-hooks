@@ -1,5 +1,6 @@
 // 此文件在构建时会自动更新，请勿手动修改! 
 import { useBoolean } from './useBoolean';
+import { useFavicon } from './useFavicon';
 import { useGetState } from './useGetState';
 import { useInterval } from './useInterval';
 import { useLatest } from './useLatest';
@@ -21,6 +22,7 @@ import { useWatermark } from './useWatermark';
 
 export {
   useBoolean,
+  useFavicon,
   useGetState,
   useInterval,
   useLatest,
@@ -43,6 +45,7 @@ export {
 
 export default {
   useBoolean,
+  useFavicon,
   useGetState,
   useInterval,
   useLatest,
