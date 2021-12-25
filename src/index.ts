@@ -7,6 +7,7 @@ import { useLocalStorageState } from './useLocalStorageState';
 import { useMemoizedFn } from './useMemoizedFn';
 import { useModal } from './useModal';
 import { useRafState } from './useRafState';
+import { useScroll } from './useScroll';
 import { useSelections } from './useSelections';
 import { useSessionStorageState } from './useSessionStorageState';
 import { useSize } from './useSize';
@@ -27,6 +28,7 @@ export {
   useMemoizedFn,
   useModal,
   useRafState,
+  useScroll,
   useSelections,
   useSessionStorageState,
   useSize,
@@ -48,6 +50,7 @@ export default {
   useMemoizedFn,
   useModal,
   useRafState,
+  useScroll,
   useSelections,
   useSessionStorageState,
   useSize,
