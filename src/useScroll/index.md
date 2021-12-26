@@ -18,6 +18,14 @@ group:
 
 <code src="./__demo__/demo01.tsx" />
 
+### 监测整页的滚动
+
+<code src="./__demo__/demo02.tsx" />
+
+### 控制滚动状态的监听
+
+<code src="./__demo__/demo03.tsx" />
+
 ## API
 
 ```ts
@@ -36,4 +44,10 @@ const position = useScroll(target, shouldUpdate);
 
 | 参数     | 说明                   | 类型                          |
 |----------|------------------------|-------------------------------|
-| position | 滚动容器当前的滚动位置 | `{ left: number, top: number } \| undefined` |
+| position | 滚动容器当前的滚动位置 | `{ left: number; top: number; direction: Direction; } \| undefined` |
+
+### Direction
+
+| 参数     | 说明                   | 类型                          |
+|----------|------------------------|-------------------------------|
+| direction | 滚动的方向 | `'top' \| 'bottom' \| 'left' \| 'right'` |
