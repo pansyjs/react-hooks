@@ -17,9 +17,7 @@ export type BasicTarget<T extends TargetType = Element> =
  * @returns
  */
 export function getTargetElement<T extends TargetType>(target: BasicTarget<T>, defaultElement?: T) {
-  if (!isBrowser) {
-    return undefined;
-  }
+  if (!isBrowser) return undefined;
 
   if (!target) {
     return defaultElement;

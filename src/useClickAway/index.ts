@@ -22,13 +22,6 @@ export function useClickAway<T extends Event = Event>(
       const handler = (event: any) => {
         const targets = Array.isArray(target) ? target : [target];
 
-        console.log('&&')
-        console.log(target)
-        console.log(targets.some((item) => {
-          const targetElement = getTargetElement(item);
-          console.log(targetElement);
-          return !targetElement || targetElement?.contains(event.target);
-        }))
         if (
           targets.some((item) => {
             const targetElement = getTargetElement(item);

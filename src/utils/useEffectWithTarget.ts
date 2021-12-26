@@ -45,8 +45,7 @@ export const createEffectWithTarget = (
           lastDepsRef.current = deps;
           unLoadRef.current = effect();
         }
-      },
-      deps
+      }
     );
 
     useUnmount(() => {
