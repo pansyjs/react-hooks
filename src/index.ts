@@ -14,6 +14,7 @@ import { useSelections } from './useSelections';
 import { useSessionStorageState } from './useSessionStorageState';
 import { useSize } from './useSize';
 import { useTimeout } from './useTimeout';
+import { useTitle } from './useTitle';
 import { useToggle } from './useToggle';
 import { useUnmount } from './useUnmount';
 import { useUpdate } from './useUpdate';
@@ -37,6 +38,7 @@ export {
   useSessionStorageState,
   useSize,
   useTimeout,
+  useTitle,
   useToggle,
   useUnmount,
   useUpdate,
@@ -61,6 +63,7 @@ export default {
   useSessionStorageState,
   useSize,
   useTimeout,
+  useTitle,
   useToggle,
   useUnmount,
   useUpdate,
