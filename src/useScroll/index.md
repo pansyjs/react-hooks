@@ -18,14 +18,6 @@ group:
 
 <code src="./__demo__/demo01.tsx" />
 
-### 监测整页的滚动
-
-<code src="./__demo__/demo02.tsx" />
-
-### 控制滚动状态的监听
-
-<code src="./__demo__/demo03.tsx" />
-
 ## API
 
 ```ts

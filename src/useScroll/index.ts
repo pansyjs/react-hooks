@@ -3,12 +3,7 @@ import { useRafState } from '../useRafState';
 import { getTargetElement } from '../utils/domTarget';
 import { useEffectWithTarget } from '../utils/useEffectWithTarget';
 
-import type { BasicTarget } from '../utils/domTarget';
-
-export interface Position { left: number; top: number };
-
-export type Target = BasicTarget<Element | Document>;
-export type ScrollListenController = (val: Position) => boolean;
+import type { Position, ScrollListenController, Target } from './types';
 
 /**
  * 监听元素的滚动位置
@@ -61,7 +56,25 @@ export function useScroll(
         }
 
         if (shouldUpdateRef.current(newPosition)) {
-          setPosition(newPosition);
+          setPosition((prev = { top: 0, left: 0 }) => {
+            if (newPosition.top > prev.top) {
+              newPosition.direction = 'bottom';
+            }
+
+            if (newPosition.top < prev.top) {
+              newPosition.direction = 'top';
+            }
+
+            if (newPosition.left > prev.left) {
+              newPosition.direction = 'right';
+            }
+
+            if (newPosition.left < prev.left) {
+              newPosition.direction = 'left';
+            }
+
+            return newPosition
+          });
         }
       }
 
