@@ -3,6 +3,7 @@ import { useBoolean } from './useBoolean';
 import { useClickAway } from './useClickAway';
 import { useFavicon } from './useFavicon';
 import { useGetState } from './useGetState';
+import { useInViewport } from './useInViewport';
 import { useInterval } from './useInterval';
 import { useLatest } from './useLatest';
 import { useLocalStorageState } from './useLocalStorageState';
@@ -27,6 +28,7 @@ export {
   useClickAway,
   useFavicon,
   useGetState,
+  useInViewport,
   useInterval,
   useLatest,
   useLocalStorageState,
@@ -52,6 +54,7 @@ export default {
   useClickAway,
   useFavicon,
   useGetState,
+  useInViewport,
   useInterval,
   useLatest,
   useLocalStorageState,
