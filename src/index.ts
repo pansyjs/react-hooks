@@ -1,6 +1,8 @@
 // 此文件在构建时会自动更新，请勿手动修改! 
 import { useBoolean } from './useBoolean';
 import { useClickAway } from './useClickAway';
+import { useDocumentVisibility } from './useDocumentVisibility';
+import { useEventListener } from './useEventListener';
 import { useFavicon } from './useFavicon';
 import { useGetState } from './useGetState';
 import { useInViewport } from './useInViewport';
@@ -26,6 +28,8 @@ import { useWatermark } from './useWatermark';
 export {
   useBoolean,
   useClickAway,
+  useDocumentVisibility,
+  useEventListener,
   useFavicon,
   useGetState,
   useInViewport,
@@ -52,6 +56,8 @@ export {
 export default {
   useBoolean,
   useClickAway,
+  useDocumentVisibility,
+  useEventListener,
   useFavicon,
   useGetState,
   useInViewport,
