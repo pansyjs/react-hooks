@@ -3,6 +3,7 @@ import { useBoolean } from './useBoolean';
 import { useClickAway } from './useClickAway';
 import { useDocumentVisibility } from './useDocumentVisibility';
 import { useEventListener } from './useEventListener';
+import { useEventTarget } from './useEventTarget';
 import { useFavicon } from './useFavicon';
 import { useGetState } from './useGetState';
 import { useHover } from './useHover';
@@ -32,6 +33,7 @@ export {
   useClickAway,
   useDocumentVisibility,
   useEventListener,
+  useEventTarget,
   useFavicon,
   useGetState,
   useHover,
@@ -62,6 +64,7 @@ export default {
   useClickAway,
   useDocumentVisibility,
   useEventListener,
+  useEventTarget,
   useFavicon,
   useGetState,
   useHover,
