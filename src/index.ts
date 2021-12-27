@@ -5,6 +5,7 @@ import { useDocumentVisibility } from './useDocumentVisibility';
 import { useEventListener } from './useEventListener';
 import { useFavicon } from './useFavicon';
 import { useGetState } from './useGetState';
+import { useHover } from './useHover';
 import { useInViewport } from './useInViewport';
 import { useInterval } from './useInterval';
 import { useLatest } from './useLatest';
@@ -33,6 +34,7 @@ export {
   useEventListener,
   useFavicon,
   useGetState,
+  useHover,
   useInViewport,
   useInterval,
   useLatest,
@@ -62,6 +64,7 @@ export default {
   useEventListener,
   useFavicon,
   useGetState,
+  useHover,
   useInViewport,
   useInterval,
   useLatest,
