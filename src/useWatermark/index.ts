@@ -44,7 +44,7 @@ export function useWatermark(
     }
   });
 
-  const handleUpdate = (opts: Watermark) => {
+  const handleUpdate = (opts: WatermarkOptions) => {
     if (watermark.current) {
       watermark.current.update(opts);
     }
