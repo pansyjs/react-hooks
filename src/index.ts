@@ -1,6 +1,7 @@
 // 此文件在构建时会自动更新，请勿手动修改! 
 import { useBoolean } from './useBoolean';
 import { useClickAway } from './useClickAway';
+import { useControllableValue } from './useControllableValue';
 import { useDocumentVisibility } from './useDocumentVisibility';
 import { useEventListener } from './useEventListener';
 import { useEventTarget } from './useEventTarget';
@@ -31,6 +32,7 @@ import { useWatermark } from './useWatermark';
 export {
   useBoolean,
   useClickAway,
+  useControllableValue,
   useDocumentVisibility,
   useEventListener,
   useEventTarget,
@@ -62,6 +64,7 @@ export {
 export default {
   useBoolean,
   useClickAway,
+  useControllableValue,
   useDocumentVisibility,
   useEventListener,
   useEventTarget,
