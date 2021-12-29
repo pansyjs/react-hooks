@@ -58,7 +58,7 @@
     "@walrus/plugin-release": "1.14.2",
     "@walrus/test": "1.3.0",
     "antd": "4.18.0",
-    "dumi": "1.1.37",
+    "dumi": "1.1.38",
     "eslint": "8.5.0",
     "eslint-config-alloy": "4.4.0",
     "eslint-config-prettier": "8.3.0",
