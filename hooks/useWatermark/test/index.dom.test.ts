@@ -1,4 +1,4 @@
-import { useWatermark } from '../index';
+import { useWatermark } from '../src/index';
 
 describe('useWatermark', () => {
   it('should be defined', () => {

@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import { renderHook } from '@testing-library/react-hooks';
-import { useUpdateLayoutEffect } from '../index';
+import { useUpdateLayoutEffect } from '../src/index';
 
 describe('useUpdateLayoutEffect', () => {
   it('should be defined', () => {
