@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 12
 
+      - name: Install pnpm
+        run: npm i pnpm -g
+
       - name: "Install dependencies"
         run: pnpm install
 
