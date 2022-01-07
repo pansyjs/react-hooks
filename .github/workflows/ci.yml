@@ -1,13 +1,11 @@
-name: "CI/CD"
+name: CI
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
+    paths-ignore:
+      - 'docs/**'
+      - '**/demo/*'
+      - '**/*.md'
 
 jobs:
   test:
