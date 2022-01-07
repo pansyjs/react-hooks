@@ -27,11 +27,11 @@ jobs:
       - name: Install pnpm
         run: npm i pnpm -g
 
-      - name: Build
-        run: pnpm build
-
       - name: "Install dependencies"
         run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
       - name: "Test"
         run: pnpm test
