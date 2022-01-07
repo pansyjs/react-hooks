@@ -1,5 +1,4 @@
 module.exports = {
-  ci: false,
   plugins: [
     [
       '@semantic-release/commit-analyzer',
