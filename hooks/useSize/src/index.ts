@@ -1,0 +1,48 @@
+import { ResizeObserver } from '@juggle/resize-observer';
+import { useRafState } from '@pansy/use-raf-state';
+import { getTargetElement, useIsomorphicLayoutEffectWithTarget } from '@pansy/hook-utils';
+
+import type { BasicTarget } from '@pansy/hook-utils';
+
+export interface Size {
+  width: number;
+  height: number;
+};
+
+/**
+ * 监听 DOM 节点尺寸变化的 Hook
+ * @param target
+ * @returns
+ */
+export function useSize(target: BasicTarget): Size | undefined {
+  const [state, setState] = useRafState<Size>();
+
+  useIsomorphicLayoutEffectWithTarget(
+    () => {
+      const el = getTargetElement(target);
+
+      if (!el) return;
+
+      const resizeObserver = new ResizeObserver((entries) => {
+        entries.forEach((entry) => {
+          const { clientWidth, clientHeight } = entry.target;
+
+          setState({
+            width: clientWidth,
+            height: clientHeight,
+          });
+        });
+      });
+
+      resizeObserver.observe(el);
+
+      return () => {
+        resizeObserver.disconnect();
+      };
+    },
+    [],
+    target,
+  );
+
+  return state;
+}

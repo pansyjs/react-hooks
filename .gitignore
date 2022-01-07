@@ -16,5 +16,5 @@ dist
 **/fixtures/**/dist
 .now
 .umi
-src/.umi-production
+.umi-production
 .yarn/cache

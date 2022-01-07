@@ -18,11 +18,11 @@ export default {
   resolve: {
     includes: [
       "docs",
-      "src",
+      "hooks",
     ]
   },
   alias: {
-    '@pansy/react-hooks': join(__dirname, 'src'),
+    '@pansy/react-hooks': join(__dirname, 'hooks/hooks/src'),
   },
   hash: true,
   extraBabelPlugins: [

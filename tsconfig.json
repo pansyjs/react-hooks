@@ -1,25 +1,3 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "target": "ESNext",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "strictNullChecks": true,
-    "strictBindCallApply": true,
-    "noEmit": true,
-    "jsx": "react",
-    "paths": {
-      "@pansy/react-hooks": [
-        "src/index.ts"
-      ]
-    },
-    "allowSyntheticDefaultImports": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  "extends": "./tsconfig.base.json"
 }

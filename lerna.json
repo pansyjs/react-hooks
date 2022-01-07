@@ -1,0 +1,14 @@
+{
+  "version": "independent",
+  "packages": [
+    "hooks/*"
+  ],
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "verifyAccess": false,
+      "ignoreChanges": ["*.md", "**/test/**"],
+      "message": "chore(release): publish"
+    }
+  }
+}
