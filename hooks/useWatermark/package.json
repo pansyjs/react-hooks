@@ -10,6 +10,9 @@
   "scripts": {
     "build": "tsup"
   },
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0"
+  },
   "dependencies": {
     "@pansy/watermark": "^2.0.5",
     "@pansy/use-unmount": "^0.1.0",

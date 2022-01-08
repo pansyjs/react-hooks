@@ -11,8 +11,7 @@
     "build": "tsup"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
     "@pansy/use-latest": "^0.1.0"
