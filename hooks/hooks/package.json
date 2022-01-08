@@ -27,6 +27,7 @@
     "@pansy/use-interval": "^0.1.0",
     "@pansy/use-latest": "^0.1.0",
     "@pansy/use-local-storage-state": "^0.1.0",
+    "@pansy/use-lock-fn": "^0.1.0",
     "@pansy/use-memoized-fn": "^0.1.0",
     "@pansy/use-modal": "^0.1.0",
     "@pansy/use-previous": "^0.1.0",

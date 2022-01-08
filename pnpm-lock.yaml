@@ -19,6 +19,7 @@ importers:
       '@pansy/use-interval': workspace:*
       '@pansy/use-latest': workspace:*
       '@pansy/use-local-storage-state': workspace:*
+      '@pansy/use-lock-fn': workspace:*
       '@pansy/use-memoized-fn': workspace:*
       '@pansy/use-modal': workspace:*
       '@pansy/use-previous': workspace:*
@@ -85,6 +86,7 @@ importers:
       '@pansy/use-interval': link:hooks/useInterval
       '@pansy/use-latest': link:hooks/useLatest
       '@pansy/use-local-storage-state': link:hooks/useLocalStorageState
+      '@pansy/use-lock-fn': link:hooks/useLockFn
       '@pansy/use-memoized-fn': link:hooks/useMemoizedFn
       '@pansy/use-modal': link:hooks/useModal
       '@pansy/use-previous': link:hooks/usePrevious
@@ -151,6 +153,7 @@ importers:
       '@pansy/use-interval': ^0.1.0
       '@pansy/use-latest': ^0.1.0
       '@pansy/use-local-storage-state': ^0.1.0
+      '@pansy/use-lock-fn': ^0.1.0
       '@pansy/use-memoized-fn': ^0.1.0
       '@pansy/use-modal': ^0.1.0
       '@pansy/use-previous': ^0.1.0
@@ -181,6 +184,7 @@ importers:
       '@pansy/use-interval': link:../useInterval
       '@pansy/use-latest': link:../useLatest
       '@pansy/use-local-storage-state': link:../useLocalStorageState
+      '@pansy/use-lock-fn': link:../useLockFn
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-modal': link:../useModal
       '@pansy/use-previous': link:../usePrevious
@@ -283,6 +287,9 @@ importers:
       '@pansy/hook-utils': ^0.1.0
     dependencies:
       '@pansy/hook-utils': link:../utils
+
+  hooks/useLockFn:
+    specifiers: {}
 
   hooks/useMemoizedFn:
     specifiers:

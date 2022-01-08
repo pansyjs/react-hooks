@@ -11,6 +11,7 @@ export { useInViewport } from '@pansy/use-in-viewport';
 export { useInterval } from '@pansy/use-interval';
 export { useLatest } from '@pansy/use-latest';
 export { useLocalStorageState } from '@pansy/use-local-storage-state';
+export { useLockFn } from '@pansy/use-lock-fn';
 export { useMemoizedFn } from '@pansy/use-memoized-fn';
 export { useModal } from '@pansy/use-modal';
 export { usePrevious } from '@pansy/use-previous';
