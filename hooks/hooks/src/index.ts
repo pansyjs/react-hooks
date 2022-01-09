@@ -28,5 +28,6 @@ export { useUpdate } from '@pansy/use-update';
 export { useUpdateEffect } from '@pansy/use-update-effect';
 export { useUpdateLayoutEffect } from '@pansy/use-update-layout-effect';
 export { useWatermark } from '@pansy/use-watermark';
+export { useWebSocket } from '@pansy/use-web-socket';
 
 export type { UseModalResult } from '@pansy/use-modal'

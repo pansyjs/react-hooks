@@ -36,6 +36,7 @@ importers:
       '@pansy/use-update-effect': workspace:*
       '@pansy/use-update-layout-effect': workspace:*
       '@pansy/use-watermark': workspace:*
+      '@pansy/use-web-socket': workspace:*
       '@testing-library/react': ^12.1.2
       '@testing-library/react-hooks': 7.0.2
       '@types/react': ^17
@@ -103,6 +104,7 @@ importers:
       '@pansy/use-update-effect': link:hooks/useUpdateEffect
       '@pansy/use-update-layout-effect': link:hooks/useUpdateLayoutEffect
       '@pansy/use-watermark': link:hooks/useWatermark
+      '@pansy/use-web-socket': link:hooks/useWebSocket
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
       '@types/react': 17.0.38
@@ -170,6 +172,7 @@ importers:
       '@pansy/use-update-effect': ^0.1.0
       '@pansy/use-update-layout-effect': ^0.1.0
       '@pansy/use-watermark': ^0.1.0
+      '@pansy/use-web-socket': ^0.1.0
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
@@ -201,6 +204,7 @@ importers:
       '@pansy/use-update-effect': link:../useUpdateEffect
       '@pansy/use-update-layout-effect': link:../useUpdateLayoutEffect
       '@pansy/use-watermark': link:../useWatermark
+      '@pansy/use-web-socket': link:../useWebSocket
 
   hooks/useBoolean:
     specifiers:
@@ -392,6 +396,16 @@ importers:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
       '@pansy/watermark': 2.0.5
+
+  hooks/useWebSocket:
+    specifiers:
+      '@pansy/use-latest': ^0.1.0
+      '@pansy/use-memoized-fn': ^0.1.0
+      '@pansy/use-unmount': ^0.1.0
+    dependencies:
+      '@pansy/use-latest': link:../useLatest
+      '@pansy/use-memoized-fn': link:../useMemoizedFn
+      '@pansy/use-unmount': link:../useUnmount
 
   hooks/utils:
     specifiers:

@@ -43,7 +43,8 @@
     "@pansy/use-update": "^0.1.0",
     "@pansy/use-update-effect": "^0.1.0",
     "@pansy/use-update-layout-effect": "^0.1.0",
-    "@pansy/use-watermark": "^0.1.0"
+    "@pansy/use-watermark": "^0.1.0",
+    "@pansy/use-web-socket": "^0.1.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
