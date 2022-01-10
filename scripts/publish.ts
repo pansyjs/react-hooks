@@ -16,16 +16,18 @@ const HOOKS_DIR = path.join(__dirname, '../hooks');
     const pkgPath = path.join(HOOKS_DIR, pkg);
     const {
       data: pkgInfo
-    } = readPackage(path.join(pkgPath, 'package.json'));
+    } = await readPackage(pkgPath);
 
-    if (!pkgInfo || !pkgInfo.name || !pkgInfo.version) return;
+    if (!pkgInfo || !pkgInfo.name || !pkgInfo.version) {
+      continue;
+    };
+
+    logger.event(`${pkgInfo.name}`);
+    await $`cd ${pkgPath}`;
 
     logger.event('git tag');
-    await $`git tag v${pkgInfo.data.version}`;
+    await $`git tag ${pkgInfo.name}@${pkgInfo.version}`;
     await $`git push origin --tags`;
-
-    logger.event('git push');
-    await $`git push`;
 
     logger.event('pnpm publish');
     await $`pnpm publish`;
