@@ -11,7 +11,7 @@
     "entry": "walrus entry",
     "test": "walrus-test",
     "publish": "walrus run ./scripts/publish.ts",
-    "release": "pnpm -r --filter ./hooks run release",
+    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "postinstall": "husky install"
   },
   "devDependencies": {
