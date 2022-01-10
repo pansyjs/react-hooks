@@ -10,10 +10,8 @@
     "commit": "commit",
     "entry": "walrus entry",
     "test": "walrus-test",
-    "release": "multi-semantic-release",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@pansy/hook-utils": "workspace:*",
@@ -72,14 +70,14 @@
     "jest-localstorage-mock": "^2.4.18",
     "jest-websocket-mock": "^2.2.1",
     "lerna": "^4.0.0",
-    "multi-semantic-release": "^2.11.0",
-    "pinst": "^2.1.6",
+    "mock-socket": "^9.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-test-renderer": "^17.0.2",
     "rimraf": "3.0.2",
-    "semantic-release": "^18.0.1",
+    "semantic-release": "17.4.7",
     "semantic-release-config-gitmoji": "^1.2.4",
+    "semantic-release-monorepo": "^7.0.5",
     "tsup": "^5.11.10",
     "typescript": "4.5.4"
   },
