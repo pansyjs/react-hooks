@@ -17,4 +17,5 @@ dist
 .now
 .umi
 .umi-production
-.yarn/cache
+
+.pnpm-debug.log
