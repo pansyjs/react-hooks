@@ -35,7 +35,7 @@ importers:
       '@pansy/use-update-effect': workspace:*
       '@pansy/use-update-layout-effect': workspace:*
       '@pansy/use-watermark': workspace:*
-      '@testing-library/react': ^12.1.2
+      '@testing-library/react': 12.1.2
       '@testing-library/react-hooks': 7.0.2
       '@types/react': ^17
       '@types/react-dom': ^17
@@ -43,35 +43,35 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.9.0
       '@typescript-eslint/parser': 5.9.0
       '@walrus/cli': 1.3.4
-      '@walrus/cli-utils': ^2.1.1
+      '@walrus/cli-utils': 2.1.1
       '@walrus/plugin-release': 1.14.3
-      '@walrus/plugin-run': ^0.5.2
+      '@walrus/plugin-run': 0.5.2
       '@walrus/test': 1.3.0
       antd: 4.18.2
-      conventional-changelog-cli: ^2.2.2
-      conventional-changelog-gitmoji-config: ^1.4.3
+      conventional-changelog-cli: 2.2.2
+      conventional-changelog-gitmoji-config: 1.4.3
       dumi: 1.1.38
       eslint: 8.6.0
       eslint-config-alloy: 4.4.0
       eslint-config-prettier: 8.3.0
       eslint-plugin-react: 7.28.0
       eslint-plugin-react-hooks: 4.3.0
-      husky: ^7.0.4
-      jest-fetch-mock: ^3.0.3
-      jest-localstorage-mock: ^2.4.18
-      jest-websocket-mock: ^2.2.1
-      lerna: ^4.0.0
-      mock-socket: ^9.0.8
+      husky: 7.0.4
+      jest-fetch-mock: 3.0.3
+      jest-localstorage-mock: 2.4.18
+      jest-websocket-mock: 2.2.1
+      lerna: 4.0.0
+      mock-socket: 9.0.8
       react: 17.0.2
       react-dom: 17.0.2
-      react-test-renderer: ^17.0.2
+      react-test-renderer: 17.0.2
       rimraf: 3.0.2
       semantic-release: 17.4.7
-      semantic-release-config-gitmoji: ^1.2.4
-      semantic-release-monorepo: ^7.0.5
-      tsup: ^5.11.10
+      semantic-release-config-gitmoji: 1.2.4
+      semantic-release-monorepo: 7.0.5
+      tsup: 5.11.11
       typescript: 4.5.4
-      zx: ^4.2.0
+      zx: 4.2.0
     devDependencies:
       '@pansy/hook-utils': link:hooks/utils
       '@pansy/react-hooks': link:hooks/hooks
@@ -138,7 +138,7 @@ importers:
       semantic-release: 17.4.7
       semantic-release-config-gitmoji: 1.2.4_semantic-release@17.4.7
       semantic-release-monorepo: 7.0.5_semantic-release@17.4.7
-      tsup: 5.11.10_typescript@4.5.4
+      tsup: 5.11.11_typescript@4.5.4
       typescript: 4.5.4
       zx: 4.2.0
 
@@ -2824,7 +2824,7 @@ packages:
   /@babel/runtime/7.11.2:
     resolution: {integrity: sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==}
     dependencies:
-      regenerator-runtime: 0.13.7
+      regenerator-runtime: 0.13.9
     dev: true
 
   /@babel/runtime/7.12.5:
@@ -4922,7 +4922,7 @@ packages:
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 14.18.5
+      '@types/node': 17.0.8
     dev: true
 
   /@types/scheduler/0.16.2:
@@ -6168,7 +6168,7 @@ packages:
     resolution: {integrity: sha512-bHU8m0SrY89ub2hBBuYjbennOeH0YUYkVpH6jxKFk0uD8rhN+0jNHIPtXnac+Vn7N/hgkLGGDcIoYK7je3Hhew==}
     dependencies:
       '@babel/helper-module-imports': 7.16.7
-      '@babel/runtime': 7.11.2
+      '@babel/runtime': 7.16.7
     dev: true
 
   /babel-plugin-istanbul/6.1.1:
@@ -15823,8 +15823,8 @@ packages:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
 
-  /tsup/5.11.10_typescript@4.5.4:
-    resolution: {integrity: sha512-z8YzbPyF8Vvj37h+TY84AfvlmKZtBTRuWwRETWUbfckMj854WeLkuRQV8vRyoY8bLJQhnKWlLge/3fVbFZGERg==}
+  /tsup/5.11.11_typescript@4.5.4:
+    resolution: {integrity: sha512-rgbTu+KhAI9PdGUS07rKohDXbRLTstBGJaxl75q7RZYRGF+n+kN8L4RlXY5pqYb9Hsq0gEB6nS39v7nSvVBS+g==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1.0
