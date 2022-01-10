@@ -18,7 +18,7 @@ export default {
   resolve: {
     includes: [
       "docs",
-      "hooks",
+      "hooks/**/index.md",
     ]
   },
   alias: {
