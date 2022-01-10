@@ -34,6 +34,7 @@
     "@pansy/use-lock-fn": "workspace:*",
     "@pansy/use-memoized-fn": "workspace:*",
     "@pansy/use-modal": "workspace:*",
+    "@pansy/use-mqtt": "workspace:*",
     "@pansy/use-previous": "workspace:*",
     "@pansy/use-raf-state": "workspace:*",
     "@pansy/use-scroll": "workspace:*",
