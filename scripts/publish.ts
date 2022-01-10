@@ -5,6 +5,7 @@ import { logger, readPackage } from '@walrus/cli-utils';
 import 'zx/globals';
 import { getPkgs } from './utils';
 
+const ROOT_DIR = process.cwd();
 const HOOKS_DIR = path.join(__dirname, '../hooks');
 
 (async () => {
@@ -23,13 +24,13 @@ const HOOKS_DIR = path.join(__dirname, '../hooks');
     };
 
     logger.event(`${pkgInfo.name}`);
-    await $`cd ${pkgPath}`;
+    await $`cd ${ROOT_DIR}`;
 
-    logger.event('git tag');
+    logger.info('git tag');
     await $`git tag ${pkgInfo.name}@${pkgInfo.version}`;
     await $`git push origin --tags`;
 
-    logger.event('pnpm publish');
-    await $`pnpm publish`;
+    logger.info('npm publish');
+    await $`cd ${pkgPath} && npm publish`;
   }
 })();
