@@ -146,36 +146,36 @@ importers:
 
   hooks/hooks:
     specifiers:
-      '@pansy/use-boolean': ^0.1.0
-      '@pansy/use-click-away': ^0.1.0
-      '@pansy/use-controllable-value': ^0.1.0
-      '@pansy/use-document-visibility': ^0.1.0
-      '@pansy/use-event-listener': ^0.1.0
-      '@pansy/use-event-target': ^0.1.0
-      '@pansy/use-favicon': ^0.1.0
-      '@pansy/use-get-state': ^0.1.0
-      '@pansy/use-hover': ^0.1.0
-      '@pansy/use-in-viewport': ^0.1.0
-      '@pansy/use-interval': ^0.1.0
-      '@pansy/use-latest': ^0.1.0
-      '@pansy/use-local-storage-state': ^0.1.0
+      '@pansy/use-boolean': ^0.2.0
+      '@pansy/use-click-away': ^0.2.0
+      '@pansy/use-controllable-value': ^0.2.0
+      '@pansy/use-document-visibility': ^0.2.0
+      '@pansy/use-event-listener': ^0.2.0
+      '@pansy/use-event-target': ^0.2.0
+      '@pansy/use-favicon': ^0.2.0
+      '@pansy/use-get-state': ^0.2.0
+      '@pansy/use-hover': ^0.2.0
+      '@pansy/use-in-viewport': ^0.2.0
+      '@pansy/use-interval': ^0.2.0
+      '@pansy/use-latest': ^0.2.0
+      '@pansy/use-local-storage-state': ^0.2.0
       '@pansy/use-lock-fn': ^0.1.0
-      '@pansy/use-memoized-fn': ^0.1.0
-      '@pansy/use-modal': ^0.1.0
-      '@pansy/use-previous': ^0.1.0
-      '@pansy/use-raf-state': ^0.1.0
-      '@pansy/use-scroll': ^0.1.0
-      '@pansy/use-selections': ^0.1.0
-      '@pansy/use-session-storage-state': ^0.1.0
-      '@pansy/use-size': ^0.1.0
-      '@pansy/use-timeout': ^0.1.0
-      '@pansy/use-title': ^0.1.0
-      '@pansy/use-toggle': ^0.1.0
-      '@pansy/use-unmount': ^0.1.0
-      '@pansy/use-update': ^0.1.0
-      '@pansy/use-update-effect': ^0.1.0
-      '@pansy/use-update-layout-effect': ^0.1.0
-      '@pansy/use-watermark': ^0.1.0
+      '@pansy/use-memoized-fn': ^0.2.0
+      '@pansy/use-modal': ^0.2.0
+      '@pansy/use-previous': ^0.2.0
+      '@pansy/use-raf-state': ^0.2.0
+      '@pansy/use-scroll': ^0.2.0
+      '@pansy/use-selections': ^0.2.0
+      '@pansy/use-session-storage-state': ^0.2.0
+      '@pansy/use-size': ^0.2.0
+      '@pansy/use-timeout': ^0.2.0
+      '@pansy/use-title': ^0.2.0
+      '@pansy/use-toggle': ^0.2.0
+      '@pansy/use-unmount': ^0.2.0
+      '@pansy/use-update': ^0.2.0
+      '@pansy/use-update-effect': ^0.2.0
+      '@pansy/use-update-layout-effect': ^0.2.0
+      '@pansy/use-watermark': ^0.2.0
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
@@ -210,45 +210,45 @@ importers:
 
   hooks/useBoolean:
     specifiers:
-      '@pansy/use-toggle': ^0.1.0
+      '@pansy/use-toggle': ^0.2.0
     dependencies:
       '@pansy/use-toggle': link:../useToggle
 
   hooks/useClickAway:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-latest': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-latest': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
 
   hooks/useControllableValue:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.1.0
-      '@pansy/use-update': ^0.1.0
+      '@pansy/use-memoized-fn': ^0.2.0
+      '@pansy/use-update': ^0.2.0
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-update': link:../useUpdate
 
   hooks/useDocumentVisibility:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-event-listener': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-event-listener': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-event-listener': link:../useEventListener
 
   hooks/useEventListener:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-latest': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-latest': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
 
   hooks/useEventTarget:
     specifiers:
-      '@pansy/use-latest': ^0.1.0
+      '@pansy/use-latest': ^0.2.0
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
@@ -257,15 +257,15 @@ importers:
 
   hooks/useGetState:
     specifiers:
-      '@pansy/use-toggle': ^0.1.0
+      '@pansy/use-toggle': ^0.2.0
     dependencies:
       '@pansy/use-toggle': link:../useToggle
 
   hooks/useHover:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-boolean': ^0.1.0
-      '@pansy/use-event-listener': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-boolean': ^0.2.0
+      '@pansy/use-event-listener': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-boolean': link:../useBoolean
@@ -273,7 +273,7 @@ importers:
 
   hooks/useInViewport:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
       intersection-observer: ^0.12.0
     dependencies:
       '@pansy/hook-utils': link:../utils
@@ -281,7 +281,7 @@ importers:
 
   hooks/useInterval:
     specifiers:
-      '@pansy/use-latest': ^0.1.0
+      '@pansy/use-latest': ^0.2.0
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
@@ -290,7 +290,7 @@ importers:
 
   hooks/useLocalStorageState:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
 
@@ -299,14 +299,14 @@ importers:
 
   hooks/useMemoizedFn:
     specifiers:
-      '@pansy/use-toggle': ^0.1.0
+      '@pansy/use-toggle': ^0.2.0
     dependencies:
       '@pansy/use-toggle': link:../useToggle
 
   hooks/useModal:
     specifiers:
-      '@pansy/use-boolean': ^0.1.0
-      '@pansy/use-memoized-fn': ^0.1.0
+      '@pansy/use-boolean': ^0.2.0
+      '@pansy/use-memoized-fn': ^0.2.0
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-memoized-fn': link:../useMemoizedFn
@@ -316,15 +316,15 @@ importers:
 
   hooks/useRafState:
     specifiers:
-      '@pansy/use-unmount': ^0.1.0
+      '@pansy/use-unmount': ^0.2.0
     dependencies:
       '@pansy/use-unmount': link:../useUnmount
 
   hooks/useScroll:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-latest': ^0.1.0
-      '@pansy/use-raf-state': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-latest': ^0.2.0
+      '@pansy/use-raf-state': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
@@ -332,21 +332,21 @@ importers:
 
   hooks/useSelections:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.1.0
+      '@pansy/use-memoized-fn': ^0.2.0
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
 
   hooks/useSessionStorageState:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
 
   hooks/useSize:
     specifiers:
       '@juggle/resize-observer': ^3.3.1
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-raf-state': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-raf-state': ^0.2.0
     dependencies:
       '@juggle/resize-observer': 3.3.1
       '@pansy/hook-utils': link:../utils
@@ -354,14 +354,14 @@ importers:
 
   hooks/useTimeout:
     specifiers:
-      '@pansy/use-latest': ^0.1.0
+      '@pansy/use-latest': ^0.2.0
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
   hooks/useTitle:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-unmount': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-unmount': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-unmount': link:../useUnmount
@@ -371,7 +371,7 @@ importers:
 
   hooks/useUnmount:
     specifiers:
-      '@pansy/use-latest': ^0.1.0
+      '@pansy/use-latest': ^0.2.0
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
@@ -383,15 +383,15 @@ importers:
 
   hooks/useUpdateLayoutEffect:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
     dependencies:
       '@pansy/hook-utils': link:../utils
 
   hooks/useWatermark:
     specifiers:
-      '@pansy/hook-utils': ^0.1.0
-      '@pansy/use-memoized-fn': ^0.1.0
-      '@pansy/use-unmount': ^0.1.0
+      '@pansy/hook-utils': ^0.2.0
+      '@pansy/use-memoized-fn': ^0.2.0
+      '@pansy/use-unmount': ^0.2.0
       '@pansy/watermark': ^2.0.5
     dependencies:
       '@pansy/hook-utils': link:../utils
@@ -401,9 +401,9 @@ importers:
 
   hooks/utils:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.1.0
-      '@pansy/use-unmount': ^0.1.0
-      '@pansy/use-update-effect': ^0.1.0
+      '@pansy/use-memoized-fn': ^0.2.0
+      '@pansy/use-unmount': ^0.2.0
+      '@pansy/use-update-effect': ^0.2.0
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
