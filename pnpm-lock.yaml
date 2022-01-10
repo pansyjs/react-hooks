@@ -36,7 +36,7 @@ importers:
       '@pansy/use-update-effect': workspace:*
       '@pansy/use-update-layout-effect': workspace:*
       '@pansy/use-watermark': workspace:*
-      '@testing-library/react': ^12.1.2
+      '@testing-library/react': 12.1.2
       '@testing-library/react-hooks': 7.0.2
       '@types/react': ^17
       '@types/react-dom': ^17
@@ -44,35 +44,35 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.9.0
       '@typescript-eslint/parser': 5.9.0
       '@walrus/cli': 1.3.4
-      '@walrus/cli-utils': ^2.1.1
+      '@walrus/cli-utils': 2.1.1
       '@walrus/plugin-release': 1.14.3
-      '@walrus/plugin-run': ^0.5.2
+      '@walrus/plugin-run': 0.5.2
       '@walrus/test': 1.3.0
-      antd: 4.18.2
-      conventional-changelog-cli: ^2.2.2
-      conventional-changelog-gitmoji-config: ^1.4.3
+      antd: 4.18.3
+      conventional-changelog-cli: 2.2.2
+      conventional-changelog-gitmoji-config: 1.4.3
       dumi: 1.1.38
       eslint: 8.6.0
       eslint-config-alloy: 4.4.0
       eslint-config-prettier: 8.3.0
       eslint-plugin-react: 7.28.0
       eslint-plugin-react-hooks: 4.3.0
-      husky: ^7.0.4
-      jest-fetch-mock: ^3.0.3
-      jest-localstorage-mock: ^2.4.18
-      jest-websocket-mock: ^2.2.1
-      lerna: ^4.0.0
-      mock-socket: ^9.0.8
+      husky: 7.0.4
+      jest-fetch-mock: 3.0.3
+      jest-localstorage-mock: 2.4.18
+      jest-websocket-mock: 2.2.1
+      lerna: 4.0.0
+      mock-socket: 9.0.8
       react: 17.0.2
       react-dom: 17.0.2
-      react-test-renderer: ^17.0.2
+      react-test-renderer: 17.0.2
       rimraf: 3.0.2
       semantic-release: 17.4.7
-      semantic-release-config-gitmoji: ^1.2.4
-      semantic-release-monorepo: ^7.0.5
-      tsup: ^5.11.10
+      semantic-release-config-gitmoji: 1.2.4
+      semantic-release-monorepo: 7.0.5
+      tsup: 5.11.10
       typescript: 4.5.4
-      zx: ^4.2.0
+      zx: 4.2.0
     devDependencies:
       '@pansy/hook-utils': link:hooks/utils
       '@pansy/react-hooks': link:hooks/hooks
@@ -118,7 +118,7 @@ importers:
       '@walrus/plugin-release': 1.14.3_@walrus+cli@1.3.4
       '@walrus/plugin-run': 0.5.2_@walrus+cli@1.3.4
       '@walrus/test': 1.3.0
-      antd: 4.18.2_react-dom@17.0.2+react@17.0.2
+      antd: 4.18.3_react-dom@17.0.2+react@17.0.2
       conventional-changelog-cli: 2.2.2
       conventional-changelog-gitmoji-config: 1.4.3
       dumi: 1.1.38_3e110919350e0ee2e64d1a654bd03c09
@@ -140,7 +140,7 @@ importers:
       semantic-release: 17.4.7
       semantic-release-config-gitmoji: 1.2.4_semantic-release@17.4.7
       semantic-release-monorepo: 7.0.5_semantic-release@17.4.7
-      tsup: 5.11.11_typescript@4.5.4
+      tsup: 5.11.10_typescript@4.5.4
       typescript: 4.5.4
       zx: 4.2.0
 
@@ -4837,14 +4837,6 @@ packages:
       '@types/react-router': 5.1.17
     dev: true
 
-  /@types/react-router-config/5.0.4:
-    resolution: {integrity: sha512-wJIRO2JcR/prphs4h7Fadx48vlqC3qMyTImqOLHkpwWCYBq9SnC+UAOBVZM4pCrzdIvUoXQy3b18+J6LXEKVpw==}
-    dependencies:
-      '@types/history': 4.7.9
-      '@types/react': 17.0.38
-      '@types/react-router': 5.1.17
-    dev: true
-
   /@types/react-router-dom/5.1.7:
     resolution: {integrity: sha512-D5mHD6TbdV/DNHYsnwBTv+y73ei+mMjrkGrla86HthE4/PVvL1J94Bu3qABU+COXzpL23T1EZapVVpwHuBXiUg==}
     dependencies:
@@ -5358,7 +5350,7 @@ packages:
     dependencies:
       '@types/react': 16.14.21
       '@types/react-dom': 16.9.14
-      '@types/react-router-config': 5.0.4
+      '@types/react-router-config': 5.0.2
       '@umijs/runtime': 3.5.20_react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -5375,7 +5367,7 @@ packages:
     dependencies:
       '@types/react': 16.14.21
       '@types/react-dom': 16.9.14
-      '@types/react-router-config': 5.0.4
+      '@types/react-router-config': 5.0.2
       '@umijs/runtime': 3.5.20_react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -5392,7 +5384,7 @@ packages:
     dependencies:
       '@types/react': 16.14.21
       '@types/react-dom': 16.9.14
-      '@types/react-router-config': 5.0.4
+      '@types/react-router-config': 5.0.2
       '@umijs/runtime': 3.5.20_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -5823,8 +5815,8 @@ packages:
     resolution: {integrity: sha1-ZlWX3oap/+Oqm/vmyuXG6kJrSXk=}
     dev: true
 
-  /antd/4.18.2_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-omezo7dtskrfGoSOoHYbA2jyaSVDd2UsxS5WM8GWyuIDtguMqlTDFKF/5204s3IjXnSUiJLOuDOWSLPMyVwHrA==}
+  /antd/4.18.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-EoCMY8pFKX9IVAc0Bdi3DWR03IIOHa6mTZALOGjrKbPm3kbrcvoBTCNXq4BMeVA1dZbMeoBw46peeJLyMp2avw==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -5850,7 +5842,7 @@ packages:
       rc-image: 5.2.5_react-dom@17.0.2+react@17.0.2
       rc-input-number: 7.3.4_react-dom@17.0.2+react@17.0.2
       rc-mentions: 1.6.1_react-dom@17.0.2+react@17.0.2
-      rc-menu: 9.1.1_react-dom@17.0.2+react@17.0.2
+      rc-menu: 9.2.1_react-dom@17.0.2+react@17.0.2
       rc-motion: 2.4.4_react-dom@17.0.2+react@17.0.2
       rc-notification: 4.5.7_react-dom@17.0.2+react@17.0.2
       rc-pagination: 3.1.15_react-dom@17.0.2+react@17.0.2
@@ -5862,7 +5854,7 @@ packages:
       rc-slider: 9.7.5_react-dom@17.0.2+react@17.0.2
       rc-steps: 4.1.4_react-dom@17.0.2+react@17.0.2
       rc-switch: 3.2.2_react-dom@17.0.2+react@17.0.2
-      rc-table: 7.21.1_react-dom@17.0.2+react@17.0.2
+      rc-table: 7.22.2_react-dom@17.0.2+react@17.0.2
       rc-tabs: 11.10.5_react-dom@17.0.2+react@17.0.2
       rc-textarea: 0.3.7_react-dom@17.0.2+react@17.0.2
       rc-tooltip: 5.1.1_react-dom@17.0.2+react@17.0.2
@@ -13787,7 +13779,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.7
       classnames: 2.3.1
-      rc-menu: 9.1.1_react-dom@17.0.2+react@17.0.2
+      rc-menu: 9.2.1_react-dom@17.0.2+react@17.0.2
       rc-textarea: 0.3.7_react-dom@17.0.2+react@17.0.2
       rc-trigger: 5.2.10_react-dom@17.0.2+react@17.0.2
       rc-util: 5.16.1_react-dom@17.0.2+react@17.0.2
@@ -13795,8 +13787,8 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /rc-menu/9.1.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-yavNNsTgWOlUYwOrJtO8s1Hn0haUvc/x5ozx9KA/H0VspOksIFeWOp7lsEQ3juWyBI2VltDxWQ2DHc65OhZ5pg==}
+  /rc-menu/9.2.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-UbEtn3rflJ8zS+etYGTVQuzy7Fm+yWXR5c0Rl6ecNTS/dPknRyWAyhJcbeR0Hu1+RdQT+0VCqrUPrgKnm4iY+w==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -13987,8 +13979,8 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /rc-table/7.21.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-b9CdrJR1k4mJoddPMmeyAe6YOFpYAPWAEzAG4O4tFOpIGB7mnvwlNhZT2qnjdixPioQ1w6IHiu7RGaPPz+wjRA==}
+  /rc-table/7.22.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-Ng2gNkGi6ybl6dzneRn2H4Gp8XhIbRa5rXQ7ZhZcgWVmfVMok70UHGPXcf68tXW6O0/qckTf/eOVsoviSvK4sw==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
@@ -14013,7 +14005,7 @@ packages:
       '@babel/runtime': 7.16.7
       classnames: 2.3.1
       rc-dropdown: 3.2.2_react-dom@17.0.2+react@17.0.2
-      rc-menu: 9.1.1_react-dom@17.0.2+react@17.0.2
+      rc-menu: 9.2.1_react-dom@17.0.2+react@17.0.2
       rc-resize-observer: 1.1.2_react-dom@17.0.2+react@17.0.2
       rc-util: 5.16.1_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
@@ -15982,8 +15974,8 @@ packages:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
 
-  /tsup/5.11.11_typescript@4.5.4:
-    resolution: {integrity: sha512-rgbTu+KhAI9PdGUS07rKohDXbRLTstBGJaxl75q7RZYRGF+n+kN8L4RlXY5pqYb9Hsq0gEB6nS39v7nSvVBS+g==}
+  /tsup/5.11.10_typescript@4.5.4:
+    resolution: {integrity: sha512-z8YzbPyF8Vvj37h+TY84AfvlmKZtBTRuWwRETWUbfckMj854WeLkuRQV8vRyoY8bLJQhnKWlLge/3fVbFZGERg==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1.0
