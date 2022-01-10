@@ -44,7 +44,9 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.9.0
       '@typescript-eslint/parser': 5.9.0
       '@walrus/cli': 1.3.4
+      '@walrus/cli-utils': ^2.1.1
       '@walrus/plugin-release': 1.14.3
+      '@walrus/plugin-run': ^0.5.2
       '@walrus/test': 1.3.0
       antd: 4.18.2
       conventional-changelog-cli: ^2.2.2
@@ -70,6 +72,7 @@ importers:
       semantic-release-monorepo: ^7.0.5
       tsup: ^5.11.10
       typescript: 4.5.4
+      zx: ^4.2.0
     devDependencies:
       '@pansy/hook-utils': link:hooks/utils
       '@pansy/react-hooks': link:hooks/hooks
@@ -111,7 +114,9 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.9.0_bd2fd93dbcc607ad2f21b784bccfe0c8
       '@typescript-eslint/parser': 5.9.0_eslint@8.6.0+typescript@4.5.4
       '@walrus/cli': 1.3.4
+      '@walrus/cli-utils': 2.1.1
       '@walrus/plugin-release': 1.14.3_@walrus+cli@1.3.4
+      '@walrus/plugin-run': 0.5.2_@walrus+cli@1.3.4
       '@walrus/test': 1.3.0
       antd: 4.18.2_react-dom@17.0.2+react@17.0.2
       conventional-changelog-cli: 2.2.2
@@ -137,6 +142,7 @@ importers:
       semantic-release-monorepo: 7.0.5_semantic-release@17.4.7
       tsup: 5.11.10_typescript@4.5.4
       typescript: 4.5.4
+      zx: 4.2.0
 
   hooks/hooks:
     specifiers:
@@ -4682,6 +4688,12 @@ packages:
       '@types/ms': 0.7.31
     dev: true
 
+  /@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
+    dependencies:
+      '@types/node': 17.0.8
+    dev: true
+
   /@types/glob/7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
@@ -4786,8 +4798,19 @@ packages:
     resolution: {integrity: sha512-c4OVMMcyodKQ9dpwBwh3ofK9P6U9ZktKU9S+p33UqwMNN1vlv2P0zJZUScTshnx7OEoIIRcCFNQ904sYxZz8kg==}
     dev: true
 
+  /@types/node-fetch/2.5.12:
+    resolution: {integrity: sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==}
+    dependencies:
+      '@types/node': 17.0.8
+      form-data: 3.0.1
+    dev: true
+
   /@types/node/14.18.5:
     resolution: {integrity: sha512-LMy+vDDcQR48EZdEx5wRX1q/sEl6NdGuHXPnfeL8ixkwCOSZ2qnIyIZmcCbdX0MeRqHhAcHmX+haCbrS8Run+A==}
+    dev: true
+
+  /@types/node/16.11.19:
+    resolution: {integrity: sha512-BPAcfDPoHlRQNKktbsbnpACGdypPFBuX4xQlsWDE7B8XXcfII+SpOLay3/qZmCLb39kV5S1RTYwXdkx2lwLYng==}
     dev: true
 
   /@types/node/17.0.8:
@@ -5498,6 +5521,15 @@ packages:
       esbuild: 0.14.9
     dev: true
 
+  /@walrus/bundle-require/1.2.1_esbuild@0.14.9:
+    resolution: {integrity: sha512-Hp13otCoB4wwCAWAL0itCRqhwXZeHNkm3HE7Tw02rGd3SjcYxnmBV/qqmMdTpVDMTUTWkJ1TJzQGHdUXOZMCXg==}
+    peerDependencies:
+      esbuild: '>=0.13'
+    dependencies:
+      esbuild: 0.14.9
+      strip-json-comments: 3.1.1
+    dev: true
+
   /@walrus/cli-utils/2.0.5:
     resolution: {integrity: sha512-FUkpzgIw7KJsPVFdPwOR7Ch0kLQfii3rEolQe6nCQLHlsTPmLieB+pvdMe4YeQ4QUKxWz+j/8RTTT6r4/Zvmgg==}
     dependencies:
@@ -5506,6 +5538,20 @@ packages:
       '@lerna/query-graph': 4.0.0
       '@umijs/utils': 4.0.0-beta.14
       '@walrus/bundle-require': 1.1.0_esbuild@0.14.9
+      cac: 6.7.12
+      esbuild: 0.14.9
+      inquirer: 8.2.0
+      joycon: 3.1.1
+    dev: true
+
+  /@walrus/cli-utils/2.1.1:
+    resolution: {integrity: sha512-VxgoyEKJq92g0OXWHsoyAAJaeztu7almyxQMRH2xN7Mc1MVQb9m+mn1uJLWcPf9v6ZFi3SZzFt6f+wxI35+1Gw==}
+    dependencies:
+      '@lerna/filter-packages': 4.0.0
+      '@lerna/project': 4.0.0
+      '@lerna/query-graph': 4.0.0
+      '@umijs/utils': 4.0.0-beta.14
+      '@walrus/bundle-require': 1.2.1_esbuild@0.14.9
       cac: 6.7.12
       esbuild: 0.14.9
       inquirer: 8.2.0
@@ -5549,6 +5595,15 @@ packages:
       - supports-color
     dev: true
 
+  /@walrus/plugin-run/0.5.2_@walrus+cli@1.3.4:
+    resolution: {integrity: sha512-N18ihu5bwJG4syO/Yfgnd56zEpUL2DBVOVzSvusiKnh/Rl9fcV0G1ttVb6BCHHx9824hxo2Wtz7UC9dFYqKdKQ==}
+    peerDependencies:
+      '@walrus/cli': 1.x
+    dependencies:
+      '@walrus/cli': 1.3.4
+      '@walrus/script-run': 1.3.0
+    dev: true
+
   /@walrus/preset-internal/1.3.4:
     resolution: {integrity: sha512-FUYK/x2xEyMEke5DKbfRwrVjjdvqXrQ+FzqO/nobXfTUmhJtDlZRjT62JLMH9o2JPUp0pLFqAlEUQUnaY8IfBw==}
     dependencies:
@@ -5568,6 +5623,14 @@ packages:
       lerna: 4.0.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@walrus/script-run/1.3.0:
+    resolution: {integrity: sha512-FCDQSHbT+CnlPCYEQbY39fgTCx9fzi7b68I1/UwJMWDGacalWtFqaDR2WEcEiFnfemVke27JBzHcULnui8YWjQ==}
+    dependencies:
+      '@walrus/cli-utils': 2.1.1
+      esbuild: 0.14.9
+      esbuild-register: 3.3.1_esbuild@0.14.9
     dev: true
 
   /@walrus/test/1.3.0:
@@ -5932,6 +5995,11 @@ packages:
   /array-union/2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
+    dev: true
+
+  /array-union/3.0.1:
+    resolution: {integrity: sha512-1OvF9IbWwaeiM9VhzYXVQacMibxpXOMYVNIvMtKRyX9SImBXpKcFr8XvFDeEslCyuH/t6KRt7HEO94AlP8Iatw==}
+    engines: {node: '>=12'}
     dev: true
 
   /array-unique/0.3.2:
@@ -8105,6 +8173,14 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-register/3.3.1_esbuild@0.14.9:
+    resolution: {integrity: sha512-DjK9rOeo+Dhq8DXKy52DF2+O7zNPXkFRg9lZfqXDGLU6AzrULxBJZPOOFcH6WCNfkwqymKOZoNvd/ncCvEjwdw==}
+    peerDependencies:
+      esbuild: '>=0.12 <1'
+    dependencies:
+      esbuild: 0.14.9
+    dev: true
+
   /esbuild-sunos-64/0.14.9:
     resolution: {integrity: sha512-mzgmQZAVGo+uLkQXTY0viqVSEQKesmR5OEMMq1jM/2jucbZUcyaq8dVKRIWJJEzwNgZ6MpeOpshUtOzGxxy8ag==}
     cpu: [x64]
@@ -8382,6 +8458,18 @@ packages:
   /esutils/2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /event-stream/3.3.4:
+    resolution: {integrity: sha1-SrTJoPWlTbkzi0w02Gv86PSzVXE=}
+    dependencies:
+      duplexer: 0.1.2
+      from: 0.1.7
+      map-stream: 0.1.0
+      pause-stream: 0.0.11
+      split: 0.3.3
+      stream-combiner: 0.0.4
+      through: 2.3.8
     dev: true
 
   /eventemitter3/4.0.7:
@@ -8730,6 +8818,10 @@ packages:
       map-cache: 0.2.2
     dev: true
 
+  /from/0.1.7:
+    resolution: {integrity: sha1-g8YK/Fi5xWmXAH7Rp2izqzA6RP4=}
+    dev: true
+
   /from2/2.3.0:
     resolution: {integrity: sha1-i/tVAr3kpNNs/e6gB/zKIdfjgq8=}
     dependencies:
@@ -9013,6 +9105,18 @@ packages:
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 3.0.0
+    dev: true
+
+  /globby/12.0.2:
+    resolution: {integrity: sha512-lAsmb/5Lww4r7MM9nCCliDZVIKbZTavrsunAsHLr9oHthrZP1qi7/gAnHOsUs9bLvEt2vKVJhHmxuL7QbDuPdQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      array-union: 3.0.1
+      dir-glob: 3.0.1
+      fast-glob: 3.2.7
+      ignore: 5.2.0
+      merge2: 1.4.1
+      slash: 4.0.0
     dev: true
 
   /got/11.8.3:
@@ -11192,6 +11296,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /map-stream/0.1.0:
+    resolution: {integrity: sha1-5WqpTEyAVaFkBKBnS3jyFffI4ZQ=}
+    dev: true
+
   /map-visit/1.0.0:
     resolution: {integrity: sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=}
     engines: {node: '>=0.10.0'}
@@ -12660,6 +12768,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /pause-stream/0.0.11:
+    resolution: {integrity: sha1-/lo0sMvOErWqaitAPuLnO2AvFEU=}
+    dependencies:
+      through: 2.3.8
+    dev: true
+
   /pbkdf2/3.1.2:
     resolution: {integrity: sha512-iuh7L6jA7JEGu2WxDwtQP1ddOpaJNC4KlDEFfdQajSGgGPNi4OyDc2R7QnbY2bR9QjBVGwgvTdNJZoE7RaxUMA==}
     engines: {node: '>=0.12'}
@@ -13247,6 +13361,14 @@ packages:
 
   /prr/1.0.1:
     resolution: {integrity: sha1-0/wRS6BplaRexok/SEzrHXj19HY=}
+    dev: true
+
+  /ps-tree/1.2.0:
+    resolution: {integrity: sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==}
+    engines: {node: '>= 0.10'}
+    hasBin: true
+    dependencies:
+      event-stream: 3.3.4
     dev: true
 
   /pseudomap/1.0.2:
@@ -14887,6 +15009,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /slash/4.0.0:
+    resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
+    engines: {node: '>=12'}
+    dev: true
+
   /slash2/2.0.0:
     resolution: {integrity: sha512-7ElvBydJPi3MHU/KEOblFSbO/skl4Z69jKkFCpYIYVOMSIZsKi4gYU43HGeZPmjxCXrHekoDAAewphPQNnsqtA==}
     engines: {node: '>=6'}
@@ -15069,6 +15196,12 @@ packages:
       extend-shallow: 3.0.2
     dev: true
 
+  /split/0.3.3:
+    resolution: {integrity: sha1-zQ7qXmOiEd//frDwkcQTPi0N0o8=}
+    dependencies:
+      through: 2.3.8
+    dev: true
+
   /split/1.0.1:
     resolution: {integrity: sha512-mTyOoPbrivtXnwnIxZRFYRrPNtEFKlpB2fvjSnCQUiAA6qAZzqwna5envK4uk6OIeP17CsdF3rSBGYVBsU0Tkg==}
     dependencies:
@@ -15142,6 +15275,12 @@ packages:
     dependencies:
       inherits: 2.0.4
       readable-stream: 2.3.7
+    dev: true
+
+  /stream-combiner/0.0.4:
+    resolution: {integrity: sha1-TV5DPBhSYd3mI8o/RMWGvPXErRQ=}
+    dependencies:
+      duplexer: 0.1.2
     dev: true
 
   /stream-combiner2/1.1.1:
@@ -16461,4 +16600,22 @@ packages:
 
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
+    dev: true
+
+  /zx/4.2.0:
+    resolution: {integrity: sha512-/4f7FaJecA9I655KXKXIHO3CFNYjAz2uSmTz6v2eNlKdrQKyz4VyF3RjqFuP6nQG+Hd3+NjOvrVNBkv8Ne9d4Q==}
+    engines: {node: '>= 14.13.0'}
+    hasBin: true
+    dependencies:
+      '@types/fs-extra': 9.0.13
+      '@types/minimist': 1.2.2
+      '@types/node': 16.11.19
+      '@types/node-fetch': 2.5.12
+      chalk: 4.1.2
+      fs-extra: 10.0.0
+      globby: 12.0.2
+      minimist: 1.2.5
+      node-fetch: 2.6.6
+      ps-tree: 1.2.0
+      which: 2.0.2
     dev: true
