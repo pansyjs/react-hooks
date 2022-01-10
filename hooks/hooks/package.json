@@ -2,7 +2,7 @@
   "name": "@pansy/react-hooks",
   "version": "0.8.0",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
