@@ -190,7 +190,7 @@ importers:
       '@pansy/use-interval': link:../useInterval
       '@pansy/use-latest': link:../useLatest
       '@pansy/use-local-storage-state': link:../useLocalStorageState
-      '@pansy/use-lock-fn': link:../useLockFn
+      '@pansy/use-lock-fn': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-modal': link:../useModal
       '@pansy/use-previous': link:../usePrevious
@@ -4257,6 +4257,16 @@ packages:
   /@pansy/types/0.2.0:
     resolution: {integrity: sha512-p4Ii7nIICkFh51th3LHfooEQg8OEeC57raRNZ57UAm1Bmt+Z1EC1qVenznXmrIs1Qmup4LA6dxva7XQ5zVfb9Q==}
     dev: true
+
+  /@pansy/use-lock-fn/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-avR5wFzSe8ao5RQIU3lY9/XnRxr52fT7daRGSl0MUfrivh7AJcOjU52IBzRKNGK47u09aPJ40sRZSmwzkwU0wQ==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
 
   /@pansy/watermark/2.0.5:
     resolution: {integrity: sha512-ql0ysUAcQXB3FQCUMhp6Sp5KMqBvpONO7NLGWHvai1svyta8egph3ECJ8xoLNc0SnPvaCuTeQx+3+s4KKfTXcw==}
