@@ -44,7 +44,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.9.1
       '@typescript-eslint/parser': 5.9.1
       '@walrus/cli': 1.3.4
-      '@walrus/cli-utils': 2.1.1
+      '@walrus/cli-utils': 2.2.0
       '@walrus/plugin-release': 1.14.3
       '@walrus/plugin-run': 0.5.2
       '@walrus/test': 1.3.0
@@ -114,7 +114,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.9.1_b7b2e42b32ee097737cd3e626b10847b
       '@typescript-eslint/parser': 5.9.1_eslint@8.6.0+typescript@4.5.4
       '@walrus/cli': 1.3.4
-      '@walrus/cli-utils': 2.1.1
+      '@walrus/cli-utils': 2.2.0
       '@walrus/plugin-release': 1.14.3_@walrus+cli@1.3.4
       '@walrus/plugin-run': 0.5.2_@walrus+cli@1.3.4
       '@walrus/test': 1.3.0
@@ -5499,6 +5499,13 @@ packages:
       clipboardy: 2.3.0
     dev: true
 
+  /@umijs/utils/4.0.0-beta.15:
+    resolution: {integrity: sha512-N9uV2Qt8e9Xz+9IJDcTZrljYkKF1ue/KTGTrAC12xwofoGpQcOM9r5zVXhFjix8FoImbmQpYpmp2aqsE/2BsRg==}
+    dependencies:
+      chokidar: 3.5.2
+      clipboardy: 2.3.0
+    dev: true
+
   /@walrus/bundle-require/1.1.0_esbuild@0.14.9:
     resolution: {integrity: sha512-mxdBR0Rb6uK/vyysLqyEVwGdqiM2FYcvCW/hREJLZ+fg0/Siwu3HlNU24d6UGJyl+Twpi56IZ/hX01i2sKSDrw==}
     peerDependencies:
@@ -5530,13 +5537,13 @@ packages:
       joycon: 3.1.1
     dev: true
 
-  /@walrus/cli-utils/2.1.1:
-    resolution: {integrity: sha512-VxgoyEKJq92g0OXWHsoyAAJaeztu7almyxQMRH2xN7Mc1MVQb9m+mn1uJLWcPf9v6ZFi3SZzFt6f+wxI35+1Gw==}
+  /@walrus/cli-utils/2.2.0:
+    resolution: {integrity: sha512-hWaQ4MS3cw6vxRMLltrTbzkYz14U6xP49qI3KCA66UFMGZ+ZnrP7lcLIl+rlTn566hKxlmSC5208zCJeIJ/I7g==}
     dependencies:
       '@lerna/filter-packages': 4.0.0
       '@lerna/project': 4.0.0
       '@lerna/query-graph': 4.0.0
-      '@umijs/utils': 4.0.0-beta.14
+      '@umijs/utils': 4.0.0-beta.15
       '@walrus/bundle-require': 1.2.1_esbuild@0.14.9
       cac: 6.7.12
       esbuild: 0.14.9
@@ -5614,7 +5621,7 @@ packages:
   /@walrus/script-run/1.3.0:
     resolution: {integrity: sha512-FCDQSHbT+CnlPCYEQbY39fgTCx9fzi7b68I1/UwJMWDGacalWtFqaDR2WEcEiFnfemVke27JBzHcULnui8YWjQ==}
     dependencies:
-      '@walrus/cli-utils': 2.1.1
+      '@walrus/cli-utils': 2.2.0
       esbuild: 0.14.9
       esbuild-register: 3.3.1_esbuild@0.14.9
     dev: true
@@ -16558,7 +16565,7 @@ packages:
   /wide-align/1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
     dev: true
 
   /word-wrap/1.2.3:
