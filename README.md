@@ -36,3 +36,19 @@ npm install @pansy/react-hooks --save
 // yarn
 yarn add @pansy/react-hooks
 ```
+
+## ⌨️ 本地开发
+
+```sh
+$ git clone git@github.com:pansyjs/react-hooks.git
+$ cd react-hooks
+$ pnpm install
+$ pnpm start
+```
+
+如何创建一个Hook, 执行以下命令，会帮你创建基本的文件
+
+```sh
+pnpm run create:hook
+```
+
