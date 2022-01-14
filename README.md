@@ -22,9 +22,14 @@
   </a>
 </p>
 
+## 📚 文档
+
+[docs](https://react-hooks-chi.vercel.app/);
 
 ## ✨ 特性
 
+- 📦 每个 Hook 单独发包，方便使用
+- 🌵 包含丰富的基础 Hooks
 - 💻 使用 TypeScript 编写，提供完善的类型定义
 
 ## 🏗 安装
@@ -35,9 +40,25 @@ npm install @pansy/react-hooks --save
 
 // yarn
 yarn add @pansy/react-hooks
+
+// pnpm
+pnpm install @pansy/react-hooks
 ```
 
-## ⌨️ 本地开发
+**注意** 每个 Hook 单独发包，如只是用部分可单独安装对应的 Hook 包;
+
+🔨 使用
+
+```ts
+import { useModal } from '@pansy/react-hooks';
+
+// or
+import { useModal } from '@pansy/react-modal';
+```
+
+## 🤝 参与共建
+
+本仓库使用 [pnpm](https://pnpm.io/zh) 进行依赖管理，开发前请保证已安装
 
 ```sh
 $ git clone git@github.com:pansyjs/react-hooks.git
