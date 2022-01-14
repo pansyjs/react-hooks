@@ -24,7 +24,7 @@
 
 ## 📚 文档
 
-[docs](https://react-hooks-chi.vercel.app/);
+[docs](https://react-hooks-chi.vercel.app/)
 
 ## ✨ 特性
 
