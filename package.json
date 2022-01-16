@@ -85,7 +85,7 @@
     "semantic-release-monorepo": "7.0.5",
     "tsup": "5.11.11",
     "typescript": "4.5.4",
-    "zx": "4.2.0"
+    "zx": "4.3.0"
   },
   "bolt": {
     "workspaces": [

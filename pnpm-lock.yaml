@@ -73,7 +73,7 @@ importers:
       semantic-release-monorepo: 7.0.5
       tsup: 5.11.11
       typescript: 4.5.4
-      zx: 4.2.0
+      zx: 4.3.0
     devDependencies:
       '@pansy/hook-utils': link:hooks/utils
       '@pansy/react-hooks': link:hooks/hooks
@@ -144,7 +144,7 @@ importers:
       semantic-release-monorepo: 7.0.5_semantic-release@17.4.7
       tsup: 5.11.11_typescript@4.5.4
       typescript: 4.5.4
-      zx: 4.2.0
+      zx: 4.3.0
 
   hooks/hooks:
     specifiers:
@@ -4679,7 +4679,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 16.11.19
+      '@types/node': 17.0.8
     dev: true
 
   /@types/glob/7.2.0:
@@ -4789,7 +4789,7 @@ packages:
   /@types/node-fetch/2.5.12:
     resolution: {integrity: sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==}
     dependencies:
-      '@types/node': 16.11.19
+      '@types/node': 17.0.8
       form-data: 3.0.1
     dev: true
 
@@ -4925,7 +4925,7 @@ packages:
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 14.18.5
+      '@types/node': 17.0.8
     dev: true
 
   /@types/scheduler/0.16.2:
@@ -16775,9 +16775,9 @@ packages:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
 
-  /zx/4.2.0:
-    resolution: {integrity: sha512-/4f7FaJecA9I655KXKXIHO3CFNYjAz2uSmTz6v2eNlKdrQKyz4VyF3RjqFuP6nQG+Hd3+NjOvrVNBkv8Ne9d4Q==}
-    engines: {node: '>= 14.13.0'}
+  /zx/4.3.0:
+    resolution: {integrity: sha512-KuEjpu5QFIMx0wWfzknDRhY98s7a3tWNRmYt19XNmB7AfOmz5zISA4+3Q8vlJc2qguxMn89uSxhPDCldPa3YLA==}
+    engines: {node: '>= 14.13.1'}
     hasBin: true
     dependencies:
       '@types/fs-extra': 9.0.13
