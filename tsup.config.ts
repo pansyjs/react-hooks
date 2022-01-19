@@ -6,4 +6,6 @@ export const config = defineConfig({
   format: ['cjs', 'esm'],
   clean: true,
   dts: true,
+  platform: 'browser',
+  legacyOutput: true,
 })

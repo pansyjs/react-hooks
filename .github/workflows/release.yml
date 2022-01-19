@@ -2,7 +2,7 @@ name: Release CI
 on:
   push:
     branches:
-      - main
+      - master
       - next
 
 jobs:
@@ -30,6 +30,6 @@ jobs:
 
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm release

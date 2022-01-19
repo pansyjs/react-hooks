@@ -1,22 +1,23 @@
 {
   "name": "@pansy/use-hover",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-boolean": "^0.1.0",
-    "@pansy/use-event-listener": "^0.1.0",
-    "@pansy/hook-utils": "^0.1.0"
+    "@pansy/use-boolean": "^0.2.0",
+    "@pansy/use-event-listener": "^0.2.0",
+    "@pansy/hook-utils": "^0.2.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
