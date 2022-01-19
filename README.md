@@ -53,7 +53,7 @@ pnpm install @pansy/react-hooks
 import { useModal } from '@pansy/react-hooks';
 
 // or
-import { useModal } from '@pansy/react-modal';
+import { useModal } from '@pansy/use-modal';
 ```
 
 ## 🤝 参与共建
