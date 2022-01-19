@@ -61,7 +61,7 @@ importers:
       husky: 7.0.4
       jest-fetch-mock: 3.0.3
       jest-localstorage-mock: 2.4.18
-      jest-websocket-mock: 2.2.1
+      jest-websocket-mock: 2.3.0
       lerna: 4.0.0
       mock-socket: 9.1.0
       react: 17.0.2
@@ -132,7 +132,7 @@ importers:
       husky: 7.0.4
       jest-fetch-mock: 3.0.3
       jest-localstorage-mock: 2.4.18
-      jest-websocket-mock: 2.2.1_mock-socket@9.1.0
+      jest-websocket-mock: 2.3.0
       lerna: 4.0.0
       mock-socket: 9.1.0
       react: 17.0.2
@@ -10843,10 +10843,8 @@ packages:
       string-length: 4.0.2
     dev: true
 
-  /jest-websocket-mock/2.2.1_mock-socket@9.1.0:
-    resolution: {integrity: sha512-fhsGLXrPfs06PhHoxqOSA9yZ6Rb4qYrf4Wcm7/nfRzjlrf1gIeuhYUkzMRjjE0TMQ37SwkmeLanwrZY4ZaNp8g==}
-    peerDependencies:
-      mock-socket: ^8||^9
+  /jest-websocket-mock/2.3.0:
+    resolution: {integrity: sha512-kXhRRApRdT4hLG/4rhsfcR0Ke0OzqIsDj0P5t0dl5aiAftShSgoRqp/0pyjS5bh+b9GrIzmfkrV2cn9LxxvSvA==}
     dependencies:
       jest-diff: 27.4.6
       mock-socket: 9.1.0
