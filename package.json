@@ -12,7 +12,8 @@
     "entry": "walrus entry",
     "test": "walrus-test",
     "publish": "walrus run ./scripts/publish.ts",
-    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
+    "release:old": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
+    "release": "walrus release",
     "postinstall": "husky install"
   },
   "devDependencies": {
@@ -63,7 +64,7 @@
     "@walrus/plugin-release": "1.14.3",
     "@walrus/plugin-run": "0.5.2",
     "@walrus/test": "1.3.0",
-    "antd": "4.18.4",
+    "antd": "4.18.5",
     "conventional-changelog-cli": "2.2.2",
     "conventional-changelog-gitmoji-config": "1.4.3",
     "dumi": "1.1.38",
@@ -75,7 +76,7 @@
     "husky": "7.0.4",
     "jest-fetch-mock": "3.0.3",
     "jest-localstorage-mock": "2.4.18",
-    "jest-websocket-mock": "2.2.1",
+    "jest-websocket-mock": "2.3.0",
     "lerna": "4.0.0",
     "mock-socket": "9.1.0",
     "react": "17.0.2",
@@ -86,7 +87,7 @@
     "semantic-release-config-gitmoji": "1.2.4",
     "semantic-release-monorepo": "7.0.5",
     "tsup": "5.11.11",
-    "typescript": "4.5.4",
+    "typescript": "4.5.5",
     "zx": "4.3.0"
   },
   "bolt": {
