@@ -20,7 +20,7 @@ export function useInterval(
 
   useEffect(
     () => {
-      if (typeof delay !== 'number' || delay <= 0) return;
+      if (typeof delay !== 'number' || delay < 0) return;
 
       if (immediate) {
         fnRef.current();
