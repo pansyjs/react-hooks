@@ -14,25 +14,25 @@ export interface UseModalResult<T = undefined> {
 }
 
 /**
- * 优雅的使用 Modal、Drawer 类弹层组件的 Hook
+ * 优雅的使用 Modal、Drawer 弹层类组件的 Hook
  * @param value 需要初始化的状态值
  * @returns
  */
 export function useModal<T = undefined>(
-  initVisible?: boolean,
-  initData?: T
+  initialVisible?: boolean,
+  initialData?: T
 ): UseModalResult<T> {
-  const [visible, { set }] = useBoolean(initVisible);
-  const [data, setData] = useState<T | undefined>(initData);
+  const [visible, { set }] = useBoolean(initialVisible);
+  const [data, setData] = useState<T>(initialData);
 
   const open = (value?: T) => {
     set(true);
-    setData(value as T);
+    setData(value);
   };
 
   const close = () => {
     set(false);
-    setData(undefined as unknown as T);
+    setData(undefined);
   };
 
   return {
