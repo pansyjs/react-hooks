@@ -14,7 +14,7 @@ export function useTimeout(
 
   useEffect(
     () => {
-      if (typeof delay !== 'number' || delay <= 0) return;
+      if (typeof delay !== 'number' || delay < 0) return;
 
       const timer = setTimeout(() => {
         fnRef.current();
