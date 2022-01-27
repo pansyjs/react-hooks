@@ -8,6 +8,11 @@ describe('useModal', () => {
     expect(useModal).toBeDefined();
   });
 
+  it('should render', () => {
+    const { result } = setUp();
+    expect(result.error).toBeUndefined();
+  });
+
   it('should default state', () => {
     const { result } = setUp();
 
