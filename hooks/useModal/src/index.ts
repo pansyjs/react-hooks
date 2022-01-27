@@ -14,7 +14,7 @@ export interface UseModalResult<T = undefined> {
 }
 
 /**
- * 优雅的使用 Modal、Drawer 等类弹层的 Hook
+ * 优雅的使用 Modal、Drawer 类弹层组件的 Hook
  * @param value 需要初始化的状态值
  * @returns
  */

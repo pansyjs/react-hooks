@@ -11,7 +11,7 @@ group:
 
 # useModal
 
-优雅的使用 Modal、Drawer 等类弹层的 Hook。
+优雅的使用 Modal、Drawer 弹层类组件的 Hook。
 
 ## 代码演示
 
