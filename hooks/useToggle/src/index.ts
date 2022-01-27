@@ -1,9 +1,13 @@
 import { useState, useMemo } from 'react';
 
 export interface Actions<T> {
+  /** 设置为 defaultValue */
   setLeft: () => void;
+  /** 设置为 reverseValue */
   setRight: () => void;
+  /** 切换 state */
   toggle: () => void;
+  /** 修改 state */
   set: (value: T) => void;
 }
 
