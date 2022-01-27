@@ -70,6 +70,6 @@ $ pnpm start
 如何创建一个Hook, 执行以下命令，会帮你创建基本的文件
 
 ```sh
-pnpm run create:hook
+pnpm run hooks:create
 ```
 
