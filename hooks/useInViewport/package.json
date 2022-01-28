@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-in-viewport",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "^0.2.0",
+    "@pansy/hook-utils": "0.2.1",
     "intersection-observer": "^0.12.0"
   },
   "publishConfig": {

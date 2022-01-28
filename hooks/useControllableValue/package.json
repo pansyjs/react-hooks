@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-controllable-value",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -15,8 +15,8 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-update": "^0.2.0",
-    "@pansy/use-memoized-fn": "^0.2.0"
+    "@pansy/use-memoized-fn": "0.2.1",
+    "@pansy/use-update": "0.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
