@@ -2,9 +2,10 @@ import { useRef, useState, useEffect } from 'react';
 import * as mqtt from 'mqtt';
 import { useUnmount } from '@pansy/use-unmount';
 import { useLatest } from '@pansy/use-latest';
+import { useMemoizedFn } from '@pansy/use-memoized-fn'
 
 import type { Options } from './types';
-import type { MqttClient } from 'mqtt';
+import type { Client, OnMessageCallback } from 'mqtt';
 
 export enum ReadyState {
   Connecting = 0,
@@ -21,42 +22,38 @@ export enum ReadyState {
 export function useMqtt(
   url: string,
   {
-    reconnectLimit = 3,
-    reconnectInterval = 3 * 1000,
     manual = false,
-    onOpen,
+    onConnect,
     onClose,
+    onReconnect,
     onMessage,
     onError,
     ...rest
   }: Options = {}
 ) {
-  const onOpenRef = useLatest(onOpen);
+  const onConnectRef = useLatest(onConnect);
   const onCloseRef = useLatest(onClose);
+  const onReconnectRef = useLatest(onReconnect);
   const onMessageRef = useLatest(onMessage);
   const onErrorRef = useLatest(onError);
 
-  const reconnectTimesRef = useRef(0);
-  const reconnectTimerRef = useRef<ReturnType<typeof setTimeout>>();
-  const mqttRef = useRef<MqttClient>();
+  const mqttRef = useRef<Client>();
 
   const unmountedRef = useRef(false);
 
   /** 连接状态 */
   const [readyState, setReadyState] = useState<ReadyState>(ReadyState.Closed);
+  const [messageMap, setMessageMap] = useState<Record<string, any>>({});
 
-  useEffect(
-    () => {
-      if (!manual) {
-        // connect();
-      }
-    },
-    [url, manual]
-  );
+  useEffect(() => {
+    if (!manual) {
+      connectMqtt();
+    }
+  }, [url, manual]);
 
   useUnmount(() => {
     unmountedRef.current = true;
-    // disconnect();
+    disconnect();
   });
 
   const connectMqtt = () => {
@@ -64,38 +61,103 @@ export function useMqtt(
       mqttRef.current.end();
     }
 
-    mqttRef.current = mqtt.connect(url, rest);
+    const mt = mqtt.connect(url, rest);
 
     setReadyState(ReadyState.Connecting);
 
-    mqttRef.current.on('connect', (event) => {
+    mt.on('connect', (event) => {
       if (unmountedRef.current) {
         return;
       }
 
-      onOpenRef.current?.(event);
-      reconnectTimesRef.current = 0;
+      onConnectRef.current?.(event);
       setReadyState(ReadyState.Open);
     });
 
-    mqttRef.current.on('message', (...args) => {
+    mt.on('reconnect', (...args) => {
+      if (unmountedRef.current) {
+        return;
+      }
+
+      onReconnectRef.current?.(...args);
+    });
+
+    mt.on('message', (...args) => {
       if (unmountedRef.current) {
         return;
       }
 
       onMessageRef.current?.(...args);
+      handleMessage(...args);
     });
 
-    mqttRef.current.on('error', (error) => {
+    mt.on('close', () => {
+      if (unmountedRef.current) {
+        return;
+      }
+
+      onCloseRef.current?.();
+    });
+
+    mt.on('error', (error) => {
       if (unmountedRef.current) {
         return;
       }
 
       onErrorRef.current?.(error);
     });
+
+    mqttRef.current = mt;
+  }
+
+  const disconnect = () => {
+    mqttRef.current?.end();
+  };
+
+  const handleMessage: OnMessageCallback = (topic: string, payload: Buffer) => {
+    const data = JSON.parse(payload.toString());
+
+    setMessageMap((prev) => ({
+      ...prev,
+      [topic]: data,
+    }))
+  };
+
+  /**
+   * 向服务端推送消息
+   * @param args
+   * @returns
+   */
+  const publishMessage = (...args: Parameters<Client['publish']>) => {
+    if (readyState === ReadyState.Open) {
+      mqttRef.current?.publish(...args);
+    } else {
+      throw new Error('WebSocket disconnected');
+    }
+
+    return mqttRef.current;
+  }
+
+  const reconnect = () => {
+    mqttRef.current?.reconnect();
+  }
+
+  const subscribe = (...args: Parameters<Client['subscribe']>) => {
+    mqttRef.current?.subscribe(...args);
+  }
+
+  const unsubscribe= (...args: Parameters<Client['unsubscribe']>) => {
+    mqttRef.current?.unsubscribe(...args);
   }
 
   return {
+    messageMap,
     mqttIns: mqttRef.current,
+    connect: useMemoizedFn(connectMqtt),
+    reconnect: useMemoizedFn(reconnect),
+    disconnect: useMemoizedFn(disconnect),
+    subscribe: useMemoizedFn(subscribe),
+    unsubscribe: useMemoizedFn(unsubscribe),
+    publishMessage: useMemoizedFn(publishMessage),
   }
 }
