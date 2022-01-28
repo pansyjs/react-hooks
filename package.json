@@ -4,7 +4,7 @@
   "scripts": {
     "start": "dumi dev",
     "site": "dumi build",
-    "build": "pnpm -r --filter ./hooks run build",
+    "build": "pnpm run hooks:sync && pnpm -r --filter ./hooks run build",
     "lint:es": "eslint ./src --ext '.ts,.tsx'",
     "lint:esfix": "pnpm lint:es --fix",
     "commit": "commit",

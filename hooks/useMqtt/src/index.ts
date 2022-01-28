@@ -134,8 +134,6 @@ export function useMqtt(
     } else {
       throw new Error('WebSocket disconnected');
     }
-
-    return mqttRef.current;
   }
 
   const reconnect = () => {

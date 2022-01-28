@@ -29,5 +29,6 @@ export { useUpdateEffect } from '@pansy/use-update-effect';
 export { useUpdateLayoutEffect } from '@pansy/use-update-layout-effect';
 export { useWatermark } from '@pansy/use-watermark';
 export { useWebSocket } from '@pansy/use-web-socket';
+export { useMqtt } from '@pansy/use-mqtt';
 
 export type { UseModalResult } from '@pansy/use-modal'

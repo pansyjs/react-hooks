@@ -12,8 +12,6 @@ group:
 
 用于处理 [Mqtt](https://github.com/mqttjs/MQTT.js) 的 Hook。
 
-## 代码演示
-
 
 ## API
 
@@ -53,7 +51,7 @@ interface Result {
   publishMessage?: MqttClient['publish'];
 }
 
-useWebSocket(url: string, options?: Options): Result;
+useMqtt(url: string, options?: Options): Result;
 ```
 
 ### Params
