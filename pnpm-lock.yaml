@@ -47,7 +47,7 @@ importers:
       '@typescript-eslint/parser': 5.10.0
       '@umijs/utils': ^3.5.20
       '@walrus/cli': 1.3.4
-      '@walrus/cli-utils': 2.2.0
+      '@walrus/cli-utils': 2.2.1
       '@walrus/package': ^1.1.0
       '@walrus/plugin-release': 1.14.3
       '@walrus/plugin-run': 0.5.3
@@ -121,7 +121,7 @@ importers:
       '@typescript-eslint/parser': 5.10.0_eslint@8.7.0+typescript@4.5.5
       '@umijs/utils': 3.5.20
       '@walrus/cli': 1.3.4
-      '@walrus/cli-utils': 2.2.0
+      '@walrus/cli-utils': 2.2.1
       '@walrus/package': 1.1.0
       '@walrus/plugin-release': 1.14.3_@walrus+cli@1.3.4
       '@walrus/plugin-run': 0.5.3_@walrus+cli@1.3.4
@@ -5546,8 +5546,8 @@ packages:
       clipboardy: 2.3.0
     dev: true
 
-  /@umijs/utils/4.0.0-beta.15:
-    resolution: {integrity: sha512-N9uV2Qt8e9Xz+9IJDcTZrljYkKF1ue/KTGTrAC12xwofoGpQcOM9r5zVXhFjix8FoImbmQpYpmp2aqsE/2BsRg==}
+  /@umijs/utils/4.0.0-beta.18:
+    resolution: {integrity: sha512-cprJnypsfndZJmC3paSNtYUl1EE9u9JOdvfmxTXASN8XLGLbXhucvC4kggT2QHMjEazG4vlIF26BEfKv5zAicw==}
     dependencies:
       chokidar: 3.5.2
       clipboardy: 2.3.0
@@ -5561,12 +5561,12 @@ packages:
       esbuild: 0.14.9
     dev: true
 
-  /@walrus/bundle-require/1.2.1_esbuild@0.14.9:
+  /@walrus/bundle-require/1.2.1_esbuild@0.14.14:
     resolution: {integrity: sha512-Hp13otCoB4wwCAWAL0itCRqhwXZeHNkm3HE7Tw02rGd3SjcYxnmBV/qqmMdTpVDMTUTWkJ1TJzQGHdUXOZMCXg==}
     peerDependencies:
       esbuild: '>=0.13'
     dependencies:
-      esbuild: 0.14.9
+      esbuild: 0.14.14
       strip-json-comments: 3.1.1
     dev: true
 
@@ -5584,16 +5584,16 @@ packages:
       joycon: 3.1.1
     dev: true
 
-  /@walrus/cli-utils/2.2.0:
-    resolution: {integrity: sha512-hWaQ4MS3cw6vxRMLltrTbzkYz14U6xP49qI3KCA66UFMGZ+ZnrP7lcLIl+rlTn566hKxlmSC5208zCJeIJ/I7g==}
+  /@walrus/cli-utils/2.2.1:
+    resolution: {integrity: sha512-kGE0CljQDpnsSltcidEC+m4FRriSil/cEQAg+B9SKwvUXkuOq9BuiRqU6T+7tM5uX9z2zLLTkEh3jly3IqP1Gw==}
     dependencies:
       '@lerna/filter-packages': 4.0.0
       '@lerna/project': 4.0.0
       '@lerna/query-graph': 4.0.0
-      '@umijs/utils': 4.0.0-beta.15
-      '@walrus/bundle-require': 1.2.1_esbuild@0.14.9
+      '@umijs/utils': 4.0.0-beta.18
+      '@walrus/bundle-require': 1.2.1_esbuild@0.14.14
       cac: 6.7.12
-      esbuild: 0.14.9
+      esbuild: 0.14.14
       inquirer: 8.2.0
       joycon: 3.1.1
     dev: true
@@ -5683,7 +5683,7 @@ packages:
   /@walrus/script-run/1.3.1:
     resolution: {integrity: sha512-d7T/lSNNiXR3ZOJ+X9b/tLzoc242jzMR7/eMurVwyWotYqfewmuBgDTeCxaGEUYhT0zJ3aN9cY3ix5fvzTcauQ==}
     dependencies:
-      '@walrus/cli-utils': 2.2.0
+      '@walrus/cli-utils': 2.2.1
       esbuild: 0.14.14
       esbuild-register: 3.3.2_esbuild@0.14.14
     dev: true
@@ -16732,7 +16732,7 @@ packages:
   /wide-align/1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
     dev: true
 
   /word-wrap/1.2.3:
