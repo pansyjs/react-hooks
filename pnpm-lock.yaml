@@ -66,7 +66,7 @@ importers:
       jest-localstorage-mock: 2.4.18
       jest-websocket-mock: 2.3.0
       lerna: 4.0.0
-      mock-socket: 9.1.0
+      mock-socket: 9.1.2
       react: 17.0.2
       react-dom: 17.0.2
       react-test-renderer: 17.0.2
@@ -140,7 +140,7 @@ importers:
       jest-localstorage-mock: 2.4.18
       jest-websocket-mock: 2.3.0
       lerna: 4.0.0
-      mock-socket: 9.1.0
+      mock-socket: 9.1.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-test-renderer: 17.0.2_react@17.0.2
@@ -10957,7 +10957,7 @@ packages:
     resolution: {integrity: sha512-kXhRRApRdT4hLG/4rhsfcR0Ke0OzqIsDj0P5t0dl5aiAftShSgoRqp/0pyjS5bh+b9GrIzmfkrV2cn9LxxvSvA==}
     dependencies:
       jest-diff: 27.4.6
-      mock-socket: 9.1.0
+      mock-socket: 9.1.2
     dev: true
 
   /jest-worker/24.9.0:
@@ -12094,8 +12094,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mock-socket/9.1.0:
-    resolution: {integrity: sha512-zNsH8h0D7buVMDZ2X1GyFYso9A1X1Co/TDfFs0AIKhSLkJeh381HYESNl/mL6BzmQpNOxZVnNhEDS1OWBrS+cQ==}
+  /mock-socket/9.1.2:
+    resolution: {integrity: sha512-XKZkCnQ9ISOlTnaPg4LYYSMj7+6i78HyadYzLA5JM4465ibLdjappZD9Csnqc3Tfzep/eEK/LCJ29BTaLHoB1A==}
     engines: {node: '>= 8'}
     dev: true
 
