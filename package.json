@@ -18,6 +18,7 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
+    "@ant-design/pro-card": "^1.18.26",
     "@pansy/hook-utils": "workspace:*",
     "@pansy/react-hooks": "workspace:*",
     "@pansy/use-boolean": "workspace:*",

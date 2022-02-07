@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@ant-design/pro-card': ^1.18.26
       '@pansy/hook-utils': workspace:*
       '@pansy/react-hooks': workspace:*
       '@pansy/use-boolean': workspace:*
@@ -78,6 +79,7 @@ importers:
       typescript: 4.5.5
       zx: 4.3.0
     devDependencies:
+      '@ant-design/pro-card': 1.18.26_d2e6cd6486096bf4658597cbfae6749a
       '@pansy/hook-utils': link:hooks/utils
       '@pansy/react-hooks': link:hooks/hooks
       '@pansy/use-boolean': link:hooks/useBoolean
@@ -469,6 +471,59 @@ packages:
       rc-util: 5.17.0_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    dev: true
+
+  /@ant-design/pro-card/1.18.26_d2e6cd6486096bf4658597cbfae6749a:
+    resolution: {integrity: sha512-ZDD881KkH4mjJYLb204O5wHamK3C0nSm0QjUJ5vBHEX2JMgetQGVBHDQ2Fg6Rs9DDBFyjkVLVHblRPRuZiXTxA==}
+    peerDependencies:
+      antd: 4.x
+      react: '>=16.9.0'
+    dependencies:
+      '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
+      '@ant-design/pro-utils': 1.33.0_d2e6cd6486096bf4658597cbfae6749a
+      '@babel/runtime': 7.16.7
+      antd: 4.18.5_react-dom@17.0.2+react@17.0.2
+      classnames: 2.3.1
+      omit.js: 2.0.2
+      rc-util: 5.17.0_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: true
+
+  /@ant-design/pro-provider/1.5.6_d2e6cd6486096bf4658597cbfae6749a:
+    resolution: {integrity: sha512-wwkpaW3GQQOZltKQBtTJPYM12urQeZ7hU3obFfc5BTBfJ+/L8LObuTv6ah90EHMsxupCwGP3jLfsQYjDmeKL+A==}
+    peerDependencies:
+      antd: 4.x
+      react: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.16.7
+      antd: 4.18.5_react-dom@17.0.2+react@17.0.2
+      rc-util: 5.17.0_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+      swr: 1.1.0_react@17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: true
+
+  /@ant-design/pro-utils/1.33.0_d2e6cd6486096bf4658597cbfae6749a:
+    resolution: {integrity: sha512-DfyaPeKPnw+pV7wSfkmh7TKZ/6QZ7gisWaDPQn2fs3GFLb1tuwj/yBaInYFLJfW6sbzYYhz+px2K6B6F9ay8cw==}
+    peerDependencies:
+      antd: 4.x
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
+      '@ant-design/pro-provider': 1.5.6_d2e6cd6486096bf4658597cbfae6749a
+      '@babel/runtime': 7.16.7
+      antd: 4.18.5_react-dom@17.0.2+react@17.0.2
+      classnames: 2.3.1
+      moment: 2.29.1
+      rc-util: 5.17.0_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-sortable-hoc: 2.0.0_react-dom@17.0.2+react@17.0.2
+      swr: 1.1.0_react@17.0.2
     dev: true
 
   /@ant-design/react-slick/0.28.4_react@17.0.2:
@@ -12707,6 +12762,10 @@ packages:
       es-abstract: 1.19.1
     dev: true
 
+  /omit.js/2.0.2:
+    resolution: {integrity: sha512-hJmu9D+bNB40YpL9jYebQl4lsTW6yEHRTroJzNLqQJYHm7c+NQnJGfZmIWh8S3q3KoaxV1aLhV6B3+0N0/kyJg==}
+    dev: true
+
   /once/1.4.0:
     resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
     dependencies:
@@ -14465,6 +14524,19 @@ packages:
       react-is: 17.0.2
     dev: true
 
+  /react-sortable-hoc/2.0.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-JZUw7hBsAHXK7PTyErJyI7SopSBFRcFHDjWW5SWjcugY0i6iH7f+eJkY8cJmGMlZ1C9xz1J3Vjz0plFpavVeRg==}
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0
+      react-dom: ^16.3.0 || ^17.0.0
+    dependencies:
+      '@babel/runtime': 7.16.7
+      invariant: 2.2.4
+      prop-types: 15.8.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: true
+
   /react-test-renderer/17.0.2_react@17.0.2:
     resolution: {integrity: sha512-yaQ9cB89c17PUb0x6UfWRs7kQCorVdHlutU1boVPEsB8IDZH6n9tHxMacc3y0JoXOJUsZb/t/Mb8FUWMKaM7iQ==}
     peerDependencies:
@@ -15866,6 +15938,14 @@ packages:
       stable: 0.1.8
       unquote: 1.1.1
       util.promisify: 1.0.1
+    dev: true
+
+  /swr/1.1.0_react@17.0.2:
+    resolution: {integrity: sha512-MFL3mkl752Uap81nLA1tEu7vQmikPamSziW+6dBidYKAo4oLOlUx/x5GZy4ZCkCwfZe2uedylkz1UMGnatUX4g==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 17.0.2
     dev: true
 
   /symbol-tree/3.2.4:
