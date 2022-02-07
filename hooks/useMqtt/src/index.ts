@@ -1,11 +1,21 @@
 import { useRef, useState, useEffect } from 'react';
-import * as mqtt from 'mqtt';
+import mqtt from 'mqtt';
 import { useUnmount } from '@pansy/use-unmount';
 import { useLatest } from '@pansy/use-latest';
+import { useBoolean } from '@pansy/use-boolean';
 import { useMemoizedFn } from '@pansy/use-memoized-fn'
 
 import type { Options } from './types';
-import type { Client, OnMessageCallback } from 'mqtt';
+import type {
+  Client,
+  Packet,
+  OnMessageCallback,
+  IClientSubscribeOptions as SubscribeOptions,
+  IClientPublishOptions as PublishOptions,
+  ClientSubscribeCallback,
+  ISubscriptionGrant,
+  PacketCallback
+} from 'mqtt';
 
 export enum ReadyState {
   Connecting = 0,
@@ -40,9 +50,7 @@ export function useMqtt(
   const mqttRef = useRef<Client>();
 
   const unmountedRef = useRef(false);
-
-  /** 连接状态 */
-  const [readyState, setReadyState] = useState<ReadyState>(ReadyState.Closed);
+  const [isConnected, isConnectedAction] = useBoolean();
   const [messageMap, setMessageMap] = useState<Record<string, any>>({});
 
   useEffect(() => {
@@ -63,15 +71,13 @@ export function useMqtt(
 
     const mt = mqtt.connect(url, rest);
 
-    setReadyState(ReadyState.Connecting);
 
     mt.on('connect', (event) => {
       if (unmountedRef.current) {
         return;
       }
-
+      isConnectedAction.setTrue();
       onConnectRef.current?.(event);
-      setReadyState(ReadyState.Open);
     });
 
     mt.on('reconnect', (...args) => {
@@ -96,6 +102,7 @@ export function useMqtt(
         return;
       }
 
+      isConnectedAction.setFalse();
       onCloseRef.current?.();
     });
 
@@ -111,7 +118,9 @@ export function useMqtt(
   }
 
   const disconnect = () => {
-    mqttRef.current?.end();
+    if (mqttRef.current && mqttRef.current.connected) {
+      mqttRef.current.end();
+    }
   };
 
   const handleMessage: OnMessageCallback = (topic: string, payload: Buffer) => {
@@ -128,34 +137,102 @@ export function useMqtt(
    * @param args
    * @returns
    */
-  const publishMessage = (...args: Parameters<Client['publish']>) => {
-    if (readyState === ReadyState.Open) {
-      mqttRef.current?.publish(...args);
-    } else {
-      throw new Error('WebSocket disconnected');
-    }
+  const publish = (
+    topic: string,
+    message: string | Buffer,
+    opts?: PublishOptions,
+    callback?: PacketCallback,
+  ) => {
+    return new Promise<Packet>((resolve, reject) => {
+      if (mqttRef.current && mqttRef.current.connected) {
+        mqttRef.current.publish(topic, message, opts, (error, packet) => {
+          callback?.(error, packet);
+          if (error) {
+            reject(error);
+            return;
+          }
+
+          resolve(packet)
+        });
+        return;
+      }
+
+      reject('mqtt no connected');
+    })
   }
 
   const reconnect = () => {
     mqttRef.current?.reconnect();
   }
 
-  const subscribe = (...args: Parameters<Client['subscribe']>) => {
-    mqttRef.current?.subscribe(...args);
+  /**
+   * 订阅通道
+   * @param topic
+   * @param opts
+   * @param callback
+   * @returns
+   */
+  const subscribe = (
+    topic: string,
+    opts: SubscribeOptions = {} as SubscribeOptions,
+    callback?: ClientSubscribeCallback
+  ) => {
+    return new Promise<ISubscriptionGrant[]>((resolve, reject) => {
+      if (mqttRef.current && mqttRef.current.connected) {
+        mqttRef.current?.subscribe(topic, opts, (error, granted) => {
+          callback?.(error, granted);
+          if (error) {
+            reject(error);
+            return;
+          }
+
+          resolve(granted)
+        });
+        return;
+      }
+
+      reject('mqtt no connected');
+    })
   }
 
-  const unsubscribe= (...args: Parameters<Client['unsubscribe']>) => {
-    mqttRef.current?.unsubscribe(...args);
+  /**
+   * 取消订阅通道
+   * @param topic
+   * @param opts
+   * @param callback
+   * @returns
+   */
+  const unsubscribe = (topic: string | string[], opts?: Object, callback?: PacketCallback) => {
+    return new Promise<Packet>((resolve, reject) => {
+      if (mqttRef.current && mqttRef.current.connected) {
+        mqttRef.current?.unsubscribe(topic, opts, (error, packet) => {
+          callback?.(error, packet);
+          if (error) {
+            reject(error);
+            return;
+          }
+
+          resolve(packet)
+        });
+        return;
+      }
+
+      reject('mqtt no connected');
+    })
   }
 
   return {
     messageMap,
+    connected: isConnected,
     mqttIns: mqttRef.current,
     connect: useMemoizedFn(connectMqtt),
     reconnect: useMemoizedFn(reconnect),
     disconnect: useMemoizedFn(disconnect),
     subscribe: useMemoizedFn(subscribe),
     unsubscribe: useMemoizedFn(unsubscribe),
-    publishMessage: useMemoizedFn(publishMessage),
+    publish: useMemoizedFn(publish),
   }
-}
+};
+
+export type { Options } from './types';
+export type { SubscribeOptions };
