@@ -172,7 +172,7 @@ importers:
       '@pansy/use-lock-fn': ^1.0.1
       '@pansy/use-memoized-fn': ^0.2.1
       '@pansy/use-modal': ^0.2.1
-      '@pansy/use-mqtt': ^0.1.1
+      '@pansy/use-mqtt': 0.1.2
       '@pansy/use-previous': ^0.2.1
       '@pansy/use-raf-state': ^0.2.1
       '@pansy/use-scroll': ^0.2.1
