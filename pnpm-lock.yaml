@@ -156,38 +156,38 @@ importers:
 
   hooks/hooks:
     specifiers:
-      '@pansy/use-boolean': 0.2.1
-      '@pansy/use-click-away': 0.2.1
-      '@pansy/use-controllable-value': 0.2.1
-      '@pansy/use-document-visibility': 0.2.1
-      '@pansy/use-event-listener': 0.2.1
-      '@pansy/use-event-target': 0.2.1
-      '@pansy/use-favicon': 0.2.1
-      '@pansy/use-get-state': 0.2.1
-      '@pansy/use-hover': 0.2.1
-      '@pansy/use-in-viewport': 0.2.1
-      '@pansy/use-interval': 0.2.1
-      '@pansy/use-latest': 0.2.1
-      '@pansy/use-local-storage-state': 0.2.1
-      '@pansy/use-lock-fn': 1.0.1
-      '@pansy/use-memoized-fn': 0.2.1
-      '@pansy/use-modal': 0.2.1
-      '@pansy/use-mqtt': 0.1.1
-      '@pansy/use-previous': 0.2.1
-      '@pansy/use-raf-state': 0.2.1
-      '@pansy/use-scroll': 0.2.1
-      '@pansy/use-selections': 0.2.1
-      '@pansy/use-session-storage-state': 0.2.1
-      '@pansy/use-size': 0.2.1
-      '@pansy/use-timeout': 0.2.1
-      '@pansy/use-title': 0.2.1
-      '@pansy/use-toggle': 0.2.1
-      '@pansy/use-unmount': 0.2.1
-      '@pansy/use-update': 0.2.1
-      '@pansy/use-update-effect': 0.2.1
-      '@pansy/use-update-layout-effect': 0.2.1
-      '@pansy/use-watermark': 0.2.1
-      '@pansy/use-web-socket': 0.1.1
+      '@pansy/use-boolean': ^0.2.1
+      '@pansy/use-click-away': ^0.2.1
+      '@pansy/use-controllable-value': ^0.2.1
+      '@pansy/use-document-visibility': ^0.2.1
+      '@pansy/use-event-listener': ^0.2.1
+      '@pansy/use-event-target': ^0.2.1
+      '@pansy/use-favicon': ^0.2.1
+      '@pansy/use-get-state': ^0.2.1
+      '@pansy/use-hover': ^0.2.1
+      '@pansy/use-in-viewport': ^0.2.1
+      '@pansy/use-interval': ^0.2.1
+      '@pansy/use-latest': ^0.2.1
+      '@pansy/use-local-storage-state': ^0.2.1
+      '@pansy/use-lock-fn': ^1.0.1
+      '@pansy/use-memoized-fn': ^0.2.1
+      '@pansy/use-modal': ^0.2.1
+      '@pansy/use-mqtt': ^0.1.1
+      '@pansy/use-previous': ^0.2.1
+      '@pansy/use-raf-state': ^0.2.1
+      '@pansy/use-scroll': ^0.2.1
+      '@pansy/use-selections': ^0.2.1
+      '@pansy/use-session-storage-state': ^0.2.1
+      '@pansy/use-size': ^0.2.1
+      '@pansy/use-timeout': ^0.2.1
+      '@pansy/use-title': ^0.2.1
+      '@pansy/use-toggle': ^0.2.1
+      '@pansy/use-unmount': ^0.2.1
+      '@pansy/use-update': ^0.2.1
+      '@pansy/use-update-effect': ^0.2.1
+      '@pansy/use-update-layout-effect': ^0.2.1
+      '@pansy/use-watermark': ^0.2.1
+      '@pansy/use-web-socket': ^0.1.1
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
@@ -327,11 +327,13 @@ importers:
 
   hooks/useMqtt:
     specifiers:
+      '@pansy/use-boolean': 0.2.1
       '@pansy/use-latest': 0.2.1
       '@pansy/use-memoized-fn': 0.2.1
       '@pansy/use-unmount': 0.2.1
       mqtt: ^4.3.4
     dependencies:
+      '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-latest': link:../useLatest
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
