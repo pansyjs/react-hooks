@@ -30,14 +30,21 @@ group:
 ## API
 
 ```ts
-const { visible, data, open, close } = useModal<T>(initVisible?: boolean, initData?: T);
+const { visible, data, open, close } = useModal<T>(defaultVisible?: boolean, defaultData?: T);
 ```
+
+### Params
+
+|参数|说明|类型|
+|---|---|---|
+|defaultVisible|默认的开关状态|`boolean`|
+|defaultData|默认的数据|`T`|
 
 ### Result
 
 |参数|说明|类型|
 |---|---|---|
 |data|需要传入的值|`T`|
-|visible|控制显示隐藏|`boolean`|
+|visible|开关状态|`boolean`|
 |open|打开对话框|`(value?: T) => void`|
 |close|关闭对话框|`() => void`|
