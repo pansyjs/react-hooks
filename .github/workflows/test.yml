@@ -1,4 +1,7 @@
-name: CI
+name: CI-Test
+
+env:
+  NODE_OPTIONS: --max-old-space-size=6144
 
 on:
   push:
@@ -26,10 +29,13 @@ jobs:
         run: npm i pnpm -g
 
       - name: "Install dependencies"
-        run: pnpm install
+        run: pnpm i
 
       - name: Build
         run: pnpm build
 
       - name: "Test"
         run: pnpm test
+        env:
+          CI: true
+          NODE_ENV: test
