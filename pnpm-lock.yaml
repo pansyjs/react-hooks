@@ -58,7 +58,7 @@ importers:
       conventional-changelog-gitmoji-config: 1.4.3
       dumi: 1.1.38
       eslint: 8.8.0
-      eslint-config-alloy: 4.4.0
+      eslint-config-alloy: 4.5.1
       eslint-config-prettier: 8.3.0
       eslint-plugin-react: 7.28.0
       eslint-plugin-react-hooks: 4.3.0
@@ -133,7 +133,7 @@ importers:
       conventional-changelog-gitmoji-config: 1.4.3
       dumi: 1.1.38_3a6359ff0dae16692fd6f0778ea71593
       eslint: 8.8.0
-      eslint-config-alloy: 4.4.0
+      eslint-config-alloy: 4.5.1
       eslint-config-prettier: 8.3.0_eslint@8.8.0
       eslint-plugin-react: 7.28.0_eslint@8.8.0
       eslint-plugin-react-hooks: 4.3.0_eslint@8.8.0
@@ -8596,8 +8596,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-alloy/4.4.0:
-    resolution: {integrity: sha512-yWG9T+ufc7V5EDg+7z1VEBi9wX259uWR73pGhTGx+FkPqlO3gdvH0kxtzuirEweJ9nXhTtMiArPcfS24VvJe2A==}
+  /eslint-config-alloy/4.5.1:
+    resolution: {integrity: sha512-rdHaoAyOf4scccQX3bxqmUa85+cvyhPvijqobsZT+Cdt0HGAbhGby3lghmotGOYHACRTtn7gs+oM5pnnmPkXyw==}
     dev: true
 
   /eslint-config-prettier/8.3.0_eslint@8.8.0:
