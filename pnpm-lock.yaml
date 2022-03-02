@@ -59,7 +59,7 @@ importers:
       dumi: 1.1.38
       eslint: 8.8.0
       eslint-config-alloy: 4.4.0
-      eslint-config-prettier: 8.3.0
+      eslint-config-prettier: 8.5.0
       eslint-plugin-react: 7.28.0
       eslint-plugin-react-hooks: 4.3.0
       husky: 7.0.4
@@ -134,7 +134,7 @@ importers:
       dumi: 1.1.38_3a6359ff0dae16692fd6f0778ea71593
       eslint: 8.8.0
       eslint-config-alloy: 4.4.0
-      eslint-config-prettier: 8.3.0_eslint@8.8.0
+      eslint-config-prettier: 8.5.0_eslint@8.8.0
       eslint-plugin-react: 7.28.0_eslint@8.8.0
       eslint-plugin-react-hooks: 4.3.0_eslint@8.8.0
       husky: 7.0.4
@@ -8600,8 +8600,8 @@ packages:
     resolution: {integrity: sha512-yWG9T+ufc7V5EDg+7z1VEBi9wX259uWR73pGhTGx+FkPqlO3gdvH0kxtzuirEweJ9nXhTtMiArPcfS24VvJe2A==}
     dev: true
 
-  /eslint-config-prettier/8.3.0_eslint@8.8.0:
-    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
+  /eslint-config-prettier/8.5.0_eslint@8.8.0:
+    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
