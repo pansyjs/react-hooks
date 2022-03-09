@@ -39,7 +39,7 @@ importers:
       '@pansy/use-update-layout-effect': workspace:*
       '@pansy/use-watermark': workspace:*
       '@pansy/use-web-socket': workspace:*
-      '@testing-library/react': 12.1.2
+      '@testing-library/react': 12.1.4
       '@testing-library/react-hooks': 7.0.2
       '@types/react': ^17
       '@types/react-dom': ^17
@@ -114,7 +114,7 @@ importers:
       '@pansy/use-update-layout-effect': link:hooks/useUpdateLayoutEffect
       '@pansy/use-watermark': link:hooks/useWatermark
       '@pansy/use-web-socket': link:hooks/useWebSocket
-      '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
@@ -2898,7 +2898,7 @@ packages:
   /@babel/runtime/7.11.2:
     resolution: {integrity: sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==}
     dependencies:
-      regenerator-runtime: 0.13.7
+      regenerator-runtime: 0.13.9
     dev: true
 
   /@babel/runtime/7.12.5:
@@ -4677,8 +4677,8 @@ packages:
       react-test-renderer: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-ihQiEOklNyHIpo2Y8FREkyD1QAea054U0MVbwH1m8N9TxeFz+KoJ9LkqoKqJlzx2JDm56DVwaJ1r36JYxZM05g==}
+  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '*'
@@ -4686,6 +4686,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.7
       '@testing-library/dom': 8.11.3
+      '@types/react-dom': 17.0.11
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
@@ -6297,7 +6298,7 @@ packages:
     resolution: {integrity: sha512-bHU8m0SrY89ub2hBBuYjbennOeH0YUYkVpH6jxKFk0uD8rhN+0jNHIPtXnac+Vn7N/hgkLGGDcIoYK7je3Hhew==}
     dependencies:
       '@babel/helper-module-imports': 7.16.7
-      '@babel/runtime': 7.11.2
+      '@babel/runtime': 7.16.7
     dev: true
 
   /babel-plugin-istanbul/6.1.1:
@@ -14764,7 +14765,7 @@ packages:
   /regenerator-transform/0.14.5:
     resolution: {integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==}
     dependencies:
-      '@babel/runtime': 7.11.2
+      '@babel/runtime': 7.16.7
     dev: true
 
   /regex-not/1.0.2:
