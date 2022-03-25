@@ -14,6 +14,7 @@ importers:
       '@pansy/use-document-visibility': workspace:*
       '@pansy/use-event-listener': workspace:*
       '@pansy/use-event-target': workspace:*
+      '@pansy/use-external': workspace:*
       '@pansy/use-favicon': workspace:*
       '@pansy/use-get-state': workspace:*
       '@pansy/use-hover': workspace:*
@@ -91,6 +92,7 @@ importers:
       '@pansy/use-document-visibility': link:hooks/useDocumentVisibility
       '@pansy/use-event-listener': link:hooks/useEventListener
       '@pansy/use-event-target': link:hooks/useEventTarget
+      '@pansy/use-external': link:hooks/useExternal
       '@pansy/use-favicon': link:hooks/useFavicon
       '@pansy/use-get-state': link:hooks/useGetState
       '@pansy/use-hover': link:hooks/useHover
@@ -166,6 +168,7 @@ importers:
       '@pansy/use-document-visibility': ^0.2.1
       '@pansy/use-event-listener': ^0.2.1
       '@pansy/use-event-target': ^0.2.1
+      '@pansy/use-external': ^0.1.0
       '@pansy/use-favicon': ^0.2.1
       '@pansy/use-get-state': ^0.2.1
       '@pansy/use-hover': ^0.2.1
@@ -200,6 +203,7 @@ importers:
       '@pansy/use-document-visibility': link:../useDocumentVisibility
       '@pansy/use-event-listener': link:../useEventListener
       '@pansy/use-event-target': link:../useEventTarget
+      '@pansy/use-external': link:../useExternal
       '@pansy/use-favicon': link:../useFavicon
       '@pansy/use-get-state': link:../useGetState
       '@pansy/use-hover': link:../useHover
@@ -271,6 +275,9 @@ importers:
       '@pansy/use-latest': ^0.2.1
     dependencies:
       '@pansy/use-latest': link:../useLatest
+
+  hooks/useExternal:
+    specifiers: {}
 
   hooks/useFavicon:
     specifiers: {}

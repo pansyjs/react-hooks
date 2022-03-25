@@ -31,5 +31,6 @@ export { useWatermark } from '@pansy/use-watermark';
 export { useWebSocket } from '@pansy/use-web-socket';
 export { useMqtt } from '@pansy/use-mqtt';
 export { useKeyPress } from '@pansy/use-key-press';
+export { useExternal } from '@pansy/use-external';
 
 export type { UseModalResult } from '@pansy/use-modal'

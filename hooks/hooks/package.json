@@ -21,6 +21,7 @@
     "@pansy/use-document-visibility": "^0.2.1",
     "@pansy/use-event-listener": "^0.2.1",
     "@pansy/use-event-target": "^0.2.1",
+    "@pansy/use-external": "^0.1.0",
     "@pansy/use-favicon": "^0.2.1",
     "@pansy/use-get-state": "^0.2.1",
     "@pansy/use-hover": "^0.2.1",

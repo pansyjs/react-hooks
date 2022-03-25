@@ -28,6 +28,7 @@
     "@pansy/use-document-visibility": "workspace:*",
     "@pansy/use-event-listener": "workspace:*",
     "@pansy/use-event-target": "workspace:*",
+    "@pansy/use-external": "workspace:*",
     "@pansy/use-favicon": "workspace:*",
     "@pansy/use-get-state": "workspace:*",
     "@pansy/use-hover": "workspace:*",
