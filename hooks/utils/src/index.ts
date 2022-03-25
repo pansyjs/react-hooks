@@ -9,6 +9,7 @@ export {
   useLayoutEffectWithTarget
 } from './utils/useEffectWithTarget';
 export { useIsomorphicLayoutEffectWithTarget } from './utils/useIsomorphicLayoutEffectWithTarget';
+export { useDeepCompareEffectWithTarget } from './utils/useDeepCompareWithTarget';
 
 export type { BasicTarget } from './utils/domTarget';
 export type { OptionsWithDefaultValue, Options } from './utils/createUseStorageState'

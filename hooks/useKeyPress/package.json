@@ -1,6 +1,7 @@
 {
-  "name": "@pansy/hook-utils",
-  "version": "0.2.1",
+  "name": "@pansy/use-key-press",
+  "description":  "监听键盘按键，支持组合键，支持按键别名。",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -12,14 +13,11 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-memoized-fn": "0.2.1",
-    "@pansy/use-unmount": "0.2.1",
-    "@pansy/use-update-effect": "0.2.1",
-    "lodash": "^4.17.21"
+    "@pansy/hook-utils": "0.2.1",
+    "@pansy/use-latest": "0.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

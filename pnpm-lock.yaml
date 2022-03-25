@@ -18,6 +18,7 @@ importers:
       '@pansy/use-hover': workspace:*
       '@pansy/use-in-viewport': workspace:*
       '@pansy/use-interval': workspace:*
+      '@pansy/use-key-press': workspace:*
       '@pansy/use-latest': workspace:*
       '@pansy/use-local-storage-state': workspace:*
       '@pansy/use-lock-fn': workspace:*
@@ -93,6 +94,7 @@ importers:
       '@pansy/use-hover': link:hooks/useHover
       '@pansy/use-in-viewport': link:hooks/useInViewport
       '@pansy/use-interval': link:hooks/useInterval
+      '@pansy/use-key-press': link:hooks/useKeyPress
       '@pansy/use-latest': link:hooks/useLatest
       '@pansy/use-local-storage-state': link:hooks/useLocalStorageState
       '@pansy/use-lock-fn': link:hooks/useLockFn
@@ -167,12 +169,13 @@ importers:
       '@pansy/use-hover': ^0.2.1
       '@pansy/use-in-viewport': ^0.2.1
       '@pansy/use-interval': ^0.2.1
+      '@pansy/use-key-press': ^1.0.0
       '@pansy/use-latest': ^0.2.1
       '@pansy/use-local-storage-state': ^0.2.1
       '@pansy/use-lock-fn': ^1.0.1
       '@pansy/use-memoized-fn': ^0.2.1
       '@pansy/use-modal': ^0.2.1
-      '@pansy/use-mqtt': 0.1.2
+      '@pansy/use-mqtt': ^0.1.2
       '@pansy/use-previous': ^0.2.1
       '@pansy/use-raf-state': ^0.2.1
       '@pansy/use-scroll': ^0.2.1
@@ -200,6 +203,7 @@ importers:
       '@pansy/use-hover': link:../useHover
       '@pansy/use-in-viewport': link:../useInViewport
       '@pansy/use-interval': link:../useInterval
+      '@pansy/use-key-press': link:../useKeyPress
       '@pansy/use-latest': link:../useLatest
       '@pansy/use-local-storage-state': link:../useLocalStorageState
       '@pansy/use-lock-fn': link:../useLockFn
@@ -297,6 +301,14 @@ importers:
     specifiers:
       '@pansy/use-latest': 0.2.1
     dependencies:
+      '@pansy/use-latest': link:../useLatest
+
+  hooks/useKeyPress:
+    specifiers:
+      '@pansy/hook-utils': 0.2.1
+      '@pansy/use-latest': 0.2.1
+    dependencies:
+      '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
 
   hooks/useLatest:
@@ -442,10 +454,12 @@ importers:
       '@pansy/use-memoized-fn': 0.2.1
       '@pansy/use-unmount': 0.2.1
       '@pansy/use-update-effect': 0.2.1
+      lodash: ^4.17.21
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
       '@pansy/use-update-effect': link:../useUpdateEffect
+      lodash: 4.17.21
 
 packages:
 
@@ -11506,7 +11520,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-symbols/4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}

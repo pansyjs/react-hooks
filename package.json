@@ -32,6 +32,7 @@
     "@pansy/use-hover": "workspace:*",
     "@pansy/use-in-viewport": "workspace:*",
     "@pansy/use-interval": "workspace:*",
+    "@pansy/use-key-press": "workspace:*",
     "@pansy/use-latest": "workspace:*",
     "@pansy/use-local-storage-state": "workspace:*",
     "@pansy/use-lock-fn": "workspace:*",
