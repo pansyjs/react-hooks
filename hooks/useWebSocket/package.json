@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-web-socket",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@pansy/use-latest": "^0.2.1",
-    "@pansy/use-memoized-fn": "^0.2.1",
-    "@pansy/use-unmount": "^0.2.1"
+    "@pansy/use-memoized-fn": "0.2.2",
+    "@pansy/use-unmount": "0.2.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-key-press",
-  "description":  "监听键盘按键，支持组合键，支持按键别名。",
-  "version": "0.1.0",
+  "description": "监听键盘按键，支持组合键，支持按键别名。",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "^0.2.1",
+    "@pansy/hook-utils": "0.2.2",
     "@pansy/use-latest": "^0.2.1"
   },
   "publishConfig": {

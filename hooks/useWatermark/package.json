@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-watermark",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "^0.2.1",
-    "@pansy/use-memoized-fn": "^0.2.1",
-    "@pansy/use-unmount": "^0.2.1",
+    "@pansy/hook-utils": "0.2.2",
+    "@pansy/use-memoized-fn": "0.2.2",
+    "@pansy/use-unmount": "0.2.2",
     "@pansy/watermark": "^2.0.10"
   },
   "publishConfig": {
