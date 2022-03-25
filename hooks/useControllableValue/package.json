@@ -15,8 +15,8 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-memoized-fn": "0.2.1",
-    "@pansy/use-update": "0.2.1"
+    "@pansy/use-memoized-fn": "^0.2.1",
+    "@pansy/use-update": "^0.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

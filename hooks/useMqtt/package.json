@@ -14,10 +14,10 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-boolean": "0.2.1",
-    "@pansy/use-latest": "0.2.1",
-    "@pansy/use-memoized-fn": "0.2.1",
-    "@pansy/use-unmount": "0.2.1",
+    "@pansy/use-boolean": "^0.2.1",
+    "@pansy/use-latest": "^0.2.1",
+    "@pansy/use-memoized-fn": "^0.2.1",
+    "@pansy/use-unmount": "^0.2.1",
     "mqtt": "^4.3.4"
   },
   "publishConfig": {

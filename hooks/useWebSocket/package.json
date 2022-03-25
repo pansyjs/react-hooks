@@ -14,9 +14,9 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-latest": "0.2.1",
-    "@pansy/use-memoized-fn": "0.2.1",
-    "@pansy/use-unmount": "0.2.1"
+    "@pansy/use-latest": "^0.2.1",
+    "@pansy/use-memoized-fn": "^0.2.1",
+    "@pansy/use-unmount": "^0.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

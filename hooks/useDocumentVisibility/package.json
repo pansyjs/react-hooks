@@ -15,8 +15,8 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.2.1",
-    "@pansy/use-event-listener": "0.2.1"
+    "@pansy/hook-utils": "^0.2.1",
+    "@pansy/use-event-listener": "^0.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
