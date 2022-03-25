@@ -18,7 +18,7 @@
     "@pansy/hook-utils": "0.2.1",
     "@pansy/use-memoized-fn": "0.2.1",
     "@pansy/use-unmount": "0.2.1",
-    "@pansy/watermark": "^2.0.5"
+    "@pansy/watermark": "^2.0.10"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

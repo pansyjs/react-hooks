@@ -432,12 +432,12 @@ importers:
       '@pansy/hook-utils': 0.2.1
       '@pansy/use-memoized-fn': 0.2.1
       '@pansy/use-unmount': 0.2.1
-      '@pansy/watermark': ^2.0.5
+      '@pansy/watermark': ^2.0.10
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
-      '@pansy/watermark': 2.0.8
+      '@pansy/watermark': 2.0.10
 
   hooks/useWebSocket:
     specifiers:
@@ -4378,8 +4378,8 @@ packages:
     resolution: {integrity: sha512-p4Ii7nIICkFh51th3LHfooEQg8OEeC57raRNZ57UAm1Bmt+Z1EC1qVenznXmrIs1Qmup4LA6dxva7XQ5zVfb9Q==}
     dev: true
 
-  /@pansy/watermark/2.0.8:
-    resolution: {integrity: sha512-IhiNOwiZIWdDtOx9qKglUh+TPaze9w6NVSIAJuxxfqlPmlsPJjdSxgd7TOCnPGi0jopCuZYHLpOcxzaYj48Vdg==}
+  /@pansy/watermark/2.0.10:
+    resolution: {integrity: sha512-EYlBw6wSNeQnQabTrW7Ulx2mgwh45sTxbSenx9ZSGl78glsb/wVkjVImf6ePkjkywzi0/37mP/K2Xo1o3uzfyQ==}
     dev: false
 
   /@semantic-release/changelog/5.0.1_semantic-release@17.4.7:
