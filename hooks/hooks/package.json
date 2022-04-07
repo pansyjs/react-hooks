@@ -20,7 +20,6 @@
     "@pansy/use-controllable-value": "^0.2.2",
     "@pansy/use-document-visibility": "^0.2.2",
     "@pansy/use-event-listener": "^0.2.2",
-    "@pansy/use-url-state": "^0.1.0",
     "@pansy/use-event-target": "^0.2.2",
     "@pansy/use-external": "^0.1.1",
     "@pansy/use-favicon": "^0.2.1",
@@ -48,6 +47,7 @@
     "@pansy/use-update": "^0.2.1",
     "@pansy/use-update-effect": "^0.2.1",
     "@pansy/use-update-layout-effect": "^0.2.2",
+    "@pansy/use-url-state": "^0.1.0",
     "@pansy/use-watermark": "^0.2.2",
     "@pansy/use-web-socket": "^0.1.2"
   },
