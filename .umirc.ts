@@ -56,6 +56,7 @@ export default {
         children: [
           'useBoolean.md',
           'useGetState.md',
+          'useUrlState.md',
           'useLocalStorageState.md',
           'useRafState.md',
           'useSessionStorageState.md',

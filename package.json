@@ -33,6 +33,7 @@
     "@pansy/use-get-state": "workspace:*",
     "@pansy/use-hover": "workspace:*",
     "@pansy/use-in-viewport": "workspace:*",
+    "@pansy/use-url-state": "workspace:*",
     "@pansy/use-interval": "workspace:*",
     "@pansy/use-key-press": "workspace:*",
     "@pansy/use-latest": "workspace:*",
