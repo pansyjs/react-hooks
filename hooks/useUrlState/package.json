@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-url-state",
-  "description":  "通过 url query 来管理 state 的 Hook。",
-  "version": "0.1.0",
+  "description": "通过 url query 来管理 state 的 Hook。",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -17,8 +17,8 @@
     "react-router": "^5.0.0 || ^6.0.0"
   },
   "dependencies": {
-    "@pansy/use-update": "^0.2.1",
-    "@pansy/use-memoized-fn": "^0.2.2",
+    "@pansy/use-memoized-fn": "0.2.3",
+    "@pansy/use-update": "0.2.2",
     "query-string": "^7.1.1"
   },
   "publishConfig": {
