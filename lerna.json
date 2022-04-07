@@ -7,7 +7,7 @@
     "publish": {
       "npmClient": "npm",
       "verifyAccess": false,
-      "ignoreChanges": ["*.md", "**/test/**"],
+      "ignoreChanges": ["*.md", "**/test/**", "**/docs/**"],
       "message": "chore(release): publish"
     }
   }
