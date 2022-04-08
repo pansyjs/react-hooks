@@ -1,3 +1,5 @@
+/* eslint-disable max-params */
+/* eslint-disable prefer-promise-reject-errors */
 import { useRef, useState, useEffect } from 'react';
 import mqtt from 'mqtt';
 import { useUnmount } from '@pansy/use-unmount';
@@ -118,7 +120,7 @@ export function useMqtt(
   }
 
   const disconnect = () => {
-    if (mqttRef.current && mqttRef.current.connected) {
+    if (mqttRef.current?.connected) {
       mqttRef.current.end();
     }
   };
@@ -144,7 +146,7 @@ export function useMqtt(
     callback?: PacketCallback,
   ) => {
     return new Promise<Packet>((resolve, reject) => {
-      if (mqttRef.current && mqttRef.current.connected) {
+      if (mqttRef.current?.connected) {
         mqttRef.current.publish(topic, message, opts, (error, packet) => {
           callback?.(error, packet);
           if (error) {
@@ -174,11 +176,11 @@ export function useMqtt(
    */
   const subscribe = (
     topic: string,
-    opts: SubscribeOptions = {} as SubscribeOptions,
+    opts: SubscribeOptions = {} as unknown as SubscribeOptions,
     callback?: ClientSubscribeCallback
   ) => {
     return new Promise<ISubscriptionGrant[]>((resolve, reject) => {
-      if (mqttRef.current && mqttRef.current.connected) {
+      if (mqttRef.current?.connected) {
         mqttRef.current?.subscribe(topic, opts, (error, granted) => {
           callback?.(error, granted);
           if (error) {
@@ -204,7 +206,7 @@ export function useMqtt(
    */
   const unsubscribe = (topic: string | string[], opts?: Object, callback?: PacketCallback) => {
     return new Promise<Packet>((resolve, reject) => {
-      if (mqttRef.current && mqttRef.current.connected) {
+      if (mqttRef.current?.connected) {
         mqttRef.current?.unsubscribe(topic, opts, (error, packet) => {
           callback?.(error, packet);
           if (error) {
@@ -217,7 +219,7 @@ export function useMqtt(
         return;
       }
 
-      reject('mqtt no connected');
+      reject(Error('mqtt no connected'));
     })
   }
 

@@ -4,6 +4,7 @@ import { useMemoizedFn } from '@pansy/use-memoized-fn'
 import { parse, stringify } from 'query-string';
 import * as router from 'react-router';
 
+import type { SetStateAction } from 'react';
 import type { ParseOptions, StringifyOptions } from 'query-string';
 import type { UrlState, Options, State } from './types';
 
@@ -51,7 +52,7 @@ export const useUrlState = <S extends UrlState = UrlState>(
     [queryFromUrl],
   );
 
-  const setState = (s: React.SetStateAction<State<S>>) => {
+  const setState = (s: SetStateAction<State<S>>) => {
     const newQuery = typeof s === 'function' ? s(targetQuery) : s;
 
     update();

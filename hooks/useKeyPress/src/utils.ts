@@ -70,7 +70,7 @@ export function genFilterKey(event: KeyboardEvent, keyFilter: KeyType, exactMatc
     // keyCode 别名
     const aliasKeyCode = aliasKeyCodeMap[key.toLowerCase()];
 
-    if ((genModifier && genModifier(event)) || (aliasKeyCode && aliasKeyCode === event.keyCode)) {
+    if ((genModifier?.(event)) || (aliasKeyCode && aliasKeyCode === event.keyCode)) {
       genLen++;
     }
   }
