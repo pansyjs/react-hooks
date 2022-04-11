@@ -44,7 +44,7 @@ importers:
       '@pansy/use-url-state': workspace:*
       '@pansy/use-watermark': workspace:*
       '@pansy/use-web-socket': workspace:*
-      '@testing-library/react': 12.1.4
+      '@testing-library/react': 12.1.5
       '@testing-library/react-hooks': 7.0.2
       '@types/react': ^17
       '@types/react-dom': ^17
@@ -124,7 +124,7 @@ importers:
       '@pansy/use-url-state': link:hooks/useUrlState
       '@pansy/use-watermark': link:hooks/useWatermark
       '@pansy/use-web-socket': link:hooks/useWebSocket
-      '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react': 12.1.5_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
@@ -2949,7 +2949,7 @@ packages:
   /@babel/runtime/7.11.2:
     resolution: {integrity: sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==}
     dependencies:
-      regenerator-runtime: 0.13.7
+      regenerator-runtime: 0.13.9
     dev: true
 
   /@babel/runtime/7.12.5:
@@ -4733,12 +4733,12 @@ packages:
       react-test-renderer: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
+  /@testing-library/react/12.1.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==}
     engines: {node: '>=12'}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: <18.0.0
+      react-dom: <18.0.0
     dependencies:
       '@babel/runtime': 7.16.7
       '@testing-library/dom': 8.11.3

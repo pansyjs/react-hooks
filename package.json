@@ -58,7 +58,7 @@
     "@pansy/use-url-state": "workspace:*",
     "@pansy/use-watermark": "workspace:*",
     "@pansy/use-web-socket": "workspace:*",
-    "@testing-library/react": "12.1.4",
+    "@testing-library/react": "12.1.5",
     "@testing-library/react-hooks": "7.0.2",
     "@types/react": "^17",
     "@types/react-dom": "^17",
