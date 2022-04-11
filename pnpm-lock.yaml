@@ -11,6 +11,7 @@ importers:
       '@pansy/use-boolean': workspace:*
       '@pansy/use-click-away': workspace:*
       '@pansy/use-controllable-value': workspace:*
+      '@pansy/use-cookie-state': workspace:*
       '@pansy/use-document-visibility': workspace:*
       '@pansy/use-event-listener': workspace:*
       '@pansy/use-event-target': workspace:*
@@ -90,6 +91,7 @@ importers:
       '@pansy/use-boolean': link:hooks/useBoolean
       '@pansy/use-click-away': link:hooks/useClickAway
       '@pansy/use-controllable-value': link:hooks/useControllableValue
+      '@pansy/use-cookie-state': link:hooks/useCookieState
       '@pansy/use-document-visibility': link:hooks/useDocumentVisibility
       '@pansy/use-event-listener': link:hooks/useEventListener
       '@pansy/use-event-target': link:hooks/useEventTarget
@@ -167,6 +169,7 @@ importers:
       '@pansy/use-boolean': ^0.2.3
       '@pansy/use-click-away': ^0.2.3
       '@pansy/use-controllable-value': ^0.2.3
+      '@pansy/use-cookie-state': ^0.1.0
       '@pansy/use-document-visibility': ^0.2.3
       '@pansy/use-event-listener': ^0.2.3
       '@pansy/use-event-target': ^0.2.3
@@ -203,6 +206,7 @@ importers:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
       '@pansy/use-controllable-value': link:../useControllableValue
+      '@pansy/use-cookie-state': link:../useCookieState
       '@pansy/use-document-visibility': link:../useDocumentVisibility
       '@pansy/use-event-listener': link:../useEventListener
       '@pansy/use-event-target': link:../useEventTarget
@@ -257,6 +261,16 @@ importers:
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-update': link:../useUpdate
+
+  hooks/useCookieState:
+    specifiers:
+      '@pansy/use-memoized-fn': ^0.2.3
+      '@types/js-cookie': ^2.x.x
+      js-cookie: ^2.x.x
+    dependencies:
+      '@pansy/use-memoized-fn': link:../useMemoizedFn
+      '@types/js-cookie': 2.2.7
+      js-cookie: 2.2.1
 
   hooks/useDocumentVisibility:
     specifiers:
@@ -4889,6 +4903,10 @@ packages:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
     dev: true
+
+  /@types/js-cookie/2.2.7:
+    resolution: {integrity: sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==}
+    dev: false
 
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
@@ -11358,6 +11376,10 @@ packages:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
     engines: {node: '>=10'}
     dev: true
+
+  /js-cookie/2.2.1:
+    resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
+    dev: false
 
   /js-sdsl/2.1.4:
     resolution: {integrity: sha512-/Ew+CJWHNddr7sjwgxaVeIORIH4AMVC9dy0hPf540ZGMVgS9d3ajwuVdyhDt6/QUvT8ATjR3yuYBKsS79F+H4A==}

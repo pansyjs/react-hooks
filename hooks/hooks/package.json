@@ -18,6 +18,7 @@
     "@pansy/use-boolean": "^0.2.3",
     "@pansy/use-click-away": "^0.2.3",
     "@pansy/use-controllable-value": "^0.2.3",
+    "@pansy/use-cookie-state": "^0.1.0",
     "@pansy/use-document-visibility": "^0.2.3",
     "@pansy/use-event-listener": "^0.2.3",
     "@pansy/use-event-target": "^0.2.3",

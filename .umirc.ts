@@ -58,6 +58,7 @@ export default {
           'useGetState.md',
           'useUrlState.md',
           'useLocalStorageState.md',
+          'useCookieState.md',
           'useRafState.md',
           'useSessionStorageState.md',
           'useToggle.md',

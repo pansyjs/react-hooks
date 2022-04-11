@@ -33,5 +33,6 @@ export { useMqtt } from '@pansy/use-mqtt';
 export { useKeyPress } from '@pansy/use-key-press';
 export { useExternal } from '@pansy/use-external';
 export { useUrlState } from '@pansy/use-url-state';
+export { useCookieState } from '@pansy/use-cookie-state';
 
 export type { UseModalResult } from '@pansy/use-modal'
