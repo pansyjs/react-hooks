@@ -3,11 +3,16 @@ import { Input } from 'antd';
 import { useCookieState } from '@pansy/react-hooks';
 
 function getRootHost() {
-  const items = window.location.host.split('.');
+  const items = window.location.hostname.split('.');
+  if (items.length <= 1) {
+    return items.join('.');
+  }
   return '.' + items.slice(items.length - 1, items.length).join('.');
 }
 
 const rootHost = getRootHost();
+
+console.log(rootHost);
 
 export default () => {
   const [message, setMessage] = useCookieState('useCookieStateString', {
