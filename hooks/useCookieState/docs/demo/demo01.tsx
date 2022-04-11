@@ -7,7 +7,7 @@ function getRootHost() {
   if (items.length <= 1) {
     return items.join('.');
   }
-  return '.' + items.slice(items.length - 1, items.length).join('.');
+  return '.' + items.slice(items.length - 2, items.length).join('.');
 }
 
 const rootHost = getRootHost();
