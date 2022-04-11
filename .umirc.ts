@@ -65,12 +65,6 @@ export default {
         ],
       },
       {
-        title: 'LifeCycle',
-        children: [
-          'useUnmount.md',
-        ],
-      },
-      {
         title: 'Effect',
         children: [
           'useInterval.md',

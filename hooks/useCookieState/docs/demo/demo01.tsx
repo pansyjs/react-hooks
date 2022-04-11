@@ -2,8 +2,17 @@ import React from 'react';
 import { Input } from 'antd';
 import { useCookieState } from '@pansy/react-hooks';
 
+function getRootHost() {
+  const items = window.location.host.split('.');
+  return '.' + items.slice(items.length - 1, items.length).join('.');
+}
+
+const rootHost = getRootHost();
+
 export default () => {
-  const [message, setMessage] = useCookieState('useCookieStateString');
+  const [message, setMessage] = useCookieState('useCookieStateString', {
+    domain: rootHost,
+  });
 
   return (
     <Input
