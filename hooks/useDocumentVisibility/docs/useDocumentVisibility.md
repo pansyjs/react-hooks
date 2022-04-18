@@ -3,6 +3,8 @@ title: useDocumentVisibility
 nav:
   title: Hooks
   path: /hooks
+group:
+  path: /
 ---
 
 # useDocumentVisibility
