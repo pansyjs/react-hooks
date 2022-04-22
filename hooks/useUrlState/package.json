@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-url-state",
   "description": "通过 url query 来管理 state 的 Hook。",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",

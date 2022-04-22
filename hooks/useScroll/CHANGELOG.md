@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/pansyjs/react-hooks/compare/@pansy/use-scroll@0.2.3...@pansy/use-scroll@0.2.4) (2022-04-22)
+
+**Note:** Version bump only for package @pansy/use-scroll
+
+
+
+
+
 ## [0.2.3](https://github.com/pansyjs/react-hooks/compare/@pansy/use-scroll@0.2.2...@pansy/use-scroll@0.2.3) (2022-04-07)
 
 **Note:** Version bump only for package @pansy/use-scroll
