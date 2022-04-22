@@ -44,14 +44,21 @@ const state: {
 
 |参数|说明|类型|
 |---|---|---|
-|defaultVisible|默认的开关状态|`boolean`|
-|defaultData|默认的数据|`T`|
+|target|DOM 节点或者 Ref|`Element | () => Element | MutableRefObject<Element>`|
 
 ### Result
 
-|参数|说明|类型|
-|---|---|---|
-|data|需要传入的值|`T`|
-|visible|开关状态|`boolean`|
-|open|打开对话框|`(value?: T) => void`|
-|close|关闭对话框|`() => void`|
+| 参数        | 说明                             | 类型     |
+|-------------|----------------------------------|----------|
+| screenX     | 距离显示器左侧的距离             | `number` |
+| screenY     | 距离显示器顶部的距离             | `number` |
+| clientX     | 距离当前视窗左侧的距离           | `number` |
+| clientY     | 距离当前视窗顶部的距离           | `number` |
+| pageX       | 距离完整页面左侧的距离           | `number` |
+| pageY       | 距离完整页面顶部的距离           | `number` |
+| elementX    | 距离指定元素左侧的距离           | `number` |
+| elementY    | 距离指定元素顶部的距离           | `number` |
+| elementH    | 指定元素的高                     | `number` |
+| elementW    | 指定元素的宽                     | `number` |
+| elementPosX | 指定元素点距离完整页面左侧的距离 | `number` |
+| elementPosY | 指定元素距离完整页面顶部的距离   | `number` |

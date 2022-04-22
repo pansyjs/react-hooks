@@ -48,6 +48,7 @@ export default {
       {
         title: 'LifeCycle',
         children: [
+          'useMount.md',
           'useUnmount.md',
         ],
       },
