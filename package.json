@@ -26,6 +26,7 @@
     "@pansy/use-click-away": "workspace:*",
     "@pansy/use-controllable-value": "workspace:*",
     "@pansy/use-cookie-state": "workspace:*",
+    "@pansy/use-creation": "workspace:*",
     "@pansy/use-document-visibility": "workspace:*",
     "@pansy/use-event-listener": "workspace:*",
     "@pansy/use-event-target": "workspace:*",

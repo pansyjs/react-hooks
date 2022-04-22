@@ -12,6 +12,7 @@ importers:
       '@pansy/use-click-away': workspace:*
       '@pansy/use-controllable-value': workspace:*
       '@pansy/use-cookie-state': workspace:*
+      '@pansy/use-creation': workspace:*
       '@pansy/use-document-visibility': workspace:*
       '@pansy/use-event-listener': workspace:*
       '@pansy/use-event-target': workspace:*
@@ -27,6 +28,7 @@ importers:
       '@pansy/use-lock-fn': workspace:*
       '@pansy/use-memoized-fn': workspace:*
       '@pansy/use-modal': workspace:*
+      '@pansy/use-mount': workspace:*
       '@pansy/use-mouse': workspace:*
       '@pansy/use-mqtt': workspace:*
       '@pansy/use-previous': workspace:*
@@ -94,6 +96,7 @@ importers:
       '@pansy/use-click-away': link:hooks/useClickAway
       '@pansy/use-controllable-value': link:hooks/useControllableValue
       '@pansy/use-cookie-state': link:hooks/useCookieState
+      '@pansy/use-creation': link:hooks/useCreation
       '@pansy/use-document-visibility': link:hooks/useDocumentVisibility
       '@pansy/use-event-listener': link:hooks/useEventListener
       '@pansy/use-event-target': link:hooks/useEventTarget
@@ -109,6 +112,7 @@ importers:
       '@pansy/use-lock-fn': link:hooks/useLockFn
       '@pansy/use-memoized-fn': link:hooks/useMemoizedFn
       '@pansy/use-modal': link:hooks/useModal
+      '@pansy/use-mount': link:hooks/useMount
       '@pansy/use-mouse': link:hooks/useMouse
       '@pansy/use-mqtt': link:hooks/useMqtt
       '@pansy/use-previous': link:hooks/usePrevious
@@ -171,47 +175,50 @@ importers:
   hooks/hooks:
     specifiers:
       '@pansy/use-boolean': ^0.2.3
-      '@pansy/use-click-away': 0.2.4
+      '@pansy/use-click-away': ^0.2.4
       '@pansy/use-controllable-value': ^0.2.3
-      '@pansy/use-cookie-state': 0.1.1
-      '@pansy/use-document-visibility': 0.2.4
-      '@pansy/use-event-listener': 0.2.4
+      '@pansy/use-cookie-state': ^0.1.1
+      '@pansy/use-creation': ^0.1.0
+      '@pansy/use-document-visibility': ^0.2.4
+      '@pansy/use-event-listener': ^0.2.4
       '@pansy/use-event-target': ^0.2.3
       '@pansy/use-external': ^0.1.2
       '@pansy/use-favicon': ^0.2.2
       '@pansy/use-get-state': ^0.2.3
-      '@pansy/use-hover': 0.2.4
-      '@pansy/use-in-viewport': 0.2.4
+      '@pansy/use-hover': ^0.2.4
+      '@pansy/use-in-viewport': ^0.2.4
       '@pansy/use-interval': ^0.2.3
-      '@pansy/use-key-press': 0.1.3
+      '@pansy/use-key-press': ^0.1.3
       '@pansy/use-latest': ^0.2.2
-      '@pansy/use-local-storage-state': 0.2.4
+      '@pansy/use-local-storage-state': ^0.2.4
       '@pansy/use-lock-fn': ^1.0.2
       '@pansy/use-memoized-fn': ^0.2.3
       '@pansy/use-modal': ^0.2.3
-      '@pansy/use-mouse': 0.1.1
-      '@pansy/use-mqtt': 0.1.5
+      '@pansy/use-mount': ^0.1.0
+      '@pansy/use-mouse': ^0.1.1
+      '@pansy/use-mqtt': ^0.1.5
       '@pansy/use-previous': ^0.2.2
       '@pansy/use-raf-state': ^0.2.3
-      '@pansy/use-scroll': 0.2.4
+      '@pansy/use-scroll': ^0.2.4
       '@pansy/use-selections': ^0.2.3
-      '@pansy/use-session-storage-state': 0.2.4
-      '@pansy/use-size': 0.2.4
+      '@pansy/use-session-storage-state': ^0.2.4
+      '@pansy/use-size': ^0.2.4
       '@pansy/use-timeout': ^0.2.3
-      '@pansy/use-title': 0.2.4
+      '@pansy/use-title': ^0.2.4
       '@pansy/use-toggle': ^0.2.2
       '@pansy/use-unmount': ^0.2.3
       '@pansy/use-update': ^0.2.2
       '@pansy/use-update-effect': ^0.2.2
-      '@pansy/use-update-layout-effect': 0.2.4
-      '@pansy/use-url-state': 0.1.2
-      '@pansy/use-watermark': 0.2.4
+      '@pansy/use-update-layout-effect': ^0.2.4
+      '@pansy/use-url-state': ^0.1.2
+      '@pansy/use-watermark': ^0.2.4
       '@pansy/use-web-socket': ^0.1.3
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
       '@pansy/use-controllable-value': link:../useControllableValue
       '@pansy/use-cookie-state': link:../useCookieState
+      '@pansy/use-creation': link:../useCreation
       '@pansy/use-document-visibility': link:../useDocumentVisibility
       '@pansy/use-event-listener': link:../useEventListener
       '@pansy/use-event-target': link:../useEventTarget
@@ -227,6 +234,7 @@ importers:
       '@pansy/use-lock-fn': link:../useLockFn
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-modal': link:../useModal
+      '@pansy/use-mount': link:../useMount
       '@pansy/use-mouse': link:../useMouse
       '@pansy/use-mqtt': link:../useMqtt
       '@pansy/use-previous': link:../usePrevious
@@ -277,6 +285,9 @@ importers:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@types/js-cookie': 2.2.7
       js-cookie: 2.2.1
+
+  hooks/useCreation:
+    specifiers: {}
 
   hooks/useDocumentVisibility:
     specifiers:
@@ -369,6 +380,9 @@ importers:
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-memoized-fn': link:../useMemoizedFn
+
+  hooks/useMount:
+    specifiers: {}
 
   hooks/useMouse:
     specifiers:
