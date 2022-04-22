@@ -12,13 +12,12 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-memoized-fn": "0.2.3",
-    "@pansy/use-unmount": "0.2.3",
-    "@pansy/use-update-effect": "0.2.2",
+    "@pansy/use-memoized-fn": "^0.2.3",
+    "@pansy/use-unmount": "^0.2.3",
+    "@pansy/use-update-effect": "^0.2.2",
     "lodash": "^4.17.21"
   },
   "publishConfig": {
