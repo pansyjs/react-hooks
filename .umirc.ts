@@ -88,6 +88,7 @@ export default {
           'useInViewport.md',
           'useKeyPress.md',
           'useScroll.md',
+          'useMouse.md',
           'useSize.md',
           'useTitle.md',
           'useWatermark.md',
