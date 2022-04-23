@@ -15,11 +15,11 @@
     "publish": "walrus run ./scripts/publish.ts",
     "release:old": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "release": "walrus release",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@ant-design/pro-card": "^1.19.2",
+    "@ant-design/pro-card": "^1.19.5",
     "@pansy/hook-utils": "workspace:*",
     "@pansy/react-hooks": "workspace:*",
     "@pansy/use-boolean": "workspace:*",
@@ -69,7 +69,7 @@
     "@types/react-test-renderer": "^17",
     "@typescript-eslint/eslint-plugin": "5.18.0",
     "@typescript-eslint/parser": "5.18.0",
-    "@umijs/utils": "^3.5.21",
+    "@umijs/utils": "^3.5.23",
     "@walrus/cli": "1.3.4",
     "@walrus/cli-utils": "2.2.1",
     "@walrus/package": "^1.1.0",
@@ -90,7 +90,7 @@
     "jest-localstorage-mock": "2.4.19",
     "jest-websocket-mock": "2.3.0",
     "lerna": "4.0.0",
-    "mock-socket": "9.1.2",
+    "mock-socket": "9.1.3",
     "mockjs": "^1.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

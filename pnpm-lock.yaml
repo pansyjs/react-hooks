@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@ant-design/icons': ^4.7.0
-      '@ant-design/pro-card': ^1.19.2
+      '@ant-design/pro-card': ^1.19.5
       '@pansy/hook-utils': workspace:*
       '@pansy/react-hooks': workspace:*
       '@pansy/use-boolean': workspace:*
@@ -55,7 +55,7 @@ importers:
       '@types/react-test-renderer': ^17
       '@typescript-eslint/eslint-plugin': 5.18.0
       '@typescript-eslint/parser': 5.18.0
-      '@umijs/utils': ^3.5.21
+      '@umijs/utils': ^3.5.23
       '@walrus/cli': 1.3.4
       '@walrus/cli-utils': 2.2.1
       '@walrus/package': ^1.1.0
@@ -76,7 +76,7 @@ importers:
       jest-localstorage-mock: 2.4.19
       jest-websocket-mock: 2.3.0
       lerna: 4.0.0
-      mock-socket: 9.1.2
+      mock-socket: 9.1.3
       mockjs: ^1.1.0
       react: 17.0.2
       react-dom: 17.0.2
@@ -91,7 +91,7 @@ importers:
       zx: 6.0.7
     devDependencies:
       '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
-      '@ant-design/pro-card': 1.19.2_9c0de265bc3f25e6004b7ce7608693c1
+      '@ant-design/pro-card': 1.19.5_9c0de265bc3f25e6004b7ce7608693c1
       '@pansy/hook-utils': link:hooks/utils
       '@pansy/react-hooks': link:hooks/hooks
       '@pansy/use-boolean': link:hooks/useBoolean
@@ -141,7 +141,7 @@ importers:
       '@types/react-test-renderer': 17.0.1
       '@typescript-eslint/eslint-plugin': 5.18.0_a07dca3bdfc4bfa60f4dda0c1f9e3287
       '@typescript-eslint/parser': 5.18.0_eslint@8.12.0+typescript@4.6.3
-      '@umijs/utils': 3.5.21
+      '@umijs/utils': 3.5.23
       '@walrus/cli': 1.3.4
       '@walrus/cli-utils': 2.2.1
       '@walrus/package': 1.1.0
@@ -162,7 +162,7 @@ importers:
       jest-localstorage-mock: 2.4.19
       jest-websocket-mock: 2.3.0
       lerna: 4.0.0
-      mock-socket: 9.1.2
+      mock-socket: 9.1.3
       mockjs: 1.1.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -178,46 +178,46 @@ importers:
 
   hooks/hooks:
     specifiers:
-      '@pansy/use-boolean': ^0.2.3
-      '@pansy/use-click-away': ^0.2.4
-      '@pansy/use-controllable-value': ^0.2.3
-      '@pansy/use-cookie-state': ^0.1.1
-      '@pansy/use-creation': ^0.1.0
-      '@pansy/use-document-visibility': ^0.2.4
-      '@pansy/use-event-listener': ^0.2.4
-      '@pansy/use-event-target': ^0.2.3
-      '@pansy/use-external': ^0.1.2
-      '@pansy/use-favicon': ^0.2.2
-      '@pansy/use-get-state': ^0.2.3
-      '@pansy/use-hover': ^0.2.4
-      '@pansy/use-in-viewport': ^0.2.4
-      '@pansy/use-interval': ^0.2.3
-      '@pansy/use-key-press': ^0.1.3
-      '@pansy/use-latest': ^0.2.2
-      '@pansy/use-local-storage-state': ^0.2.4
-      '@pansy/use-lock-fn': ^1.0.2
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-modal': ^0.2.3
-      '@pansy/use-mount': ^0.1.0
-      '@pansy/use-mouse': ^0.1.1
-      '@pansy/use-mqtt': ^0.1.5
-      '@pansy/use-previous': ^0.2.2
-      '@pansy/use-raf-state': ^0.2.3
-      '@pansy/use-request': ^0.1.0
-      '@pansy/use-scroll': ^0.2.4
-      '@pansy/use-selections': ^0.2.3
-      '@pansy/use-session-storage-state': ^0.2.4
-      '@pansy/use-size': ^0.2.4
-      '@pansy/use-timeout': ^0.2.3
-      '@pansy/use-title': ^0.2.4
-      '@pansy/use-toggle': ^0.2.2
-      '@pansy/use-unmount': ^0.2.3
-      '@pansy/use-update': ^0.2.2
-      '@pansy/use-update-effect': ^0.2.2
-      '@pansy/use-update-layout-effect': ^0.2.4
-      '@pansy/use-url-state': ^0.1.2
-      '@pansy/use-watermark': ^0.2.4
-      '@pansy/use-web-socket': ^0.1.3
+      '@pansy/use-boolean': 0.2.4
+      '@pansy/use-click-away': 0.2.5
+      '@pansy/use-controllable-value': 0.2.4
+      '@pansy/use-cookie-state': 0.1.2
+      '@pansy/use-creation': 0.1.1
+      '@pansy/use-document-visibility': 0.2.5
+      '@pansy/use-event-listener': 0.2.5
+      '@pansy/use-event-target': 0.2.4
+      '@pansy/use-external': 0.1.3
+      '@pansy/use-favicon': 0.2.3
+      '@pansy/use-get-state': 0.2.4
+      '@pansy/use-hover': 0.2.5
+      '@pansy/use-in-viewport': 0.2.5
+      '@pansy/use-interval': 0.2.4
+      '@pansy/use-key-press': 0.1.4
+      '@pansy/use-latest': 0.2.3
+      '@pansy/use-local-storage-state': 0.2.5
+      '@pansy/use-lock-fn': 1.0.3
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-modal': 0.2.4
+      '@pansy/use-mount': 0.1.1
+      '@pansy/use-mouse': 0.1.2
+      '@pansy/use-mqtt': 0.1.6
+      '@pansy/use-previous': 0.2.3
+      '@pansy/use-raf-state': 0.2.4
+      '@pansy/use-request': 0.1.1
+      '@pansy/use-scroll': 0.2.5
+      '@pansy/use-selections': 0.2.4
+      '@pansy/use-session-storage-state': 0.2.5
+      '@pansy/use-size': 0.2.5
+      '@pansy/use-timeout': 0.2.4
+      '@pansy/use-title': 0.2.5
+      '@pansy/use-toggle': 0.2.3
+      '@pansy/use-unmount': 0.2.4
+      '@pansy/use-update': 0.2.3
+      '@pansy/use-update-effect': 0.2.3
+      '@pansy/use-update-layout-effect': 0.2.5
+      '@pansy/use-url-state': 0.1.3
+      '@pansy/use-watermark': 0.2.5
+      '@pansy/use-web-socket': 0.1.4
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
@@ -262,29 +262,29 @@ importers:
 
   hooks/useBoolean:
     specifiers:
-      '@pansy/use-toggle': ^0.2.2
+      '@pansy/use-toggle': 0.2.3
     dependencies:
       '@pansy/use-toggle': link:../useToggle
 
   hooks/useClickAway:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
 
   hooks/useControllableValue:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-update': ^0.2.2
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-update': 0.2.3
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-update': link:../useUpdate
 
   hooks/useCookieState:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.2.3
+      '@pansy/use-memoized-fn': 0.2.4
       '@types/js-cookie': ^2.x.x
       js-cookie: ^2.x.x
     dependencies:
@@ -294,29 +294,29 @@ importers:
 
   hooks/useCreation:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
 
   hooks/useDocumentVisibility:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-event-listener': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-event-listener': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-event-listener': link:../useEventListener
 
   hooks/useEventListener:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
 
   hooks/useEventTarget:
     specifiers:
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
@@ -328,15 +328,15 @@ importers:
 
   hooks/useGetState:
     specifiers:
-      '@pansy/use-toggle': ^0.2.2
+      '@pansy/use-toggle': 0.2.3
     dependencies:
       '@pansy/use-toggle': link:../useToggle
 
   hooks/useHover:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-boolean': ^0.2.3
-      '@pansy/use-event-listener': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-boolean': 0.2.4
+      '@pansy/use-event-listener': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-boolean': link:../useBoolean
@@ -344,7 +344,7 @@ importers:
 
   hooks/useInViewport:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
       intersection-observer: ^0.12.0
     dependencies:
       '@pansy/hook-utils': link:../utils
@@ -352,14 +352,14 @@ importers:
 
   hooks/useInterval:
     specifiers:
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
   hooks/useKeyPress:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
@@ -369,7 +369,7 @@ importers:
 
   hooks/useLocalStorageState:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
 
@@ -378,14 +378,14 @@ importers:
 
   hooks/useMemoizedFn:
     specifiers:
-      '@pansy/use-toggle': ^0.2.2
+      '@pansy/use-toggle': 0.2.3
     dependencies:
       '@pansy/use-toggle': link:../useToggle
 
   hooks/useModal:
     specifiers:
-      '@pansy/use-boolean': ^0.2.3
-      '@pansy/use-memoized-fn': ^0.2.3
+      '@pansy/use-boolean': 0.2.4
+      '@pansy/use-memoized-fn': 0.2.4
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-memoized-fn': link:../useMemoizedFn
@@ -395,9 +395,9 @@ importers:
 
   hooks/useMouse:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-event-listener': ^0.2.4
-      '@pansy/use-raf-state': ^0.2.3
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-event-listener': 0.2.5
+      '@pansy/use-raf-state': 0.2.4
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-event-listener': link:../useEventListener
@@ -405,10 +405,10 @@ importers:
 
   hooks/useMqtt:
     specifiers:
-      '@pansy/use-boolean': ^0.2.3
-      '@pansy/use-latest': ^0.2.2
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-unmount': ^0.2.3
+      '@pansy/use-boolean': 0.2.4
+      '@pansy/use-latest': 0.2.3
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-unmount': 0.2.4
       mqtt: ^4.3.7
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
@@ -422,19 +422,19 @@ importers:
 
   hooks/useRafState:
     specifiers:
-      '@pansy/use-unmount': ^0.2.3
+      '@pansy/use-unmount': 0.2.4
     dependencies:
       '@pansy/use-unmount': link:../useUnmount
 
   hooks/useRequest:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-creation': ^0.1.0
-      '@pansy/use-latest': ^0.2.2
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-mount': ^0.1.0
-      '@pansy/use-unmount': ^0.2.3
-      '@pansy/use-update': ^0.2.2
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-creation': 0.1.1
+      '@pansy/use-latest': 0.2.3
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-mount': 0.1.1
+      '@pansy/use-unmount': 0.2.4
+      '@pansy/use-update': 0.2.3
       lodash: ^4.17.21
     dependencies:
       '@pansy/hook-utils': link:../utils
@@ -448,9 +448,9 @@ importers:
 
   hooks/useScroll:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-latest': ^0.2.2
-      '@pansy/use-raf-state': ^0.2.3
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-latest': 0.2.3
+      '@pansy/use-raf-state': 0.2.4
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
@@ -458,21 +458,21 @@ importers:
 
   hooks/useSelections:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.2.3
+      '@pansy/use-memoized-fn': 0.2.4
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
 
   hooks/useSessionStorageState:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
 
   hooks/useSize:
     specifiers:
       '@juggle/resize-observer': ^3.3.1
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-raf-state': ^0.2.3
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-raf-state': 0.2.4
     dependencies:
       '@juggle/resize-observer': 3.3.1
       '@pansy/hook-utils': link:../utils
@@ -480,14 +480,14 @@ importers:
 
   hooks/useTimeout:
     specifiers:
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
   hooks/useTitle:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-unmount': ^0.2.3
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-unmount': 0.2.4
     dependencies:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-unmount': link:../useUnmount
@@ -497,7 +497,7 @@ importers:
 
   hooks/useUnmount:
     specifiers:
-      '@pansy/use-latest': ^0.2.2
+      '@pansy/use-latest': 0.2.3
     dependencies:
       '@pansy/use-latest': link:../useLatest
 
@@ -509,14 +509,14 @@ importers:
 
   hooks/useUpdateLayoutEffect:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
+      '@pansy/hook-utils': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
 
   hooks/useUrlState:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-update': ^0.2.2
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-update': 0.2.3
       query-string: ^7.1.1
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
@@ -525,9 +525,9 @@ importers:
 
   hooks/useWatermark:
     specifiers:
-      '@pansy/hook-utils': ^0.2.4
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-unmount': ^0.2.3
+      '@pansy/hook-utils': 0.2.5
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-unmount': 0.2.4
       '@pansy/watermark': ^2.0.10
     dependencies:
       '@pansy/hook-utils': link:../utils
@@ -537,9 +537,9 @@ importers:
 
   hooks/useWebSocket:
     specifiers:
-      '@pansy/use-latest': ^0.2.2
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-unmount': ^0.2.3
+      '@pansy/use-latest': 0.2.3
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-unmount': 0.2.4
     dependencies:
       '@pansy/use-latest': link:../useLatest
       '@pansy/use-memoized-fn': link:../useMemoizedFn
@@ -547,9 +547,9 @@ importers:
 
   hooks/utils:
     specifiers:
-      '@pansy/use-memoized-fn': ^0.2.3
-      '@pansy/use-unmount': ^0.2.3
-      '@pansy/use-update-effect': ^0.2.2
+      '@pansy/use-memoized-fn': 0.2.4
+      '@pansy/use-unmount': 0.2.4
+      '@pansy/use-update-effect': 0.2.3
       lodash: ^4.17.21
     dependencies:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
@@ -585,14 +585,14 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@ant-design/pro-card/1.19.2_9c0de265bc3f25e6004b7ce7608693c1:
-    resolution: {integrity: sha512-hXG1qJMoA3fU6IErsHDptfkST46K1TumlRH8kPtdpW9M87CLT0wtqNImnZynZRXMSDW/pdxdmOLoYNzKDcixZw==}
+  /@ant-design/pro-card/1.19.5_9c0de265bc3f25e6004b7ce7608693c1:
+    resolution: {integrity: sha512-CHd+tjvA4RcbtVfJC2vQmufDrEiksk9YhJoZnApzWlgfX2IPwVn4PaqRdPHD1swHMkAd03lw8hZM2hv6HBhkGw==}
     peerDependencies:
       antd: '>=4.18.0'
       react: '>=16.9.0'
     dependencies:
       '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
-      '@ant-design/pro-utils': 1.38.2_9c0de265bc3f25e6004b7ce7608693c1
+      '@ant-design/pro-utils': 1.39.2_9c0de265bc3f25e6004b7ce7608693c1
       '@babel/runtime': 7.16.7
       antd: 4.19.5_react-dom@17.0.2+react@17.0.2
       classnames: 2.3.1
@@ -603,8 +603,8 @@ packages:
       - react-dom
     dev: true
 
-  /@ant-design/pro-provider/1.6.2_9c0de265bc3f25e6004b7ce7608693c1:
-    resolution: {integrity: sha512-wzYb6n5nXHjj/Amn/qQL+BE9Xd0tRISkR+3IWqRmmB1syq5epFdrvjPUHiTsIzQXaUb6q/OrrrbTuiKqoudYDg==}
+  /@ant-design/pro-provider/1.6.3_9c0de265bc3f25e6004b7ce7608693c1:
+    resolution: {integrity: sha512-GyjN5oTUZVylf6Fy3TJfuvs/u8TmeWoqFZ5AKZLvWsdNKN+lPsYXmEYPjutyCtq/ogZkkx6drnuGqAc5E7lb4Q==}
     peerDependencies:
       antd: '>=4.18.0'
       react: '>=16.9.0'
@@ -618,15 +618,15 @@ packages:
       - react-dom
     dev: true
 
-  /@ant-design/pro-utils/1.38.2_9c0de265bc3f25e6004b7ce7608693c1:
-    resolution: {integrity: sha512-ShR24XBMehKaySqwauZylIGGqJZNGXQy4Trt31YGgFz60oIY/ER6NBsX6QSTAp2DlpUV1uMm32ZeAH0aTBS3Cw==}
+  /@ant-design/pro-utils/1.39.2_9c0de265bc3f25e6004b7ce7608693c1:
+    resolution: {integrity: sha512-z98NhVR2QC6JF1fFoerkBHb53aXTxQBAx2w9S3Zb9EwxLocJdqXhmjavGyvBDMmimfjpaJuTZUTGC26EEwrX4w==}
     peerDependencies:
       antd: '>=4.18.0'
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
       '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
-      '@ant-design/pro-provider': 1.6.2_9c0de265bc3f25e6004b7ce7608693c1
+      '@ant-design/pro-provider': 1.6.3_9c0de265bc3f25e6004b7ce7608693c1
       '@babel/runtime': 7.16.7
       antd: 4.19.5_react-dom@17.0.2+react@17.0.2
       classnames: 2.3.1
@@ -5456,8 +5456,8 @@ packages:
       prettier: 2.2.1
     dev: true
 
-  /@umijs/deps/3.5.21:
-    resolution: {integrity: sha512-P/4KaOklePvkWV1qk3euNBNEhbkEkh+gQYhWxqGxPswAK60jCxHdCu6QHaCQB3y3H9tOh44teuP8Cls4/4tF2w==}
+  /@umijs/deps/3.5.23:
+    resolution: {integrity: sha512-Z4Tq0GG6PQaguPWIVVtfi+ehruD4JJjTibPXIASxuMT9Xey076ZMY9rjCd5ZBlecFDde2lC53MOkyOcGniCAaQ==}
     dependencies:
       '@bloomberg/record-tuple-polyfill': 0.0.3
       chokidar: 3.5.1
@@ -5465,6 +5465,7 @@ packages:
       esbuild: 0.12.15
       jest-worker: 24.9.0
       prettier: 2.2.1
+      regenerate-unicode-properties: 9.0.0
     dev: true
 
   /@umijs/plugin-analytics/0.2.2_umi@3.5.20:
@@ -5525,7 +5526,7 @@ packages:
       '@umijs/plugin-analytics': 0.2.2_umi@3.5.20
       '@umijs/runtime': 3.5.20_react@17.0.2
       '@umijs/types': 3.5.20_92395bb76fe9a75d17eb780a65fa07e7
-      '@umijs/utils': 3.5.21
+      '@umijs/utils': 3.5.23
       copy-text-to-clipboard: 2.2.0
       deepmerge: 4.2.2
       dumi-assets-types: 1.0.0
@@ -5725,10 +5726,10 @@ packages:
       '@umijs/deps': 3.5.20
     dev: true
 
-  /@umijs/utils/3.5.21:
-    resolution: {integrity: sha512-YBeugACAJHe/43uuKN2C+HWIfztqWhTGwFxRGE1XxCEIGCcJPFt8u8SMvw0wtE/kHT9JIz/tTpErJyo1QYJp2A==}
+  /@umijs/utils/3.5.23:
+    resolution: {integrity: sha512-3uGD7DeuQrhfWZBnm3ry7PvP7jZwmdps5na+7TsI1/XpjyIWLWxbuy5vYQszi/1spKA3eIB0UNW9PrroAVxMIg==}
     dependencies:
-      '@umijs/deps': 3.5.21
+      '@umijs/deps': 3.5.23
     dev: true
 
   /@umijs/utils/4.0.0-beta.14:
@@ -5876,8 +5877,8 @@ packages:
     resolution: {integrity: sha512-d7T/lSNNiXR3ZOJ+X9b/tLzoc242jzMR7/eMurVwyWotYqfewmuBgDTeCxaGEUYhT0zJ3aN9cY3ix5fvzTcauQ==}
     dependencies:
       '@walrus/cli-utils': 2.2.1
-      esbuild: 0.14.14
-      esbuild-register: 3.3.2_esbuild@0.14.14
+      esbuild: 0.14.34
+      esbuild-register: 3.3.2_esbuild@0.14.34
     dev: true
 
   /@walrus/test/1.3.0:
@@ -8703,12 +8704,12 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-register/3.3.2_esbuild@0.14.14:
+  /esbuild-register/3.3.2_esbuild@0.14.34:
     resolution: {integrity: sha512-jceAtTO6zxPmCfSD5cBb3rgIK1vmuqCKYwgylHiS1BF4pq0jJiJb4K2QMuqF4BEw7XDBRatYzip0upyTzfkgsQ==}
     peerDependencies:
       esbuild: '>=0.12 <1'
     dependencies:
-      esbuild: 0.14.14
+      esbuild: 0.14.34
     dev: true
 
   /esbuild-sunos-64/0.14.14:
@@ -11371,7 +11372,7 @@ packages:
     resolution: {integrity: sha512-kXhRRApRdT4hLG/4rhsfcR0Ke0OzqIsDj0P5t0dl5aiAftShSgoRqp/0pyjS5bh+b9GrIzmfkrV2cn9LxxvSvA==}
     dependencies:
       jest-diff: 27.4.6
-      mock-socket: 9.1.2
+      mock-socket: 9.1.3
     dev: true
 
   /jest-worker/24.9.0:
@@ -12523,8 +12524,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mock-socket/9.1.2:
-    resolution: {integrity: sha512-XKZkCnQ9ISOlTnaPg4LYYSMj7+6i78HyadYzLA5JM4465ibLdjappZD9Csnqc3Tfzep/eEK/LCJ29BTaLHoB1A==}
+  /mock-socket/9.1.3:
+    resolution: {integrity: sha512-uz8lx8c5wuJYJ21f5UtovqpV0+KJuVwE7cVOLNhrl2QW/CvmstOLRfjXnLSbfFHZtJtiaSGQu0oCJA8SmRcK6A==}
     engines: {node: '>= 8'}
     dev: true
 
