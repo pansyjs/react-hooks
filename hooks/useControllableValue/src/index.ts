@@ -1,27 +1,19 @@
 import { useMemo, useRef } from 'react';
+import { isFunction } from '@pansy/hook-utils';
 import { useMemoizedFn } from '@pansy/use-memoized-fn';
 import { useUpdate } from '@pansy/use-update';
 
-export type Props = Record<string, any>;
+import type { SetStateAction } from 'react';
+import type { Props, StandardProps, Options, } from './types';
 
-export interface StandardProps<T> {
-  value: T;
-  defaultValue?: T;
-  onChange: (val: T) => void;
-}
+export function useControllableValue<T = any>(
+  props: StandardProps<T>
+): [T, (v: SetStateAction<T>) => void];
 
-export interface Options<T> {
-  defaultValue?: T;
-  defaultValuePropName?: string;
-  valuePropName?: string;
-  trigger?: string;
-}
-
-export function useControllableValue<T = any>(props: StandardProps<T>): [T, (val: T) => void];
 export function useControllableValue<T = any>(
   props?: Props,
   options?: Options<T>,
-): [T, (v: T, ...args: any[]) => void];
+): [T, (v: SetStateAction<T>, ...args: any[]) => void];
 
 export function useControllableValue<T = any>(
   props: Props = {},
@@ -58,15 +50,23 @@ export function useControllableValue<T = any>(
 
   const update = useUpdate();
 
-  const setState = (v: T, ...args: any[]) => {
+  const setState = (v: SetStateAction<T>, ...args: any[]) => {
+    const r = isFunction(v) ? (v as ((prevState: T) => T))(stateRef.current) : v;
+
     if (!isControlled) {
-      stateRef.current = v;
+      stateRef.current = r;
       update();
     }
     if (props[trigger]) {
-      props[trigger](v, ...args);
+      props[trigger](r, ...args);
     }
   };
 
   return [stateRef.current, useMemoizedFn(setState)] as const;
+}
+
+export type {
+  Props,
+  StandardProps,
+  Options,
 }
