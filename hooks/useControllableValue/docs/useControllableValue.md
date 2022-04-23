@@ -28,7 +28,7 @@ group:
 ## API
 
 ```ts
-const [state, setState] = useControllableValue(props: Record<string, any>, options?: Options)
+const [state, setState] = useControllableValue<T = any>(props: Record<string, any>, options?: Options<T>)
 ```
 
 ### Result
@@ -36,13 +36,13 @@ const [state, setState] = useControllableValue(props: Record<string, any>, optio
 | 参数     | 说明              | 类型                   |
 |----------|-------------------|------------------------|
 | state    | 状态值            | -                      |
-| setState | 修改 state 的函数 | `(value: any) => void` |
+| setState | 修改 state 的函数 | `(value: T \| ((prevState: T) => T)) => void` |
 
 ### Params
 
 | 参数    | 说明         | 类型                  | 默认值 |
 |---------|--------------|-----------------------|--------|
-| props   | 组件的 props | `Record<string, any>` | -      |
+| props   | 组件的 props | `Record<string, T>` | -      |
 | options | 可选配置项   | `Options`             | -      |
 
 
