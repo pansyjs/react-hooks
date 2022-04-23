@@ -5,7 +5,7 @@ import { useMount } from '@pansy/use-mount';
 import { useUnmount } from '@pansy/use-unmount';
 import { useUpdate } from '@pansy/use-update';
 
-import Fetch from './Fetch';
+import Fetch from './fetch';
 
 import type { Options, Result, Plugin, Service } from './types';
 
