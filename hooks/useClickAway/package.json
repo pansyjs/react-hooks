@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-click-away",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.2.5",
+    "@pansy/hook-utils": "0.2.6",
     "@pansy/use-latest": "0.2.3"
   },
   "publishConfig": {
