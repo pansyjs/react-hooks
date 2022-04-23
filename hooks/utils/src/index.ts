@@ -11,6 +11,7 @@ export {
 export { canUseDom } from './utils/canUseDom';
 export { useIsomorphicLayoutEffectWithTarget } from './utils/useIsomorphicLayoutEffectWithTarget';
 export { useDeepCompareEffectWithTarget } from './utils/useDeepCompareWithTarget';
+export { isFunction } from './utils/isFunction';
 
 export type { BasicTarget } from './utils/domTarget';
 export type { OptionsWithDefaultValue, Options } from './utils/createUseStorageState'
