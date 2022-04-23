@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-creation",
-  "description":  "useCreation 是 useMemo 或 useRef 的替代品。",
-  "version": "0.1.0",
+  "description": "useCreation 是 useMemo 或 useRef 的替代品。",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "^0.2.4"
+    "@pansy/hook-utils": "0.2.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

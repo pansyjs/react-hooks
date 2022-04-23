@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-mount",
-  "description":  "只在组件初始化时执行的 Hook。",
-  "version": "0.1.0",
+  "description": "只在组件初始化时执行的 Hook。",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",

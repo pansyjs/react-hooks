@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-local-storage-state",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "^0.2.4"
+    "@pansy/hook-utils": "0.2.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
