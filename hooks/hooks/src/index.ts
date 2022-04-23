@@ -36,6 +36,7 @@ export { useUrlState } from '@pansy/use-url-state';
 export { useCookieState } from '@pansy/use-cookie-state';
 export { useMouse } from '@pansy/use-mouse';
 export { useMount } from '@pansy/use-mount';
-export { useCreation } from '@pansy/use-creation'
+export { useCreation } from '@pansy/use-creation';
+export { useRequest } from '@pansy/use-request';
 
 export type { UseModalResult } from '@pansy/use-modal'

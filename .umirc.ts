@@ -39,6 +39,7 @@ export default {
       {
         title: 'Scene',
         children: [
+          'useRequest.md',
           'useModal.md',
           'useMqtt.md',
           'useSelections.md',
@@ -100,6 +101,7 @@ export default {
         children: [
           'useControllableValue.md',
           'useLatest.md',
+          'useCreation.md',
           'useMemoizedFn.md',
           'usePrevious.md',
         ],

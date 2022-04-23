@@ -8,6 +8,7 @@ export {
   useEffectWithTarget,
   useLayoutEffectWithTarget
 } from './utils/useEffectWithTarget';
+export { canUseDom } from './utils/canUseDom';
 export { useIsomorphicLayoutEffectWithTarget } from './utils/useIsomorphicLayoutEffectWithTarget';
 export { useDeepCompareEffectWithTarget } from './utils/useDeepCompareWithTarget';
 

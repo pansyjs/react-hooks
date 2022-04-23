@@ -12,7 +12,7 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "react": "^16.8.6 || ^17.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@pansy/use-boolean": "^0.2.3",
@@ -40,6 +40,7 @@
     "@pansy/use-mqtt": "^0.1.5",
     "@pansy/use-previous": "^0.2.2",
     "@pansy/use-raf-state": "^0.2.3",
+    "@pansy/use-request": "^0.1.0",
     "@pansy/use-scroll": "^0.2.4",
     "@pansy/use-selections": "^0.2.3",
     "@pansy/use-session-storage-state": "^0.2.4",

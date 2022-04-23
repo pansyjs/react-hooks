@@ -1,0 +1,32 @@
+{
+  "name": "@pansy/use-request",
+  "description":  "一个强大的异步数据管理的 Hooks",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "release": "semantic-release"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@pansy/hook-utils": "^0.2.4",
+    "@pansy/use-creation": "^0.1.0",
+    "@pansy/use-latest": "^0.2.2",
+    "@pansy/use-memoized-fn": "^0.2.3",
+    "@pansy/use-mount": "^0.1.0",
+    "@pansy/use-unmount": "^0.2.3",
+    "@pansy/use-update": "^0.2.2",
+    "lodash": "^4.17.21"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
