@@ -12,12 +12,12 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "react": "^16.8.6 || ^17.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@juggle/resize-observer": "^3.3.1",
-    "@pansy/hook-utils": "0.2.4",
-    "@pansy/use-raf-state": "0.2.3"
+    "@pansy/hook-utils": "^0.2.4",
+    "@pansy/use-raf-state": "^0.2.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

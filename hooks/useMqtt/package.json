@@ -11,14 +11,14 @@
     "build": "tsup"
   },
   "peerDependencies": {
-    "react": "^16.8.6 || ^17.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-boolean": "0.2.3",
-    "@pansy/use-latest": "0.2.2",
-    "@pansy/use-memoized-fn": "0.2.3",
-    "@pansy/use-unmount": "0.2.3",
-    "mqtt": "^4.3.4"
+    "@pansy/use-boolean": "^0.2.3",
+    "@pansy/use-latest": "^0.2.2",
+    "@pansy/use-memoized-fn": "^0.2.3",
+    "@pansy/use-unmount": "^0.2.3",
+    "mqtt": "^4.3.7"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
