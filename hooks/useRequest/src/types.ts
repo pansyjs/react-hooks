@@ -110,6 +110,10 @@ export interface Options<D, P extends any[]> {
    */
   staleTime?: number;
   /**
+   * 判断请求是否成功
+   */
+  checkSuccess?: (data: D) => boolean;
+  /**
    * 自定义设置缓存
    */
   setCache?: (data: CachedData<D, P>) => void;

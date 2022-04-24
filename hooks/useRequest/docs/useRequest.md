@@ -41,6 +41,10 @@ group:
 
 <code src="./demo/demo04.tsx" />
 
+### checkSuccess
+
+<code src="./demo/demo05.tsx" />
+
 ## API
 
 ```ts

@@ -1,3 +1,5 @@
+import { isFunction } from '@pansy/hook-utils';
+
 import type { MutableRefObject } from 'react';
 import type { FetchState, Options, PluginReturn, Service, Subscribe } from './types';
 
@@ -72,7 +74,18 @@ export default class Fetch<D, P extends any[]> {
         loading: false,
       });
 
+      let isSuccess = true;
+
+      if (isFunction(this.options.checkSuccess)) {
+        isSuccess = this.options.checkSuccess(res);
+      }
+
+      if (isSuccess) {
+        return new Promise(() => {});
+      }
+
       this.options.onSuccess?.(res, params);
+
       this.runPluginHandler('onSuccess', res, params);
 
       this.options.onFinally?.(params, res, undefined);
