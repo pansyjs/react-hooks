@@ -2,10 +2,9 @@
  * title: 多状态管理
  * desc: useUrlState 可以同时管理多个状态
  */
-
 import React from 'react';
 import { Button } from 'antd';
-import useUrlState from '@pansy/use-url-state';
+import { useUrlState } from '@pansy/use-url-state';
 
 export default () => {
   const [state, setState] = useUrlState({ page: '1', pageSize: '10' });

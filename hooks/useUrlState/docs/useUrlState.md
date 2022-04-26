@@ -11,6 +11,8 @@ group:
 
 通过 url query 来管理 state 的 Hook。
 
+> 注意: 本库需要单独安装
+
 ## 代码演示
 
 ### 基础用法

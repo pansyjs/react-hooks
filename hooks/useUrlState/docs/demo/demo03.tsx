@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import { Button } from 'antd';
-import useUrlState from '@pansy/use-url-state';
+import { useUrlState } from '@pansy/use-url-state';
 
 export default () => {
   const [state, setState] = useUrlState(
