@@ -11,6 +11,7 @@ const rootIgnore = [];
 const hooksIgnore = [
   '@pansy/react-hooks',
   '@pansy/hook-utils',
+  '@pansy/use-url-state',
 ];
 
 function syncRootPkg(pkgs: Package[]) {
