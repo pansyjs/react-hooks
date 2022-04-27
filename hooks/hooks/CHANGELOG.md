@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.9](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@0.9.8...@pansy/react-hooks@0.9.9) (2022-04-27)
+
+**Note:** Version bump only for package @pansy/react-hooks
+
+
+
+
+
 ## [0.9.8](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@0.9.7...@pansy/react-hooks@0.9.8) (2022-04-26)
 
 **Note:** Version bump only for package @pansy/react-hooks
