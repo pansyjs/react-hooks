@@ -80,7 +80,7 @@ export default class Fetch<D, P extends any[]> {
         isSuccess = this.options.checkSuccess(res);
       }
 
-      if (isSuccess) {
+      if (!isSuccess) {
         return new Promise(() => {});
       }
 
