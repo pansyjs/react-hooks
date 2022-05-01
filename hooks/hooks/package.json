@@ -40,7 +40,7 @@
     "@pansy/use-mqtt": "^0.1.6",
     "@pansy/use-previous": "^0.2.3",
     "@pansy/use-raf-state": "^0.2.4",
-    "@pansy/use-request": "0.1.4",
+    "@pansy/use-request": "^0.1.4",
     "@pansy/use-scroll": "^0.2.6",
     "@pansy/use-selections": "^0.2.4",
     "@pansy/use-session-storage-state": "^0.2.6",
