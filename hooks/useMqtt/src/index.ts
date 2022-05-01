@@ -12,6 +12,7 @@ import type {
   Client,
   Packet,
   OnMessageCallback,
+  IClientOptions,
   IClientSubscribeOptions as SubscribeOptions,
   IClientPublishOptions as PublishOptions,
   ClientSubscribeCallback,
@@ -43,6 +44,8 @@ export function useMqtt(
     ...rest
   }: Options = {}
 ) {
+  const mqttUrl = useRef(url);
+  const mqttOpts = useRef(rest);
   const onConnectRef = useLatest(onConnect);
   const onCloseRef = useLatest(onClose);
   const onReconnectRef = useLatest(onReconnect);
@@ -66,12 +69,18 @@ export function useMqtt(
     disconnect();
   });
 
-  const connectMqtt = () => {
+  const connectMqtt = (url: string = mqttUrl.current, opts?: IClientOptions) => {
+    mqttUrl.current = url;
+    mqttOpts.current = {
+      ...mqttOpts.current,
+      ...opts,
+    }
+
     if (mqttRef.current) {
       mqttRef.current.end();
     }
 
-    const mt = mqtt.connect(url, rest);
+    const mt = mqtt.connect(mqttUrl.current, mqttOpts.current);
 
 
     mt.on('connect', (event) => {
