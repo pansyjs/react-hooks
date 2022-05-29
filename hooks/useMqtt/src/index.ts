@@ -80,8 +80,9 @@ export function useMqtt(
       mqttRef.current.end();
     }
 
-    const mt = mqtt.connect(mqttUrl.current, mqttOpts.current);
+    if (!mqttUrl.current) return;
 
+    const mt = mqtt.connect(mqttUrl.current, mqttOpts.current);
 
     mt.on('connect', (event) => {
       if (unmountedRef.current) {
