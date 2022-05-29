@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.2.0...@pansy/use-mqtt@0.2.1) (2022-05-29)
+
+
+### Bug Fixes
+
+* **useMqtt:** 修复不设置 mqtt 地址，也调用连接 ([e5808b3](https://github.com/pansyjs/react-hooks/commit/e5808b3d67c032937b8ac1ffa00131da568090e2))
+
+
+
+
+
 # [0.2.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.1.7...@pansy/use-mqtt@0.2.0) (2022-05-29)
 
 
