@@ -33,7 +33,7 @@ export enum ReadyState {
  * @param options
  */
 export function useMqtt(
-  url: string,
+  url?: string,
   {
     manual = false,
     onConnect,
