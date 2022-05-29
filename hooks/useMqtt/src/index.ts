@@ -1,6 +1,6 @@
 /* eslint-disable max-params */
 /* eslint-disable prefer-promise-reject-errors */
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import mqtt from 'mqtt';
 import { useUnmount } from '@pansy/use-unmount';
 import { useLatest } from '@pansy/use-latest';
@@ -11,7 +11,6 @@ import type { Options } from './types';
 import type {
   Client,
   Packet,
-  OnMessageCallback,
   IClientOptions,
   IClientSubscribeOptions as SubscribeOptions,
   IClientPublishOptions as PublishOptions,
@@ -56,7 +55,6 @@ export function useMqtt(
 
   const unmountedRef = useRef(false);
   const [isConnected, isConnectedAction] = useBoolean();
-  const [messageMap, setMessageMap] = useState<Record<string, any>>({});
 
   useEffect(() => {
     if (!manual) {
@@ -106,7 +104,6 @@ export function useMqtt(
       }
 
       onMessageRef.current?.(...args);
-      handleMessage(...args);
     });
 
     mt.on('close', () => {
@@ -133,15 +130,6 @@ export function useMqtt(
     if (mqttRef.current?.connected) {
       mqttRef.current.end();
     }
-  };
-
-  const handleMessage: OnMessageCallback = (topic: string, payload: Buffer) => {
-    const data = JSON.parse(payload.toString());
-
-    setMessageMap((prev) => ({
-      ...prev,
-      [topic]: data,
-    }))
   };
 
   /**
@@ -234,7 +222,6 @@ export function useMqtt(
   }
 
   return {
-    messageMap,
     connected: isConnected,
     mqttIns: mqttRef.current,
     connect: useMemoizedFn(connectMqtt),
