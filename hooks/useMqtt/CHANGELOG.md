@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.2.1...@pansy/use-mqtt@0.3.0) (2022-06-08)
+
+
+### Features
+
+* **use-mqtt:** 恢复 messageMap ([e8c21bc](https://github.com/pansyjs/react-hooks/commit/e8c21bca69fc3300cdea905034a597c510722a81))
+
+
+
+
+
 ## [0.2.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.2.0...@pansy/use-mqtt@0.2.1) (2022-05-29)
 
 
