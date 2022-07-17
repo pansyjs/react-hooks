@@ -23,3 +23,9 @@ group:
 const latestValueRef = useLatest<T>(value: T): React.MutableRefObject<T>;
 ```
 
+## Params
+
+|参数|说明|类型|
+|---|---|---|
+|value|需要设置的值|`T`|
+
