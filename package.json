@@ -80,7 +80,7 @@
     "antd": "4.21.6",
     "conventional-changelog-cli": "2.2.2",
     "conventional-changelog-gitmoji-config": "1.4.3",
-    "dumi": "1.1.45",
+    "dumi": "1.1.46",
     "eslint": "8.20.0",
     "eslint-config-alloy": "4.6.2",
     "eslint-config-prettier": "8.5.0",
