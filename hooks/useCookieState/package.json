@@ -2,14 +2,14 @@
   "name": "@pansy/use-cookie-state",
   "description": "一个可以将状态存储在 Cookie 中的 Hook 。",
   "version": "0.1.2",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+     "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {

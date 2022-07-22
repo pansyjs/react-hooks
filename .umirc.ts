@@ -1,7 +1,7 @@
 import { join } from 'path';
 import { readdirSync } from 'fs';
 
-const headPkgList = [];
+const headPkgList: string[] = [];
 const pkgList = readdirSync(join(__dirname, 'hooks')).filter(
   (pkg) => pkg.charAt(0) !== '.' && !headPkgList.includes(pkg),
 );
