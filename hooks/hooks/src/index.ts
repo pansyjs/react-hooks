@@ -3,6 +3,7 @@ export { useClickAway } from '@pansy/use-click-away';
 export { useControllableValue } from '@pansy/use-controllable-value';
 export { useDocumentVisibility } from '@pansy/use-document-visibility';
 export { useEventListener } from '@pansy/use-event-listener';
+export { useDeepCompareEffect } from '@pansy/use-deep-compare-effect'
 export { useEventTarget } from '@pansy/use-event-target';
 export { useFavicon } from '@pansy/use-favicon';
 export { useGetState } from '@pansy/use-get-state';

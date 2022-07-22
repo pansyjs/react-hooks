@@ -22,6 +22,7 @@
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-card": "^1.20.13",
     "@pansy/hook-utils": "workspace:*",
+    "@pansy/use-deep-compare-effect": "workspace:*",
     "@pansy/react-hooks": "workspace:*",
     "@pansy/use-boolean": "workspace:*",
     "@pansy/use-click-away": "workspace:*",

@@ -183,6 +183,7 @@ importers:
       '@pansy/use-controllable-value': ^0.2.5
       '@pansy/use-cookie-state': ^0.1.2
       '@pansy/use-creation': ^0.1.2
+      '@pansy/use-deep-compare-effect': ^1.0.0
       '@pansy/use-document-visibility': ^0.2.6
       '@pansy/use-event-listener': ^0.2.6
       '@pansy/use-event-target': ^0.2.4
@@ -223,6 +224,7 @@ importers:
       '@pansy/use-controllable-value': link:../useControllableValue
       '@pansy/use-cookie-state': link:../useCookieState
       '@pansy/use-creation': link:../useCreation
+      '@pansy/use-deep-compare-effect': link:../useDeepCompareEffect
       '@pansy/use-document-visibility': link:../useDocumentVisibility
       '@pansy/use-event-listener': link:../useEventListener
       '@pansy/use-event-target': link:../useEventTarget
@@ -295,6 +297,12 @@ importers:
       '@pansy/hook-utils': 0.2.6
     dependencies:
       '@pansy/hook-utils': link:../utils
+
+  hooks/useDeepCompareEffect:
+    specifiers:
+      lodash: ^4.17.21
+    dependencies:
+      lodash: 4.17.21
 
   hooks/useDocumentVisibility:
     specifiers:
@@ -554,6 +562,9 @@ importers:
       '@pansy/use-unmount': link:../useUnmount
       '@pansy/use-update-effect': link:../useUpdateEffect
       lodash: 4.17.21
+
+  scripts:
+    specifiers: {}
 
 packages:
 

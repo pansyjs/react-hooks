@@ -75,6 +75,7 @@ export default {
           'useUpdate.md',
           'useUpdateEffect.md',
           'useUpdateLayoutEffect.md',
+          'useDeepCompareEffect.md',
         ],
       },
       {
