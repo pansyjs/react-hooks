@@ -4,7 +4,7 @@ import { spawnSync, toArray } from './.internal/utils';
 
 (async () => {
   const args = yArgs(process.argv.slice(2));
-  const filter = args.filter || './packages/*';
+  const filter = args.filter || './hooks/*';
   const extra = (args._ || []).join(' ');
 
   turbo({

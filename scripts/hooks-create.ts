@@ -1,12 +1,6 @@
 import { join } from 'path';
-import {
-  logger,
-  isDir,
-  lodash,
-  prompts,
-  fsExtra,
-  BaseGenerator,
-} from '@walrus/cli-utils';
+import { isDir, } from '@walrus/cli-utils';
+import { logger, lodash, prompts, fsExtra, BaseGenerator } from '@umijs/utils';
 import { getPkgs } from './utils';
 
 (async () => {

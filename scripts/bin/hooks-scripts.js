@@ -15,7 +15,7 @@ assert(
   `Executed script '${chalk.red(name)}' does not exist`
 )
 
-console.log(chalk.cyan(`umi-scripts: ${name}\n`))
+console.log(chalk.cyan(`hooks-scripts: ${name}\n`))
 
 const spawn = sync(
   'tsx',
@@ -28,6 +28,6 @@ const spawn = sync(
   }
 )
 if (spawn.status !== 0) {
-  console.log(chalk.red(`umi-scripts: ${name} execute fail`))
+  console.log(chalk.red(`hooks-scripts: ${name} execute fail`))
   process.exit(1)
 }
