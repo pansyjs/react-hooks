@@ -15,7 +15,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@pansy/hook-utils": "0.2.7"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
