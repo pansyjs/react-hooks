@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-event-target",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -8,14 +8,14 @@
     "dist"
   ],
   "scripts": {
-     "build": "redbud build",
+    "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-latest": "0.2.3"
+    "@pansy/use-latest": "0.2.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

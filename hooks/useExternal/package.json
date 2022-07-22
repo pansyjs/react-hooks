@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-external",
   "description": "动态注入 JS 或 CSS 资源，useExternal 可以保证资源全局唯一",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-     "build": "redbud build",
+    "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {

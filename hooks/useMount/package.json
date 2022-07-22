@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-mount",
   "description": "只在组件初始化时执行的 Hook。",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-     "build": "redbud build",
+    "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {

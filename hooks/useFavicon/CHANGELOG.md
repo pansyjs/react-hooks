@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/pansyjs/react-hooks/compare/@pansy/use-favicon@0.2.3...@pansy/use-favicon@0.2.4) (2022-07-22)
+
+**Note:** Version bump only for package @pansy/use-favicon
+
+
+
+
+
 ## [0.2.3](https://github.com/pansyjs/react-hooks/compare/@pansy/use-favicon@0.2.2...@pansy/use-favicon@0.2.3) (2022-04-23)
 
 **Note:** Version bump only for package @pansy/use-favicon

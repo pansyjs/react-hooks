@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@0.9.13...@pansy/react-hooks@0.10.0) (2022-07-22)
+
+
+### Features
+
+* add useDeepCompareEffect hooks ([b9b59b4](https://github.com/pansyjs/react-hooks/commit/b9b59b4387fce4407bebc692b565f6184dac59fe))
+
+
+
+
+
 ## [0.9.13](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@0.9.12...@pansy/react-hooks@0.9.13) (2022-06-08)
 
 **Note:** Version bump only for package @pansy/react-hooks

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-modal",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -8,15 +8,15 @@
     "dist"
   ],
   "scripts": {
-     "build": "redbud build",
+    "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-boolean": "0.2.4",
-    "@pansy/use-memoized-fn": "0.2.4"
+    "@pansy/use-boolean": "0.2.5",
+    "@pansy/use-memoized-fn": "0.2.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
