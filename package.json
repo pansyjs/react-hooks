@@ -15,7 +15,8 @@
     "release:old": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "release": "walrus release",
     "prepare": "husky install",
-    "clean": "rimraf **/dist/*"
+    "tsc:check": "tsc --noEmit",
+    "clean:turbo": "rimraf .turbo"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.7.0",
