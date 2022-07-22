@@ -1,4 +1,5 @@
-import { logger, spawn } from '@walrus/cli-utils';
+import { logger } from '@umijs/utils';
+import spawn from '@umijs/utils/compiled/cross-spawn';
 import type { SpawnSyncOptions } from 'child_process';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';

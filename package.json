@@ -3,7 +3,7 @@
   "scripts": {
     "start": "dumi dev",
     "site": "dumi build",
-    "build": "pnpm run hooks:sync && pnpm -r --filter @pansy/* run build",
+    "build": "hooks-scripts turbo --cmd build",
     "lint": "eslint --ignore-pattern **/tests/* --ignore-pattern **/demo/* \"hooks/*/src/**/*.{ts,tsx}\"",
     "lint:esfix": "pnpm lint --fix",
     "commit": "commit",
