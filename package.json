@@ -9,6 +9,7 @@
     "commit": "commit",
     "hooks:sync": "hooks-scripts hooks-sync",
     "hooks:create": "hooks-scripts hooks-create",
+    "format": "prettier --cache --write .",
     "entry": "walrus entry",
     "test": "walrus-test",
     "publish": "walrus run ./scripts/publish.ts",
