@@ -2,14 +2,14 @@
   "name": "{{{ name }}}",
   "description":  "{{{ description }}}",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+     "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {

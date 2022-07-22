@@ -14,4 +14,5 @@ export { useDeepCompareEffectWithTarget } from './utils/useDeepCompareWithTarget
 export { isFunction } from './utils/isFunction';
 
 export type { BasicTarget } from './utils/domTarget';
-export type { OptionsWithDefaultValue, Options } from './utils/createUseStorageState'
+export type { OptionsWithDefaultValue, Options } from './utils/createUseStorageState';
+export type { Noop } from './types';
