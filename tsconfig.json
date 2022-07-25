@@ -1,3 +1,10 @@
 {
-  "extends": "./tsconfig.base.json"
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@pansy/hook-utils": ["./hooks/utils"],
+      "@pansy/react-hooks": ["./hooks/hooks"]
+    }
+  }
 }

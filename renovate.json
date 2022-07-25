@@ -5,6 +5,10 @@
   "ignoreDeps": [
     "@types/react",
     "@types/react-dom",
-    "@types/react-test-renderer"
+    "@types/react-test-renderer",
+    "@umijs/babel-preset-umi",
+    "zx",
+    "react",
+    "react-dom"
   ]
 }

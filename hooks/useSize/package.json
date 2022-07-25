@@ -1,23 +1,23 @@
 {
   "name": "@pansy/use-size",
-  "version": "0.2.0",
-  "main": "dist/index.js",
+  "version": "0.2.8",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "redbud build",
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "react": "^16.8.6 || ^17.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@juggle/resize-observer": "^3.3.1",
-    "@pansy/use-raf-state": "^0.2.0",
-    "@pansy/hook-utils": "^0.2.0"
+    "@pansy/hook-utils": "0.3.0",
+    "@pansy/use-raf-state": "0.2.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

@@ -1,0 +1,8 @@
+{
+  "name": "hooks-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "hooks-scripts": "bin/hooks-scripts.js"
+  }
+}

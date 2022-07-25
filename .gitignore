@@ -5,6 +5,8 @@ node_modules
 /.nyc_output
 /.changelog
 
+.turbo
+
 dist
 lib
 cjs

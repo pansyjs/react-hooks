@@ -9,11 +9,7 @@
     "noUnusedParameters": true,
     "skipLibCheck": true,
     "target": "es2015",
-    "jsx": "react",
-    "paths": {
-      "@pansy/hook-utils": ["./hooks/utils"],
-      "@pansy/react-hooks": ["./hooks/hooks"]
-    }
+    "jsx": "react"
   },
   "exclude": [
     "**/node_modules",

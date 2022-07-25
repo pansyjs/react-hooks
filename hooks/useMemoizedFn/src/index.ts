@@ -1,4 +1,5 @@
 import { useMemo, useRef } from 'react';
+import { isFunction } from '@pansy/hook-utils';
 
 type noop = (...args: any[]) => any;
 
