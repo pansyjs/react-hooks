@@ -36,6 +36,7 @@ importers:
       '@pansy/use-raf-state': workspace:*
       '@pansy/use-request': workspace:*
       '@pansy/use-scroll': workspace:*
+      '@pansy/use-scroll-lock': workspace:*
       '@pansy/use-selections': workspace:*
       '@pansy/use-session-storage-state': workspace:*
       '@pansy/use-size': workspace:*
@@ -127,6 +128,7 @@ importers:
       '@pansy/use-raf-state': link:hooks/useRafState
       '@pansy/use-request': link:hooks/useRequest
       '@pansy/use-scroll': link:hooks/useScroll
+      '@pansy/use-scroll-lock': link:hooks/useScrollLock
       '@pansy/use-selections': link:hooks/useSelections
       '@pansy/use-session-storage-state': link:hooks/useSessionStorageState
       '@pansy/use-size': link:hooks/useSize
@@ -216,6 +218,7 @@ importers:
       '@pansy/use-raf-state': 0.2.5
       '@pansy/use-request': 0.1.6
       '@pansy/use-scroll': 0.2.8
+      '@pansy/use-scroll-lock': 1.0.0
       '@pansy/use-selections': 0.2.5
       '@pansy/use-session-storage-state': 0.2.8
       '@pansy/use-size': 0.2.8
@@ -257,6 +260,7 @@ importers:
       '@pansy/use-raf-state': link:../useRafState
       '@pansy/use-request': link:../useRequest
       '@pansy/use-scroll': link:../useScroll
+      '@pansy/use-scroll-lock': link:../useScrollLock
       '@pansy/use-selections': link:../useSelections
       '@pansy/use-session-storage-state': link:../useSessionStorageState
       '@pansy/use-size': link:../useSize
@@ -471,6 +475,14 @@ importers:
       '@pansy/hook-utils': link:../utils
       '@pansy/use-latest': link:../useLatest
       '@pansy/use-raf-state': link:../useRafState
+
+  hooks/useScrollLock:
+    specifiers:
+      '@pansy/hook-utils': ^0.3.0
+      '@pansy/shared': ^1.1.0
+    dependencies:
+      '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.1.0
 
   hooks/useSelections:
     specifiers:
@@ -5747,6 +5759,10 @@ packages:
     dependencies:
       '@octokit/openapi-types': 12.10.1
     dev: true
+
+  /@pansy/shared/1.1.0:
+    resolution: {integrity: sha512-N96YQzjETjp1KKUsLDj8iPFgDD1D3k1chcjeMSxISLnJq8Vh4kSdAP3NrzrHNl42UfvBLoe8ZGn6YCm4r42eXQ==}
+    dev: false
 
   /@pansy/types/0.2.0:
     resolution: {integrity: sha512-p4Ii7nIICkFh51th3LHfooEQg8OEeC57raRNZ57UAm1Bmt+Z1EC1qVenznXmrIs1Qmup4LA6dxva7XQ5zVfb9Q==}

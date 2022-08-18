@@ -91,6 +91,7 @@ export default {
           'useInViewport.md',
           'useKeyPress.md',
           'useScroll.md',
+          'useScrollLock.md',
           'useMouse.md',
           'useSize.md',
           'useTitle.md',

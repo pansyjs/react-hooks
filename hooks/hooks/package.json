@@ -43,6 +43,7 @@
     "@pansy/use-raf-state": "0.2.5",
     "@pansy/use-request": "0.1.6",
     "@pansy/use-scroll": "0.2.8",
+    "@pansy/use-scroll-lock": "1.0.0",
     "@pansy/use-selections": "0.2.5",
     "@pansy/use-session-storage-state": "0.2.8",
     "@pansy/use-size": "0.2.8",

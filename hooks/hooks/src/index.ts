@@ -18,6 +18,7 @@ export { useModal } from '@pansy/use-modal';
 export { usePrevious } from '@pansy/use-previous';
 export { useRafState } from '@pansy/use-raf-state';
 export { useScroll } from '@pansy/use-scroll';
+export { useScrollLock } from '@pansy/use-scroll-lock';
 export { useSelections } from '@pansy/use-selections';
 export { useSessionStorageState } from '@pansy/use-session-storage-state';
 export { useSize } from '@pansy/use-size';

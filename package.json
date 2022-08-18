@@ -52,6 +52,7 @@
     "@pansy/use-raf-state": "workspace:*",
     "@pansy/use-request": "workspace:*",
     "@pansy/use-scroll": "workspace:*",
+    "@pansy/use-scroll-lock": "workspace:*",
     "@pansy/use-selections": "workspace:*",
     "@pansy/use-session-storage-state": "workspace:*",
     "@pansy/use-size": "workspace:*",
