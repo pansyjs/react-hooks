@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-selections@0.2.5...@pansy/use-selections@0.3.0) (2022-08-18)
+
+
+### Features
+
+* add useScrollLock ([1d15f6c](https://github.com/pansyjs/react-hooks/commit/1d15f6cbdd5477b80f7b97bfe834299d6b649cef))
+
+
+
+
+
 ## [0.2.5](https://github.com/pansyjs/react-hooks/compare/@pansy/use-selections@0.2.4...@pansy/use-selections@0.2.5) (2022-07-22)
 
 **Note:** Version bump only for package @pansy/use-selections
