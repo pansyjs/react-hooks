@@ -1,8 +1,9 @@
 import { ResizeObserver } from '@juggle/resize-observer';
 import { useRafState } from '@pansy/use-raf-state';
-import { getTargetElement, useIsomorphicLayoutEffectWithTarget } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
+import { useIsomorphicLayoutEffectWithTarget } from '@pansy/hook-utils';
 
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 
 export interface Size {
   width: number;

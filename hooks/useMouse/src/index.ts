@@ -1,8 +1,8 @@
 import { useRafState } from '@pansy/use-raf-state';
 import { useEventListener } from '@pansy/use-event-listener';
-import { getTargetElement } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
 
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 import type { CursorState } from './types';
 
 const initState: CursorState = {

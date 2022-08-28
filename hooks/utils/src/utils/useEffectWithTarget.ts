@@ -1,10 +1,10 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useUnmount } from '@pansy/use-unmount';
 import { depsAreSame } from './depsAreSame';
-import { getTargetElement } from './domTarget';
+import { getTargetElement } from '@pansy/shared/react';
 
 import type { DependencyList, EffectCallback } from 'react';
-import type { BasicTarget } from './domTarget';
+import type { BasicTarget } from '@pansy/shared/react';
 
 export const createEffectWithTarget = (
   useEffectType: typeof useEffect | typeof useLayoutEffect

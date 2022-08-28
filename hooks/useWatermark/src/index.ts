@@ -1,10 +1,11 @@
 import { useRef } from 'react';
 import { Watermark, WatermarkOptions } from '@pansy/watermark'
-import { getTargetElement, useEffectWithTarget } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
+import { useEffectWithTarget } from '@pansy/hook-utils';
 import { useUnmount } from '@pansy/use-unmount';
 import { useMemoizedFn } from '@pansy/use-memoized-fn';
 
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 
 export type BaseWatermarkOptions = Omit<WatermarkOptions, 'container'>
 

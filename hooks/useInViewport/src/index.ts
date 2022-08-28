@@ -1,8 +1,9 @@
 import 'intersection-observer';
 import { useState } from 'react';
-import { getTargetElement, useEffectWithTarget } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
+import { useEffectWithTarget } from '@pansy/hook-utils';
 
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 
 export interface Options {
   rootMargin?: string;

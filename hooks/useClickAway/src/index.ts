@@ -1,9 +1,9 @@
 import { useLatest } from '@pansy/use-latest';
-import { getTargetElement } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
 // eslint-disable-next-line @typescript-eslint/no-duplicate-imports
 import { useEffectWithTarget } from '@pansy/hook-utils';
 
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 
 /**
  * 监听目标元素外的点击事件

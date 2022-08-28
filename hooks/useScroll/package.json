@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@pansy/hook-utils": "0.3.0",
+    "@pansy/shared": "^1.2.0",
     "@pansy/use-latest": "0.2.4",
     "@pansy/use-raf-state": "0.2.5"
   },

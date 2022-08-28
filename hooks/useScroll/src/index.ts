@@ -1,6 +1,7 @@
 import { useLatest } from '@pansy/use-latest';
 import { useRafState } from '@pansy/use-raf-state';
-import { getTargetElement, useEffectWithTarget } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
+import { useEffectWithTarget } from '@pansy/hook-utils';
 
 import type { Position, ScrollListenController, Target } from './types';
 

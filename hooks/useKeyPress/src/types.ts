@@ -1,4 +1,4 @@
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 
 export type KeyType = number | string;
 

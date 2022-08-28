@@ -3,7 +3,7 @@ import isEqual from 'lodash/isEqual';
 import { useEffectWithTarget } from './useEffectWithTarget';
 
 import type { DependencyList, EffectCallback } from 'react';
-import type { BasicTarget } from './domTarget';
+import type { BasicTarget } from '@pansy/shared/react';
 
 const depsEqual = (aDeps: DependencyList, bDeps: DependencyList = []) => {
   return isEqual(aDeps, bDeps);

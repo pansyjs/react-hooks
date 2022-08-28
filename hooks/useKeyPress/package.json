@@ -16,6 +16,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
+    "@pansy/shared": "^1.2.0",
     "@pansy/hook-utils": "0.3.0",
     "@pansy/use-latest": "0.2.4"
   },

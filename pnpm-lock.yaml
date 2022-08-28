@@ -331,9 +331,11 @@ importers:
   hooks/useEventListener:
     specifiers:
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       '@pansy/use-latest': 0.2.4
     dependencies:
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       '@pansy/use-latest': link:../useLatest
 
   hooks/useEventTarget:
@@ -357,19 +359,23 @@ importers:
   hooks/useHover:
     specifiers:
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       '@pansy/use-boolean': 0.2.5
       '@pansy/use-event-listener': 0.2.8
     dependencies:
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-event-listener': link:../useEventListener
 
   hooks/useInViewport:
     specifiers:
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       intersection-observer: ^0.12.0
     dependencies:
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       intersection-observer: 0.12.2
 
   hooks/useInfiniteScroll:
@@ -384,9 +390,11 @@ importers:
   hooks/useKeyPress:
     specifiers:
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       '@pansy/use-latest': 0.2.4
     dependencies:
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       '@pansy/use-latest': link:../useLatest
 
   hooks/useLatest:
@@ -421,10 +429,12 @@ importers:
   hooks/useMouse:
     specifiers:
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       '@pansy/use-event-listener': 0.2.8
       '@pansy/use-raf-state': 0.2.5
     dependencies:
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       '@pansy/use-event-listener': link:../useEventListener
       '@pansy/use-raf-state': link:../useRafState
 
@@ -485,11 +495,13 @@ importers:
 
   hooks/useScrollLock:
     specifiers:
-      '@pansy/hook-utils': ^0.3.0
       '@pansy/shared': ^1.2.0
+      '@pansy/use-event-listener': ^0.2.8
+      '@pansy/use-get-state': ^0.2.5
     dependencies:
-      '@pansy/hook-utils': link:../utils
       '@pansy/shared': 1.2.0
+      '@pansy/use-event-listener': link:../useEventListener
+      '@pansy/use-get-state': link:../useGetState
 
   hooks/useSelections:
     specifiers:
@@ -507,10 +519,12 @@ importers:
     specifiers:
       '@juggle/resize-observer': ^3.3.1
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       '@pansy/use-raf-state': 0.2.5
     dependencies:
       '@juggle/resize-observer': 3.3.1
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       '@pansy/use-raf-state': link:../useRafState
 
   hooks/useTimeout:
@@ -561,11 +575,13 @@ importers:
   hooks/useWatermark:
     specifiers:
       '@pansy/hook-utils': 0.3.0
+      '@pansy/shared': ^1.2.0
       '@pansy/use-memoized-fn': 0.2.5
       '@pansy/use-unmount': 0.2.5
-      '@pansy/watermark': ^2.0.10
+      '@pansy/watermark': ^2.2.1
     dependencies:
       '@pansy/hook-utils': link:../utils
+      '@pansy/shared': 1.2.0
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
       '@pansy/watermark': 2.2.1
@@ -582,11 +598,13 @@ importers:
 
   hooks/utils:
     specifiers:
+      '@pansy/shared': ^1.2.0
       '@pansy/use-memoized-fn': 0.2.5
       '@pansy/use-unmount': 0.2.5
       '@pansy/use-update-effect': 0.2.4
       lodash: ^4.17.21
     dependencies:
+      '@pansy/shared': 1.2.0
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
       '@pansy/use-update-effect': link:../useUpdateEffect

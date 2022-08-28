@@ -1,6 +1,7 @@
 import { useBoolean } from '@pansy/use-boolean';
 import { useEventListener } from '@pansy/use-event-listener';
-import type { BasicTarget } from '@pansy/hook-utils';
+
+import type { BasicTarget } from '@pansy/shared/react';
 
 export interface Options {
   onEnter?: () => void;

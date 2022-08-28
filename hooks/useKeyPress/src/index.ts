@@ -1,5 +1,6 @@
 import { useLatest } from '@pansy/use-latest';
-import { useDeepCompareEffectWithTarget, getTargetElement } from '@pansy/hook-utils';
+import { getTargetElement } from '@pansy/shared/react';
+import { useDeepCompareEffectWithTarget } from '@pansy/hook-utils';
 
 import { genKeyFormater } from './utils';
 

@@ -1,7 +1,6 @@
 export { createUpdateEffect } from '@pansy/use-update-effect';
 export { createUseStorageState } from './utils/createUseStorageState';
 export { depsAreSame } from './utils/depsAreSame';
-export { getTargetElement } from './utils/domTarget';
 export { isBrowser } from './utils/isBrowser';
 export {
   createEffectWithTarget,
@@ -15,6 +14,5 @@ export { isFunction } from './utils/isFunction';
 
 export { createDeepCompareEffect } from './createDeepCompareEffect';
 
-export type { BasicTarget } from './utils/domTarget';
 export type { OptionsWithDefaultValue, Options } from './utils/createUseStorageState';
 export type { Noop } from './types';

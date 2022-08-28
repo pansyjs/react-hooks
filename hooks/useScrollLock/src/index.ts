@@ -1,11 +1,11 @@
 import { useMemo, useEffect } from 'react';
-import { getTargetElement } from '@pansy/hook-utils';
+import { isIOS } from '@pansy/shared';
+import { getTargetElement } from '@pansy/shared/react';
 import { useGetState } from '@pansy/use-get-state';
 import { useEventListener } from '@pansy/use-event-listener';
-import { isIOS } from '@pansy/shared';
 
 import type { CSSProperties } from 'react';
-import type { BasicTarget } from '@pansy/hook-utils';
+import type { BasicTarget } from '@pansy/shared/react';
 
 export function useScrollLock(
   target: BasicTarget,
