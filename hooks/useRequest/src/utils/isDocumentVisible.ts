@@ -1,7 +1,7 @@
-import { canUseDom } from '@pansy/hook-utils';
+import { isBrowser } from '@pansy/shared';
 
 export function isDocumentVisible(): boolean {
-  if (canUseDom()) {
+  if (isBrowser) {
     return document.visibilityState !== 'hidden';
   }
   return true;

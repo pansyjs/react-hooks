@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useEventListener } from '@pansy/use-event-listener';
-import { isBrowser } from '@pansy/hook-utils';
+import { isBrowser } from '@pansy/shared';
 
 type VisibilityState = 'hidden' | 'visible' | 'prerender' | undefined;
 
@@ -14,7 +14,7 @@ const getVisibility = () => {
  * 监听页面是否可见
  * @returns
  */
- export function useDocumentVisibility(): VisibilityState {
+export function useDocumentVisibility(): VisibilityState {
   const [documentVisibility, setDocumentVisibility] = useState(() => getVisibility());
 
   useEventListener(

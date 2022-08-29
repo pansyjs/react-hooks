@@ -1,6 +1,6 @@
 import type { DependencyList } from 'react';
 import { useRef } from 'react';
-import { depsAreSame } from '@pansy/hook-utils';
+import { depsAreSame } from '@pansy/shared/react';
 
 export function useCreation<T>(factory: () => T, deps: DependencyList) {
   const { current } = useRef({

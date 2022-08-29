@@ -1,4 +1,4 @@
-import { canUseDom } from '@pansy/hook-utils';
+import { isBrowser } from '@pansy/shared';
 
 import { isDocumentVisible } from './isDocumentVisible';
 import { isOnline } from './isOnline';
@@ -13,7 +13,7 @@ export function subscribeFocus(listener: () => void) {
   };
 }
 
-if (canUseDom()) {
+if (isBrowser) {
   const revalidate = () => {
     if (!isDocumentVisible() || !isOnline()) return;
     for (let i = 0; i < listeners.length; i++) {

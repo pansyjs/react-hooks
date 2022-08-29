@@ -1,4 +1,5 @@
-import { isBrowser, createUseStorageState } from '@pansy/hook-utils';
+import { createUseStorageState } from '@pansy/hook-utils';
+import { isBrowser } from '@pansy/shared';
 
 /**
  * 将状态存储在 sessionStorage 中的 Hook

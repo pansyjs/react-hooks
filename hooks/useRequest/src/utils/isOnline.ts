@@ -1,7 +1,7 @@
-import { canUseDom } from '@pansy/hook-utils';
+import { isBrowser } from '@pansy/shared';
 
 export function isOnline(): boolean {
-  if (canUseDom() && typeof navigator.onLine !== 'undefined') {
+  if (isBrowser && typeof navigator.onLine !== 'undefined') {
     return navigator.onLine;
   }
   return true;

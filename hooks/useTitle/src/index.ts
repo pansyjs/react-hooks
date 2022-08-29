@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useUnmount } from '@pansy/use-unmount';
-import { isBrowser } from '@pansy/hook-utils';
+import { isBrowser } from '@pansy/shared';
 
 export interface Options {
   /** 组件卸载时，是否恢复上一个页面标题 */
