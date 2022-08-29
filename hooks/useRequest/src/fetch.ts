@@ -1,4 +1,4 @@
-import { isFunction } from '@pansy/hook-utils';
+import { isFunction } from '@pansy/shared';
 
 import type { MutableRefObject } from 'react';
 import type { FetchState, Options, PluginReturn, Service, Subscribe } from './types';

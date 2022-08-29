@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { isFunction } from '@pansy/shared';
 import { useMemoizedFn } from '@pansy/use-memoized-fn';
 import { useUpdateEffect } from '@pansy/use-update-effect';
 
@@ -15,10 +16,6 @@ export type FuncUpdater<T> = (previousState?: T) => T;
 
 export type StorageStateResult<T> = [T | undefined, (value?: T | FuncUpdater<T>) => void];
 export type StorageStateResultHasDefaultValue<T> = [T, (value?: T | FuncUpdater<T>) => void];
-
-function isFunction<T>(obj: any): obj is T {
-  return typeof obj === 'function';
-}
 
 export function createUseStorageState(getStorage: () => Storage | undefined) {
   function useStorageState<T = any>(key: string, options?: Options<T>): StorageStateResult<T>;

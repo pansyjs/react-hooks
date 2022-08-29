@@ -1,5 +1,5 @@
 import { useMemo, useRef } from 'react';
-import { isFunction } from '@pansy/hook-utils';
+import { isFunction } from '@pansy/shared';
 import { useMemoizedFn } from '@pansy/use-memoized-fn';
 import { useUpdate } from '@pansy/use-update';
 

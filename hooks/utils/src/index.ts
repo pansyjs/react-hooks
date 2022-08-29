@@ -10,7 +10,6 @@ export {
 export { canUseDom } from './utils/canUseDom';
 export { useIsomorphicLayoutEffectWithTarget } from './utils/useIsomorphicLayoutEffectWithTarget';
 export { useDeepCompareEffectWithTarget } from './utils/useDeepCompareWithTarget';
-export { isFunction } from './utils/isFunction';
 
 export { createDeepCompareEffect } from './createDeepCompareEffect';
 

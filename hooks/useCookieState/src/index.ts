@@ -1,4 +1,5 @@
 import Cookies from 'js-cookie';
+import { isFunction } from '@pansy/shared';
 import { useState } from 'react';
 import { useMemoizedFn } from '@pansy/use-memoized-fn';
 
@@ -6,10 +7,6 @@ export type State = string | undefined;
 
 export interface Options extends Cookies.CookieAttributes {
   defaultValue?: State | (() => State);
-}
-
-export function isFunction(obj: any): obj is Function {
-  return typeof obj === 'function';
 }
 
 export function useCookieState(cookieKey: string, options: Options = {}) {
