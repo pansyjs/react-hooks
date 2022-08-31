@@ -8,7 +8,5 @@ export {
 export { useIsomorphicLayoutEffectWithTarget } from './utils/useIsomorphicLayoutEffectWithTarget';
 export { useDeepCompareEffectWithTarget } from './utils/useDeepCompareWithTarget';
 
-export { createDeepCompareEffect } from './createDeepCompareEffect';
-
 export type { OptionsWithDefaultValue, Options } from './utils/createUseStorageState';
 export type { Noop } from './types';
