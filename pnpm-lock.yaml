@@ -32,6 +32,7 @@ importers:
       '@pansy/use-mount': workspace:*
       '@pansy/use-mouse': workspace:*
       '@pansy/use-mqtt': workspace:*
+      '@pansy/use-portal': workspace:*
       '@pansy/use-previous': workspace:*
       '@pansy/use-raf-state': workspace:*
       '@pansy/use-request': workspace:*
@@ -125,6 +126,7 @@ importers:
       '@pansy/use-mount': link:hooks/useMount
       '@pansy/use-mouse': link:hooks/useMouse
       '@pansy/use-mqtt': link:hooks/useMqtt
+      '@pansy/use-portal': link:hooks/usePortal
       '@pansy/use-previous': link:hooks/usePrevious
       '@pansy/use-raf-state': link:hooks/useRafState
       '@pansy/use-request': link:hooks/useRequest
@@ -216,6 +218,7 @@ importers:
       '@pansy/use-mount': 0.1.2
       '@pansy/use-mouse': 0.1.5
       '@pansy/use-mqtt': 0.3.1
+      '@pansy/use-portal': 0.1.0
       '@pansy/use-previous': 0.2.4
       '@pansy/use-raf-state': 0.2.5
       '@pansy/use-request': 0.1.6
@@ -258,6 +261,7 @@ importers:
       '@pansy/use-mount': link:../useMount
       '@pansy/use-mouse': link:../useMouse
       '@pansy/use-mqtt': link:../useMqtt
+      '@pansy/use-portal': link:../usePortal
       '@pansy/use-previous': link:../usePrevious
       '@pansy/use-raf-state': link:../useRafState
       '@pansy/use-request': link:../useRequest
@@ -456,6 +460,9 @@ importers:
       '@pansy/use-memoized-fn': link:../useMemoizedFn
       '@pansy/use-unmount': link:../useUnmount
       mqtt: 4.3.7
+
+  hooks/usePortal:
+    specifiers: {}
 
   hooks/usePrevious:
     specifiers: {}
