@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-hover",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@pansy/shared": "^1.4.0",
     "@pansy/use-boolean": "0.2.5",
-    "@pansy/use-event-listener": "0.2.8"
+    "@pansy/use-event-listener": "0.3.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

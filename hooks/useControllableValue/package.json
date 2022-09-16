@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-controllable-value",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.4.0",
-    "@pansy/use-memoized-fn": "0.2.5",
+    "@pansy/use-memoized-fn": "0.3.0",
     "@pansy/use-update": "0.2.4"
   },
   "publishConfig": {

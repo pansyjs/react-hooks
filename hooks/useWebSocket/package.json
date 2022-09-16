@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-web-socket",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/cjs/index.js",
   "module": "dist/index.mjs",
   "types": "dist/esm/index.d.ts",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@pansy/use-latest": "0.2.4",
-    "@pansy/use-memoized-fn": "0.2.5",
+    "@pansy/use-memoized-fn": "0.3.0",
     "@pansy/use-unmount": "0.2.5"
   },
   "publishConfig": {

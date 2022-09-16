@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-cookie-state",
   "description": "一个可以将状态存储在 Cookie 中的 Hook 。",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.4.0",
-    "@pansy/use-memoized-fn": "0.2.5",
+    "@pansy/use-memoized-fn": "0.3.0",
     "@types/js-cookie": "^2.x.x",
     "js-cookie": "^2.x.x"
   },

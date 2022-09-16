@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-deep-compare-effect@1.2.0...@pansy/use-deep-compare-effect@1.3.0) (2022-09-16)
+
+
+### Features
+
+* replace createDeepCompareEffect ([3c00fe8](https://github.com/pansyjs/react-hooks/commit/3c00fe8a33cac410f0c3d245e84027ca01431943))
+
+
+
+
+
 # [1.2.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-deep-compare-effect@1.1.0...@pansy/use-deep-compare-effect@1.2.0) (2022-07-22)
 
 

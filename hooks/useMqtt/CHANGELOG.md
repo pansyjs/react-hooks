@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.3.1...@pansy/use-mqtt@0.3.2) (2022-09-16)
+
+**Note:** Version bump only for package @pansy/use-mqtt
+
+
+
+
+
 ## [0.3.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.3.0...@pansy/use-mqtt@0.3.1) (2022-07-22)
 
 **Note:** Version bump only for package @pansy/use-mqtt

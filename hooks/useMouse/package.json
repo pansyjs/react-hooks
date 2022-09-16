@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-mouse",
   "description": "监听鼠标位置",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.4.0",
-    "@pansy/use-event-listener": "0.2.8",
+    "@pansy/use-event-listener": "0.3.0",
     "@pansy/use-raf-state": "0.2.5"
   },
   "publishConfig": {

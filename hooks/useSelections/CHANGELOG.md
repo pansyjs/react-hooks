@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-selections@0.3.0...@pansy/use-selections@0.3.1) (2022-09-16)
+
+**Note:** Version bump only for package @pansy/use-selections
+
+
+
+
+
 # [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-selections@0.2.5...@pansy/use-selections@0.3.0) (2022-08-18)
 
 

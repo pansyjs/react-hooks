@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-scroll-lock",
   "description": "Lock scrolling of the element.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -16,9 +16,9 @@
     "react": "^16.8.6 || ^17.0"
   },
   "dependencies": {
-    "@pansy/use-get-state": "^0.2.5",
-    "@pansy/use-event-listener": "^0.2.8",
-    "@pansy/shared": "^1.3.1"
+    "@pansy/shared": "^1.3.1",
+    "@pansy/use-event-listener": "0.3.0",
+    "@pansy/use-get-state": "^0.2.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
