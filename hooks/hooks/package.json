@@ -17,6 +17,7 @@
   "dependencies": {
     "@pansy/use-boolean": "0.2.5",
     "@pansy/use-click-away": "0.2.8",
+    "@pansy/use-portal": "0.1.0",
     "@pansy/use-controllable-value": "0.2.7",
     "@pansy/use-cookie-state": "0.1.3",
     "@pansy/use-creation": "0.1.4",

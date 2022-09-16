@@ -42,6 +42,7 @@ export default {
           'useRequest.md',
           'useModal.md',
           'useMqtt.md',
+          'usePortal.md',
           'useSelections.md',
           'useWebSocket.md',
         ],
