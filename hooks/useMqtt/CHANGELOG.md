@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.3](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.3.2...@pansy/use-mqtt@0.3.3) (2022-10-18)
+
+
+### Bug Fixes
+
+* 修复 module 路径配置问题 ([f46de49](https://github.com/pansyjs/react-hooks/commit/f46de4963847e688f530eaf9eeb21dca63670a9a))
+
+
+
+
+
 ## [0.3.2](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.3.1...@pansy/use-mqtt@0.3.2) (2022-09-16)
 
 **Note:** Version bump only for package @pansy/use-mqtt

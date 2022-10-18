@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/pansyjs/react-hooks/compare/@pansy/use-web-socket@0.1.6...@pansy/use-web-socket@0.1.7) (2022-10-18)
+
+
+### Bug Fixes
+
+* 修复 module 路径配置问题 ([f46de49](https://github.com/pansyjs/react-hooks/commit/f46de4963847e688f530eaf9eeb21dca63670a9a))
+
+
+
+
+
 ## [0.1.6](https://github.com/pansyjs/react-hooks/compare/@pansy/use-web-socket@0.1.5...@pansy/use-web-socket@0.1.6) (2022-09-16)
 
 **Note:** Version bump only for package @pansy/use-web-socket
