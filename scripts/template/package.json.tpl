@@ -13,7 +13,7 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "react": "^16.8.6 || ^17.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
