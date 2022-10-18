@@ -212,12 +212,12 @@ importers:
       '@pansy/use-key-press': 0.2.0
       '@pansy/use-latest': 0.2.4
       '@pansy/use-local-storage-state': 0.3.0
-      '@pansy/use-lock-fn': 1.0.4
+      '@pansy/use-lock-fn': 1.0.5
       '@pansy/use-memoized-fn': 0.3.0
       '@pansy/use-modal': 0.2.6
       '@pansy/use-mount': 0.1.2
       '@pansy/use-mouse': 0.2.0
-      '@pansy/use-mqtt': 0.3.2
+      '@pansy/use-mqtt': 0.3.3
       '@pansy/use-portal': 0.2.0
       '@pansy/use-previous': 0.2.4
       '@pansy/use-raf-state': 0.2.5
@@ -235,7 +235,7 @@ importers:
       '@pansy/use-update-effect': 0.2.4
       '@pansy/use-update-layout-effect': 0.2.9
       '@pansy/use-watermark': 0.3.0
-      '@pansy/use-web-socket': 0.1.6
+      '@pansy/use-web-socket': 0.1.7
     dependencies:
       '@pansy/use-boolean': link:../useBoolean
       '@pansy/use-click-away': link:../useClickAway
