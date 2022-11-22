@@ -223,7 +223,7 @@ importers:
       '@pansy/use-raf-state': 0.2.5
       '@pansy/use-request': 0.2.0
       '@pansy/use-scroll': 0.3.0
-      '@pansy/use-scroll-lock': 1.2.0
+      '@pansy/use-scroll-lock': 1.2.1
       '@pansy/use-selections': 0.3.1
       '@pansy/use-session-storage-state': 0.3.0
       '@pansy/use-size': 0.3.0
