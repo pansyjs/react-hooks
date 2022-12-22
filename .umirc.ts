@@ -111,15 +111,5 @@ export default {
       },
     ]
   },
-  hash: true,
-  extraBabelPlugins: [
-    [
-      'import',
-      {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
-        style: 'css',
-      },
-    ],
-  ],
+  hash: true
 }
