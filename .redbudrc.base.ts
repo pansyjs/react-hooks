@@ -1,5 +1,9 @@
 export default {
-  esm: {},
-  cjs: {},
+  esm: {
+    output: 'es',
+  },
+  cjs: {
+    output: 'lib',
+  },
   platform: 'browser'
 };
