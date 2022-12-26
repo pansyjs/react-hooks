@@ -8,11 +8,11 @@ node_modules
 .turbo
 
 dist
+es
 lib
 cjs
 esm
 esnext
-dist
 
 .DS_Store
 **/fixtures/**/dist
