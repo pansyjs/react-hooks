@@ -1,7 +1,7 @@
 import { useLatest } from '@pansy/use-latest';
+import { isArray } from '@pansy/shared'
 import { getTargetElement } from '@pansy/shared/react';
-// eslint-disable-next-line @typescript-eslint/no-duplicate-imports
-import { useEffectWithTarget } from '@pansy/hook-utils';
+import { useEffectWithTarget, getDocumentOrShadow } from '@pansy/hook-utils';
 
 import type { BasicTarget } from '@pansy/shared/react';
 
@@ -14,14 +14,14 @@ import type { BasicTarget } from '@pansy/shared/react';
 export function useClickAway<T extends Event = Event>(
   onClickAway: (event: T) => void,
   target: BasicTarget | BasicTarget[],
-  eventName = 'click',
+  eventName: string | string[] = 'click',
 ) {
   const onClickAwayRef = useLatest(onClickAway);
 
   useEffectWithTarget(
     () => {
       const handler = (event: any) => {
-        const targets = Array.isArray(target) ? target : [target];
+        const targets = isArray(target) ? target : [target];
 
         if (
           targets.some((item) => {
@@ -34,13 +34,16 @@ export function useClickAway<T extends Event = Event>(
         onClickAwayRef.current(event);
       };
 
-      document.addEventListener(eventName, handler);
+      const documentOrShadow = getDocumentOrShadow(target);
+      const eventNames = isArray(eventName) ? eventName : [eventName];
+
+      eventNames.forEach((event) => documentOrShadow.addEventListener(event, handler));
 
       return () => {
-        document.removeEventListener(eventName, handler);
+        eventNames.forEach((event) => documentOrShadow.removeEventListener(event, handler));
       };
     },
-    [eventName],
+    isArray(eventName) ? eventName : [eventName],
     target,
   );
 }

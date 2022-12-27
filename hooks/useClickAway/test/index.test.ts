@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import { renderHook } from '@testing-library/react-hooks/dom';
+import { renderHook } from '@testing-library/react';
 import { useClickAway } from '../src/index';
 
 describe('useClickAway', () => {
@@ -13,6 +13,8 @@ describe('useClickAway', () => {
   beforeEach(() => {
     container = document.createElement('div');
     container1 = document.createElement('div');
+    container1.setAttribute('id', 'ele');
+
     document.body.appendChild(container);
     document.body.appendChild(container1);
   });

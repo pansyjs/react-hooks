@@ -1,5 +1,5 @@
-import { useRef } from 'react';
 import isEqual from 'lodash/isEqual';
+import { useRef } from 'react';
 import { useEffectWithTarget } from './useEffectWithTarget';
 
 import type { DependencyList, EffectCallback } from 'react';
@@ -23,5 +23,4 @@ export const useDeepCompareEffectWithTarget = (
   }
 
   useEffectWithTarget(effect, [signalRef.current], target);
-}
-
+};

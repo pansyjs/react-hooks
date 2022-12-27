@@ -8,6 +8,11 @@ export interface Actions {
   toggle: () => void;
 }
 
+/**
+ * 优雅的管理 boolean 状态的 Hook
+ * @param defaultValue 默认的状态值
+ * @returns
+ */
 export function useBoolean(defaultValue = false): [boolean, Actions] {
   const [state, { toggle, set }] = useToggle(defaultValue);
 
