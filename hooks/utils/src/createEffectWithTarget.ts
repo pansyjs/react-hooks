@@ -1,8 +1,7 @@
 import { useRef } from 'react';
 import { isArray } from '@pansy/shared';
-import { getTargetElement } from '@pansy/shared/react';
+import { getTargetElement, depsAreSame } from '@pansy/shared/react';
 import { useUnmount } from '@pansy/use-unmount'
-import { depsAreSame } from './depsAreSame';
 
 import type { DependencyList, EffectCallback, useEffect, useLayoutEffect } from 'react';
 import type { BasicTarget } from '@pansy/shared/react';

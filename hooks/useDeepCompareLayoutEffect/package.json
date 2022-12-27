@@ -1,0 +1,27 @@
+{
+  "name": "@pansy/use-deep-compare-layout-effect",
+  "version": "1.0.0",
+  "description": "用法与 useLayoutEffect 一致，但 deps 通过 lodash isEqual 进行深比较",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "redbud dev",
+    "build": "redbud build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@pansy/shared": "^1.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
