@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import { useTitle } from '../src/index';
 
 describe('useTitle', () => {
@@ -8,8 +8,8 @@ describe('useTitle', () => {
 
   it('should update document title', () => {
     const hook = renderHook((props) => useTitle(props), { initialProps: 'Current Page Title' });
-
     expect(document.title).toBe('Current Page Title');
+
     act(() => {
       hook.rerender('Other Page Title');
     });
@@ -22,7 +22,6 @@ describe('useTitle', () => {
     const hook = renderHook((props) => useTitle(props, { restoreOnUnmount: true }), {
       initialProps: 'Current Page Title',
     });
-
     expect(document.title).toBe('Current Page Title');
 
     hook.unmount();

@@ -1,16 +1,18 @@
 {
   "name": "{{{ name }}}",
-  "description":  "{{{ description }}}",
+  "description": "{{{ description }}}",
   "version": "1.0.0",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "scripts": {
-     "build": "redbud build",
-    "release": "semantic-release"
+    "dev": "redbud dev",
+    "build": "redbud build"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"

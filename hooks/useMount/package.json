@@ -2,15 +2,17 @@
   "name": "@pansy/use-mount",
   "description": "只在组件初始化时执行的 Hook。",
   "version": "0.1.2",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "scripts": {
-    "build": "redbud build",
-    "release": "semantic-release"
+    "dev": "redbud dev",
+    "build": "redbud build"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"

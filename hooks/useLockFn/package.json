@@ -1,13 +1,16 @@
 {
   "name": "@pansy/use-lock-fn",
   "version": "1.0.5",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "scripts": {
+    "dev": "redbud dev",
     "build": "redbud build"
   },
   "peerDependencies": {

@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
+import { isNumber } from '@pansy/shared'
 import { useLatest } from '@pansy/use-latest';
 
 /**
@@ -11,19 +12,32 @@ export function useTimeout(
   delay: number | undefined
 ) {
   const fnRef = useLatest(fn);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(
     () => {
-      if (typeof delay !== 'number' || delay < 0) return;
+      if (!isNumber(delay) || delay < 0) {
+        return;
+      }
 
-      const timer = setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         fnRef.current();
       }, delay);
 
       return () => {
-        clearTimeout(timer);
+        if (timerRef.current) {
+          clearTimeout(timerRef.current);
+        }
       };
     },
     [delay]
   )
+
+  const clear = useCallback(() => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+  }, []);
+
+  return clear;
 }

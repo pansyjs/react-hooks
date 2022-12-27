@@ -1,15 +1,17 @@
 {
   "name": "@pansy/react-hooks",
   "version": "1.0.1",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "scripts": {
-    "build": "redbud build",
-    "release": "semantic-release"
+    "dev": "redbud dev",
+    "build": "redbud build"
   },
   "sideEffects": false,
   "peerDependencies": {

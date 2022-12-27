@@ -2,13 +2,16 @@
   "name": "@pansy/use-portal",
   "description": "提供了一种将子节点渲染到已有 DOM 节点中的方式，主要用于地图类服务的封装。",
   "version": "0.2.0",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "scripts": {
+    "dev": "redbud dev",
     "build": "redbud build"
   },
   "peerDependencies": {

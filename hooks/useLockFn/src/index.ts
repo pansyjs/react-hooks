@@ -5,7 +5,7 @@ import { useRef, useCallback } from 'react';
  * @param fn
  * @returns
  */
-export function useLockFn<P extends any[] = any[], V = any>(
+export function useLockFn<P extends any[] = any[], V extends any = any>(
   fn: (...args: P) => Promise<V>
 ) {
   const lockRef = useRef(false);

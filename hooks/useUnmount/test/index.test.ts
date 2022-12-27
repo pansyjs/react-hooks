@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 import { useUnmount } from '../src/index';
 
 describe('useUnmount', () => {
@@ -8,13 +8,14 @@ describe('useUnmount', () => {
 
   it('useUnmount should work', async () => {
     const fn = jest.fn();
-
-    const hook = renderHook(() => { useUnmount(fn); });
+    const { rerender, unmount } = renderHook(() => useUnmount(fn));
 
     expect(fn).toBeCalledTimes(0);
-    hook.rerender();
+
+    rerender();
     expect(fn).toBeCalledTimes(0);
-    hook.rerender();
+
+    unmount();
     expect(fn).toBeCalledTimes(1);
   });
 });

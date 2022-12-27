@@ -1,6 +1,7 @@
 {
   "name": "@pansy/use-boolean",
   "version": "0.2.5",
+  "description": "优雅的管理 boolean 状态的 Hook",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -10,6 +11,7 @@
     "dist"
   ],
   "scripts": {
+    "dev": "redbud dev",
     "build": "redbud build"
   },
   "peerDependencies": {

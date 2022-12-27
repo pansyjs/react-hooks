@@ -5,10 +5,10 @@ export interface Actions<T> {
   setLeft: () => void;
   /** 设置为 reverseValue */
   setRight: () => void;
-  /** 切换 state */
-  toggle: () => void;
   /** 修改 state */
   set: (value: T) => void;
+  /** 切换 state */
+  toggle: () => void;
 }
 
 export function useToggle<T = boolean>(): [boolean, Actions<T>];

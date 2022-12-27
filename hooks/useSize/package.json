@@ -1,23 +1,25 @@
 {
   "name": "@pansy/use-size",
   "version": "0.3.0",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
+    "es",
+    "lib",
     "dist"
   ],
   "scripts": {
-    "build": "redbud build",
-    "release": "semantic-release"
+    "dev": "redbud dev",
+    "build": "redbud build"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@juggle/resize-observer": "^3.3.1",
+    "@juggle/resize-observer": "^3.4.0",
     "@pansy/hook-utils": "0.4.0",
-    "@pansy/shared": "^1.4.0",
+    "@pansy/shared": "^1.9.0",
     "@pansy/use-raf-state": "0.2.5"
   },
   "publishConfig": {
