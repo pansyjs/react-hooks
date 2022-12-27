@@ -27,23 +27,24 @@ export function useControllableValue<T = any>(
   } = options;
 
   const value = props[valuePropName] as T;
-  const isControlled = valuePropName in props;
+  const isControlled = props.hasOwnProperty(valuePropName);
 
   const initialValue = useMemo(
     () => {
       if (isControlled) {
         return value;
       }
-      if (defaultValuePropName in props) {
+
+      if (props.hasOwnProperty(defaultValuePropName)) {
         return props[defaultValuePropName];
       }
+
       return defaultValue;
     },
     []
   );
 
   const stateRef = useRef(initialValue);
-
   if (isControlled) {
     stateRef.current = value;
   }
@@ -51,12 +52,13 @@ export function useControllableValue<T = any>(
   const update = useUpdate();
 
   const setState = (v: SetStateAction<T>, ...args: any[]) => {
-    const r = isFunction(v) ? (v as ((prevState: T) => T))(stateRef.current) : v;
+    const r = isFunction(v) ? v(stateRef.current) : v;
 
     if (!isControlled) {
       stateRef.current = r;
       update();
     }
+
     if (props[trigger]) {
       props[trigger](r, ...args);
     }

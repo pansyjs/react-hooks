@@ -1,14 +1,15 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import { useControllableValue } from '../src/index';
+
 import type { Options, Props }  from '../src/index';
+
+const setUp = (props?: Props, options?: Options<any>): any =>
+  renderHook(() => useControllableValue(props, options));
 
 describe('useControllableValue', () => {
   it('should be defined', () => {
     expect(useControllableValue).toBeDefined();
   });
-
-  const setUp = (props?: Props, options?: Options<any>): any =>
-    renderHook(() => useControllableValue(props, options));
 
   it('defaultValue should work', () => {
     const hook = setUp({ defaultValue: 1 });
@@ -44,7 +45,7 @@ describe('useControllableValue', () => {
   });
 
   it('test on state update', () => {
-    const props: any = {
+    const props = {
       value: 1,
     };
     const { result, rerender } = setUp(props);
@@ -69,6 +70,9 @@ describe('useControllableValue', () => {
 
     act(() => setValue(55));
     expect(result.current[0]).toEqual(55);
+
+    act(() => setValue((prevState) => prevState + 1));
+    expect(result.current[0]).toEqual(56);
   });
 
   it('type inference should work', async () => {
@@ -89,7 +93,7 @@ describe('useControllableValue', () => {
       onChange: () => {},
     };
     const hook = renderHook(() => useControllableValue(props));
-    const [v, setV] = hook.result.current;
+    const [v] = hook.result.current;
     expect(v.foo).toBe(123);
   });
 });
