@@ -24,6 +24,7 @@
     "@pansy/use-cookie-state": "0.2.0",
     "@pansy/use-creation": "0.2.0",
     "@pansy/use-deep-compare-effect": "1.3.0",
+    "@pansy/use-deep-compare-layout-effect": "1.0.0",
     "@pansy/use-document-visibility": "0.3.0",
     "@pansy/use-event-listener": "0.3.0",
     "@pansy/use-event-target": "0.2.5",

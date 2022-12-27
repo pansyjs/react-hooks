@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-cookie-state",
-  "description": "一个可以将状态存储在 Cookie 中的 Hook 。",
+  "description": "一个可以将状态存储在 Cookie 中的 Hook",
   "version": "0.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",

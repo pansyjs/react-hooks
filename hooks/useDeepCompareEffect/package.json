@@ -1,6 +1,7 @@
 {
   "name": "@pansy/use-deep-compare-effect",
   "version": "1.3.0",
+  "description": "用法与 useEffect 一致，但 deps 通过 lodash isEqual 进行深比较",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

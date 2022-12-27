@@ -204,6 +204,7 @@ importers:
       '@pansy/use-cookie-state': 0.2.0
       '@pansy/use-creation': 0.2.0
       '@pansy/use-deep-compare-effect': 1.3.0
+      '@pansy/use-deep-compare-layout-effect': 1.0.0
       '@pansy/use-document-visibility': 0.3.0
       '@pansy/use-event-listener': 0.3.0
       '@pansy/use-event-target': 0.2.5
@@ -247,6 +248,7 @@ importers:
       '@pansy/use-cookie-state': link:../useCookieState
       '@pansy/use-creation': link:../useCreation
       '@pansy/use-deep-compare-effect': link:../useDeepCompareEffect
+      '@pansy/use-deep-compare-layout-effect': link:../useDeepCompareLayoutEffect
       '@pansy/use-document-visibility': link:../useDocumentVisibility
       '@pansy/use-event-listener': link:../useEventListener
       '@pansy/use-event-target': link:../useEventTarget
@@ -331,6 +333,12 @@ importers:
       '@pansy/shared': 1.9.0
 
   hooks/useDeepCompareEffect:
+    specifiers:
+      '@pansy/shared': ^1.9.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+
+  hooks/useDeepCompareLayoutEffect:
     specifiers:
       '@pansy/shared': ^1.9.0
     dependencies:
