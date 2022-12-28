@@ -551,15 +551,15 @@ importers:
 
   hooks/useSize:
     specifiers:
-      '@juggle/resize-observer': ^3.4.0
       '@pansy/hook-utils': 0.4.0
       '@pansy/shared': ^1.9.0
       '@pansy/use-raf-state': 0.2.5
+      resize-observer-polyfill: ^1.5.1
     dependencies:
-      '@juggle/resize-observer': 3.4.0
       '@pansy/hook-utils': link:../utils
       '@pansy/shared': 1.9.0
       '@pansy/use-raf-state': link:../useRafState
+      resize-observer-polyfill: 1.5.1
 
   hooks/useTimeout:
     specifiers:
@@ -3835,10 +3835,6 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
-
-  /@juggle/resize-observer/3.4.0:
-    resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
-    dev: false
 
   /@lerna/add/4.0.0:
     resolution: {integrity: sha512-cpmAH1iS3k8JBxNvnMqrGTTjbY/ZAiKa1ChJzFevMYY3eeqbvhsBKnBcxjRXtdrJ6bd3dCQM+ZtK+0i682Fhng==}
@@ -19742,7 +19738,6 @@ packages:
 
   /resize-observer-polyfill/1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
-    dev: true
 
   /resolve-alpn/1.2.1:
     resolution: {integrity: sha512-0a1F4l73/ZFZOakJnQ3FvkJ2+gSTQWz/r2KE5OdDY0TxPm5h4GkqkWWfM47T7HsbnOtcJVEF4epCVy6u7Q3K+g==}

@@ -1,4 +1,4 @@
-import { ResizeObserver } from '@juggle/resize-observer';
+import ResizeObserver from 'resize-observer-polyfill';
 import { useRafState } from '@pansy/use-raf-state';
 import { isBrowser } from '@pansy/shared';
 import { getTargetElement } from '@pansy/shared/react';

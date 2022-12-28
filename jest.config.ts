@@ -10,6 +10,7 @@ const config: Config.InitialOptions = {
   resetMocks: false,
   setupFiles: [
     ...(defaultConfig.setupFiles || []),
+    './tests/setupFile.ts',
     'jest-localstorage-mock'
   ],
   setupFilesAfterEnv: [
