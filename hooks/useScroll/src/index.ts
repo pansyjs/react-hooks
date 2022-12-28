@@ -3,7 +3,16 @@ import { useRafState } from '@pansy/use-raf-state';
 import { getTargetElement } from '@pansy/shared/react';
 import { useEffectWithTarget } from '@pansy/hook-utils';
 
-import type { Position, ScrollListenController, Target } from './types';
+import type { BasicTarget } from '@pansy/shared/react';
+
+export interface Position {
+  left: number;
+  top: number;
+  direction?: 'top' | 'bottom' | 'left' | 'right';
+};
+
+export type Target = BasicTarget<Element | Document>;
+export type ScrollListenController = (val: Position) => boolean;
 
 /**
  * 监听元素的滚动位置

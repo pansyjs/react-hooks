@@ -4,7 +4,21 @@ import { useMemoizedFn } from '@pansy/use-memoized-fn';
 import { useUpdate } from '@pansy/use-update';
 
 import type { SetStateAction } from 'react';
-import type { Props, StandardProps, Options, } from './types';
+
+export type Props = Record<string, any>;
+
+export interface StandardProps<T> {
+  value: T;
+  defaultValue?: T;
+  onChange: (val: T) => void;
+}
+
+export interface Options<T> {
+  defaultValue?: T;
+  defaultValuePropName?: string;
+  valuePropName?: string;
+  trigger?: string;
+}
 
 export function useControllableValue<T = any>(
   props: StandardProps<T>
@@ -65,10 +79,4 @@ export function useControllableValue<T = any>(
   };
 
   return [stateRef.current, useMemoizedFn(setState)] as const;
-}
-
-export type {
-  Props,
-  StandardProps,
-  Options,
 }
