@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-interval@0.2.5...@pansy/use-interval@0.3.0) (2022-12-28)
+
+
+### Features
+
+* useInterval return clear fun ([938f3c5](https://github.com/pansyjs/react-hooks/commit/938f3c5f07e71e9368e0a4d293982261a71999bb))
+
+
+
+
+
 ## [0.2.5](https://github.com/pansyjs/react-hooks/compare/@pansy/use-interval@0.2.4...@pansy/use-interval@0.2.5) (2022-07-22)
 
 **Note:** Version bump only for package @pansy/use-interval

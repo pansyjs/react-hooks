@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-external",
   "description": "动态注入 JS 或 CSS 资源，useExternal 可以保证资源全局唯一",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-controllable-value@0.3.0...@pansy/use-controllable-value@0.4.0) (2022-12-28)
+
+
+### Features
+
+* **useControllableValue:** 代码优化 ([fdb8007](https://github.com/pansyjs/react-hooks/commit/fdb80071042c74c1b23367463b779c246d4b7464))
+
+
+
+
+
 # [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-controllable-value@0.2.7...@pansy/use-controllable-value@0.3.0) (2022-09-16)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-click-away@0.3.0...@pansy/use-click-away@0.4.0) (2022-12-28)
+
+
+### Features
+
+* **useClickAway:** 支持监听其它事件 ([88962b5](https://github.com/pansyjs/react-hooks/commit/88962b55d29a5df0c83e655651bb999611d7b88f))
+
+
+
+
+
 # [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-click-away@0.2.8...@pansy/use-click-away@0.3.0) (2022-09-16)
 
 

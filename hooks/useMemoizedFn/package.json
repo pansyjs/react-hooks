@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-memoized-fn",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "持久化 function 的 Hook",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-toggle": "0.2.4"
+    "@pansy/use-toggle": "0.2.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-deep-compare-layout-effect",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "用法与 useLayoutEffect 一致，但 deps 通过 lodash isEqual 进行深比较",
   "main": "lib/index.js",
   "module": "es/index.js",

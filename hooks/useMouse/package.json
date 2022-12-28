@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-mouse",
   "description": "监听鼠标位置",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.9.0",
-    "@pansy/use-event-listener": "0.3.0",
-    "@pansy/use-raf-state": "0.2.5"
+    "@pansy/use-event-listener": "0.3.1",
+    "@pansy/use-raf-state": "0.2.6"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

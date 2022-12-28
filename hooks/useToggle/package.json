@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-toggle",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "用于在两个状态值间切换的 Hook",
   "main": "lib/index.js",
   "module": "es/index.js",

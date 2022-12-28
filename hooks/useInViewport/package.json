@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-in-viewport",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "观察元素是否在可见区域，以及元素可见比例",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.4.0",
+    "@pansy/hook-utils": "0.5.0",
     "@pansy/shared": "^1.9.0",
     "intersection-observer": "^0.12.2"
   },

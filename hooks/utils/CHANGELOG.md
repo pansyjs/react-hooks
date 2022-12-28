@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/pansyjs/react-hooks/compare/@pansy/hook-utils@0.4.0...@pansy/hook-utils@0.5.0) (2022-12-28)
+
+
+### Features
+
+* **useClickAway:** 支持监听其它事件 ([88962b5](https://github.com/pansyjs/react-hooks/commit/88962b55d29a5df0c83e655651bb999611d7b88f))
+* **useDeepCompareLayoutEffect:** add useDeepCompareLayoutEffect hooks ([c5897d9](https://github.com/pansyjs/react-hooks/commit/c5897d90f9b017cee971d01bd9cb95c817124bcb))
+* **useKeyPress:** 支持设置 useCapture ([1d01d43](https://github.com/pansyjs/react-hooks/commit/1d01d436a1fc1fb2c6d7d143b6207f3cd4810f81))
+
+
+
+
+
 # [0.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/hook-utils@0.3.0...@pansy/hook-utils@0.4.0) (2022-09-16)
 
 

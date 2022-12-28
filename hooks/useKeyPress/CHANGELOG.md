@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-key-press@0.2.0...@pansy/use-key-press@0.3.0) (2022-12-28)
+
+
+### Features
+
+* **useKeyPress:** 支持设置 useCapture ([1d01d43](https://github.com/pansyjs/react-hooks/commit/1d01d436a1fc1fb2c6d7d143b6207f3cd4810f81))
+
+
+
+
+
 # [0.2.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-key-press@0.1.7...@pansy/use-key-press@0.2.0) (2022-09-16)
 
 
