@@ -89,7 +89,7 @@
     "antd": "5.1.1",
     "conventional-changelog-cli": "2.2.2",
     "conventional-changelog-gitmoji-config": "1.4.4",
-    "dumi": "1.1.47",
+    "dumi": "1.1.50",
     "eslint": "8.30.0",
     "eslint-config-alloy": "4.7.0",
     "eslint-config-prettier": "8.5.0",
