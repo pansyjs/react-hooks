@@ -2,11 +2,11 @@ import { useRef } from 'react';
 import { useCreation } from '@pansy/use-creation';
 import { useUnmount } from '@pansy/use-unmount';
 import * as cache from '../utils/cache';
-import type { CachedData } from '../utils/cache';
 import * as cachePromise from '../utils/cachePromise';
 import * as cacheSubscribe from '../utils/cacheSubscribe';
 
 import type { Plugin } from '../types';
+import type { CachedData } from '../utils/cache';
 
 export const useCachePlugin: Plugin<any, any[]> = (
   fetchInstance,
@@ -80,12 +80,14 @@ export const useCachePlugin: Plugin<any, any[]> = (
         return {
           loading: false,
           data: cacheData?.data,
+          error: undefined,
           returnNow: true,
         };
       } else {
         // If the data is stale, return data, and request continue
         return {
           data: cacheData?.data,
+          error: undefined,
         };
       }
     },

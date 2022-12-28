@@ -159,16 +159,9 @@ export default class Fetch<D, P extends any[]> {
   }
 
   mutate(data?: D | ((oldData?: D) => D | undefined)) {
-    let targetData: D | undefined;
-    if (typeof data === 'function') {
-      // @ts-ignore
-      targetData = data(this.state.data);
-    } else {
-      targetData = data;
-    }
+    const targetData = isFunction(data) ? data(this.state.data) : data;
 
     this.runPluginHandler('onMutate', targetData);
-
     this.setState({
       data: targetData,
     });

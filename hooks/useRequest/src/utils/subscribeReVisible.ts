@@ -2,10 +2,13 @@ import { isBrowser } from '@pansy/shared';
 
 import { isDocumentVisible, } from './isDocumentVisible';
 
-const listeners: any[] = [];
+type Listener = () => void;
 
-export function subscribeReVisible(listener: () => void) {
+const listeners: Listener[] = [];
+
+export function subscribeReVisible(listener: Listener) {
   listeners.push(listener);
+
   return function unsubscribe() {
     const index = listeners.indexOf(listener);
     listeners.splice(index, 1);

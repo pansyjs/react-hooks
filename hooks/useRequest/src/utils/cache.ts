@@ -1,4 +1,4 @@
-type Timer = ReturnType<typeof setTimeout>;
+type Timeout = ReturnType<typeof setTimeout>;
 type CachedKey = string | number;
 
 export interface CachedData<TData = any, TParams = any> {
@@ -6,8 +6,9 @@ export interface CachedData<TData = any, TParams = any> {
   params: TParams;
   time: number;
 }
+
 interface RecordData extends CachedData {
-  timer: Timer | undefined;
+  timer: Timeout | undefined;
 }
 
 const cache = new Map<CachedKey, RecordData>();
@@ -18,7 +19,7 @@ const setCache = (key: CachedKey, cacheTime: number, cachedData: CachedData) => 
     clearTimeout(currentCache.timer);
   }
 
-  let timer: Timer | undefined = undefined;
+  let timer: Timeout | undefined = undefined;
 
   if (cacheTime > -1) {
     // if cache out, clear it

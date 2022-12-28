@@ -3,13 +3,18 @@ import { isBrowser } from '@pansy/shared';
 import { isDocumentVisible } from './isDocumentVisible';
 import { isOnline } from './isOnline';
 
-const listeners: any[] = [];
+type Listener = () => void;
 
-export function subscribeFocus(listener: () => void) {
+const listeners: Listener[] = [];
+
+export function subscribeFocus(listener: Listener) {
   listeners.push(listener);
+
   return function unsubscribe() {
     const index = listeners.indexOf(listener);
-    listeners.splice(index, 1);
+    if (index > -1) {
+      listeners.splice(index, 1);
+    }
   };
 }
 

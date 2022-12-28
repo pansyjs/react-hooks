@@ -45,6 +45,7 @@ export interface Options<D, P extends any[]> {
    * 如果设置为 false，在页面隐藏时会暂时停止轮询，页面重新显示时继续上次轮询
    */
   pollingWhenHidden?: boolean;
+  pollingErrorRetryCount?: number;
   /**
    * 依赖数组，当数组内容变化后，发起请求
    */

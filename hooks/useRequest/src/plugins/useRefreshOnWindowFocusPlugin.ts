@@ -23,6 +23,7 @@ export const useRefreshOnWindowFocusPlugin: Plugin<any, any[]> = (
         limitRefresh();
       });
     }
+
     return () => {
       stopSubscribe();
     };
