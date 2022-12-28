@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { act, renderHook, RenderHookResult } from '@testing-library/react-hooks';
+import { act, renderHook, RenderHookResult } from '@testing-library/react';
 import { useMemoizedFn } from '../src/index';
 
 const useCount = () => {
@@ -14,7 +14,7 @@ const useCount = () => {
   return { addCount, memoizedFn };
 };
 
-let hook: RenderHookResult<[], ReturnType<typeof useCount>>;
+let hook;
 
 describe('useMemoizedFn', () => {
   it('should be defined', () => {

@@ -1,9 +1,14 @@
 import { ResizeObserver } from '@juggle/resize-observer';
 import { useRafState } from '@pansy/use-raf-state';
+import { isBrowser } from '@pansy/shared';
 import { getTargetElement } from '@pansy/shared/react';
-import { useIsomorphicLayoutEffectWithTarget } from '@pansy/hook-utils';
+import { useLayoutEffectWithTarget, useEffectWithTarget } from '@pansy/hook-utils';
 
 import type { BasicTarget } from '@pansy/shared/react';
+
+const useIsomorphicLayoutEffectWithTarget = isBrowser
+  ? useLayoutEffectWithTarget
+  : useEffectWithTarget;
 
 export interface Size {
   width: number;

@@ -1,4 +1,4 @@
-import { renderHook, act } from '@testing-library/react-hooks';
+import { renderHook, act } from '@testing-library/react';
 import { useModal } from '../src/index';
 
 const setUp = <T>() => renderHook(() => useModal<T>());
@@ -6,11 +6,6 @@ const setUp = <T>() => renderHook(() => useModal<T>());
 describe('useModal', () => {
   it('should be defined', () => {
     expect(useModal).toBeDefined();
-  });
-
-  it('should render', () => {
-    const { result } = setUp();
-    expect(result.error).toBeUndefined();
   });
 
   it('should default state', () => {

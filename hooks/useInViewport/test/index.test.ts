@@ -39,8 +39,7 @@ describe('useInViewport', () => {
   it('should not work when target is null', async () => {
     renderHook(() => useInViewport(null));
     const calls = mockIntersectionObserver.mock.calls;
-    console.log(calls);
-    expect(calls[calls.length - 1].root).toBeUndefined();
+    expect(calls[calls.length - 1]).toBeUndefined();
   });
 
   it('should disconnect when unmount', async () => {

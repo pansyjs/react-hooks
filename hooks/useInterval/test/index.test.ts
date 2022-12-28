@@ -12,6 +12,7 @@ const setUp = ({ fn, delay, options }: ParamsObj) =>
 
 describe('useInterval', () => {
   jest.useFakeTimers();
+  jest.spyOn(global, 'clearInterval');
 
   it('should be defined', () => {
     expect(useInterval).toBeDefined();
@@ -49,7 +50,6 @@ describe('useInterval', () => {
   });
 
   it('interval should be clear', () => {
-    jest.spyOn(global, 'clearInterval');
     const callback = jest.fn();
     const hook = setUp({ fn: callback, delay: 20 });
 
