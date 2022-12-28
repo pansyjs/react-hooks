@@ -6,6 +6,10 @@ const defaultConfig = createConfig({
 
 const config: Config.InitialOptions = {
   ...defaultConfig,
+  setupFilesAfterEnv: [
+    ...(defaultConfig.setupFilesAfterEnv || []),
+    './tests/setupFilesAfterEnv.ts'
+  ],
 };
 
 export default config;
