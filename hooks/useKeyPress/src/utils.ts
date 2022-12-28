@@ -1,6 +1,20 @@
+import { isNumber, isFunction, isString } from '@pansy/shared';
 import { aliasKeyCodeMap } from './config';
 
-import type { KeyFilter, KeyPredicate, KeyType } from './types';
+import type { KeyType, KeyFilter, KeyPredicate,  } from './types';
+
+// 修饰键
+const modifierKey = {
+  ctrl: (event: KeyboardEvent) => event.ctrlKey,
+  shift: (event: KeyboardEvent) => event.shiftKey,
+  alt: (event: KeyboardEvent) => event.altKey,
+  meta: (event: KeyboardEvent) => {
+    if (event.type === 'keyup') {
+      return aliasKeyCodeMap['meta'].includes(event.keyCode);
+    }
+    return event.metaKey;
+  },
+};
 
 // 根据 event 计算激活键数量
 export function countKeyByEvent(event: KeyboardEvent) {
@@ -16,31 +30,23 @@ export function countKeyByEvent(event: KeyboardEvent) {
   return [16, 17, 18, 91, 92].includes(event.keyCode) ? countOfModifier : countOfModifier + 1;
 }
 
-// 修饰键
-const modifierKey = {
-  ctrl: (event: KeyboardEvent) => event.ctrlKey,
-  shift: (event: KeyboardEvent) => event.shiftKey,
-  alt: (event: KeyboardEvent) => event.altKey,
-  meta: (event: KeyboardEvent) => event.metaKey,
-};
-
 /**
  * 键盘输入预处理方法
  * @param [keyFilter: any] 当前键
  * @returns () => Boolean
  */
-export function genKeyFormater(keyFilter: KeyFilter, exactMatch: boolean): KeyPredicate {
-  if (typeof keyFilter === 'function') {
+export function genKeyFormatter(keyFilter: KeyFilter, exactMatch: boolean): KeyPredicate {
+  if (isFunction(keyFilter)) {
     return keyFilter;
   }
-  if (typeof keyFilter === 'string' || typeof keyFilter === 'number') {
+  if (isString(keyFilter) || isNumber(keyFilter)) {
     return (event: KeyboardEvent) => genFilterKey(event, keyFilter, exactMatch);
   }
   if (Array.isArray(keyFilter)) {
     return (event: KeyboardEvent) =>
       keyFilter.some((item) => genFilterKey(event, item, exactMatch));
   }
-  return keyFilter ? () => true : () => false;
+  return () => Boolean(keyFilter);
 }
 
 /**
@@ -56,7 +62,7 @@ export function genFilterKey(event: KeyboardEvent, keyFilter: KeyType, exactMatc
   }
 
   // 数字类型直接匹配事件的 keyCode
-  if (typeof keyFilter === 'number') {
+  if (isNumber(keyFilter)) {
     return event.keyCode === keyFilter;
   }
 

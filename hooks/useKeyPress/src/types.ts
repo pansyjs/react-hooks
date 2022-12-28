@@ -14,6 +14,7 @@ export interface Options {
   events?: KeyEvent[];
   target?: Target;
   exactMatch?: boolean;
+  useCapture?: boolean;
 }
 
 export type KeyPredicate = (event: KeyboardEvent) => boolean;

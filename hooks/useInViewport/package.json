@@ -1,6 +1,7 @@
 {
   "name": "@pansy/use-in-viewport",
   "version": "0.3.0",
+  "description": "观察元素是否在可见区域，以及元素可见比例",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

@@ -1,3 +1,5 @@
+import { isAppleDevice } from '@pansy/hook-utils';
+
 // 键盘事件 keyCode 别名
 export const aliasKeyCodeMap = {
   '0': 48,
@@ -100,3 +102,9 @@ export const aliasKeyCodeMap = {
   closebracket: 221,
   singlequote: 222,
 };
+
+if (isAppleDevice) {
+  aliasKeyCodeMap['meta'] = [91, 93];
+} else {
+  aliasKeyCodeMap['meta'] = [91, 92];
+}

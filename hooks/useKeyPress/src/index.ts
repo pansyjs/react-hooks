@@ -1,8 +1,7 @@
 import { useLatest } from '@pansy/use-latest';
 import { getTargetElement } from '@pansy/shared/react';
 import { useDeepCompareEffectWithTarget } from '@pansy/hook-utils';
-
-import { genKeyFormater } from './utils';
+import { genKeyFormatter } from './utils';
 
 import type { KeyFilter, EventHandler, Options, KeyEvent, KeyPredicate } from './types';
 
@@ -13,7 +12,7 @@ export function useKeyPress(
   eventHandler: EventHandler,
   option: Options = {}
 ) {
-  const { events = defaultEvents, target, exactMatch = false } = option;
+  const { events = defaultEvents, target, exactMatch = false, useCapture = false } = option;
 
   const eventHandlerRef = useLatest(eventHandler);
   const keyFilterRef = useLatest(keyFilter);
@@ -27,19 +26,19 @@ export function useKeyPress(
       }
 
       const callbackHandler = (event: KeyboardEvent) => {
-        const genGuard: KeyPredicate = genKeyFormater(keyFilterRef.current, exactMatch);
+        const genGuard: KeyPredicate = genKeyFormatter(keyFilterRef.current, exactMatch);
         if (genGuard(event)) {
           return eventHandlerRef.current?.(event);
         }
       };
 
       for (const eventName of events) {
-        el?.addEventListener?.(eventName, callbackHandler);
+        el?.addEventListener?.(eventName, callbackHandler, useCapture);
       }
 
       return () => {
         for (const eventName of events) {
-          el?.removeEventListener?.(eventName, callbackHandler);
+          el?.removeEventListener?.(eventName, callbackHandler, useCapture);
         }
       };
     },

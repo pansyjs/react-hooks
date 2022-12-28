@@ -32,11 +32,7 @@ export function useInViewport(target: BasicTarget, options?: Options) {
         (entries) => {
           for (const entry of entries) {
             setRatio(entry.intersectionRatio);
-            if (entry.isIntersecting) {
-              setState(true);
-            } else {
-              setState(false);
-            }
+            setState(entry.isIntersecting);
           }
         },
         {
@@ -51,7 +47,7 @@ export function useInViewport(target: BasicTarget, options?: Options) {
         observer.disconnect();
       };
     },
-    [],
+    [options?.rootMargin, options?.threshold],
     target,
   );
 
