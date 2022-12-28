@@ -1,6 +1,7 @@
 {
   "name": "@pansy/use-document-visibility",
   "version": "0.3.0",
+  "description": "监听页面是否可见",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

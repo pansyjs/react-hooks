@@ -5,7 +5,9 @@ import { isBrowser } from '@pansy/shared';
 type VisibilityState = 'hidden' | 'visible' | 'prerender' | undefined;
 
 const getVisibility = () => {
-  if (!isBrowser) return 'visible';
+  if (!isBrowser) {
+    return 'visible';
+  };
 
   return document.visibilityState;
 };
