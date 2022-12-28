@@ -408,8 +408,10 @@ importers:
 
   hooks/useInterval:
     specifiers:
+      '@pansy/shared': ^1.9.0
       '@pansy/use-latest': 0.2.4
     dependencies:
+      '@pansy/shared': 1.9.0
       '@pansy/use-latest': link:../useLatest
 
   hooks/useKeyPress:

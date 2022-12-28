@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { useLatest } from '@pansy/use-latest';
+import { isNumber } from '@pansy/shared'
 
 /**
  * 处理 setInterval 的 Hook。
@@ -10,31 +11,43 @@ import { useLatest } from '@pansy/use-latest';
 export function useInterval(
   fn: () => void,
   delay?: number,
-  options?: {
+  options: {
     immediate?: boolean;
-  },
+  } = {},
 ) {
-  const fnRef = useLatest(fn);
+  const { immediate } = options;
 
-  const immediate = options?.immediate;
+  const fnRef = useLatest(fn);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(
     () => {
-      if (typeof delay !== 'number' || delay < 0) return;
+      if (!isNumber(delay) || delay < 0) {
+        return;
+      }
 
       if (immediate) {
         fnRef.current();
       }
 
-      const timer = setInterval(() => {
+      timerRef.current = setInterval(() => {
         fnRef.current();
       }, delay);
 
       return () => {
-        clearInterval(timer);
+        if (timerRef.current) {
+          clearInterval(timerRef.current);
+        }
       };
     },
     [delay]
   )
 
+  const clear = useCallback(() => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+  }, []);
+
+  return clear;
 }

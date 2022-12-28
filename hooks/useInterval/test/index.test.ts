@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 import { useInterval } from '../src/index';
 
 interface ParamsObj {
@@ -21,7 +21,6 @@ describe('useInterval', () => {
     const callback = jest.fn();
 
     setUp({ fn: callback, delay: 20, });
-
     expect(callback).not.toBeCalled();
 
     jest.advanceTimersByTime(70);
@@ -29,29 +28,37 @@ describe('useInterval', () => {
   });
 
   it('delay is undefined should stop', () => {
-    let delay: number | undefined;
-
     const callback = jest.fn();
-    setUp({ fn: callback, delay });
 
-    expect(callback).not.toBeCalled();
-
+    setUp({ fn: callback, delay: undefined });
     jest.advanceTimersByTime(50);
-    expect(callback).not.toBeCalled();
+    expect(callback).toHaveBeenCalledTimes(0);
+
+    setUp({ fn: callback, delay: -2 });
+    jest.advanceTimersByTime(50);
+    expect(callback).toHaveBeenCalledTimes(0);
   });
 
   it('immediate in options should work', () => {
     const callback = jest.fn();
-
-    setUp({
-      fn: callback,
-      delay: 20,
-      options: { immediate: true }
-    });
-
+    setUp({ fn: callback, delay: 20, options: { immediate: true } });
+    expect(callback).toBeCalled();
     expect(callback).toHaveBeenCalledTimes(1);
+    jest.advanceTimersByTime(50);
+    expect(callback).toHaveBeenCalledTimes(3);
+  });
 
+  it('interval should be clear', () => {
+    jest.spyOn(global, 'clearInterval');
+    const callback = jest.fn();
+    const hook = setUp({ fn: callback, delay: 20 });
+
+    expect(callback).not.toBeCalled();
+
+    hook.result.current();
     jest.advanceTimersByTime(70);
-    expect(callback).toHaveBeenCalledTimes(4);
+    // not to be called
+    expect(callback).toHaveBeenCalledTimes(0);
+    expect(clearInterval).toHaveBeenCalledTimes(1);
   });
 })

@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import { useGetState } from '../src/index';
 
 describe('useGetState', () => {
@@ -9,6 +9,7 @@ describe('useGetState', () => {
   const setUp = <T>(initialValue: T) =>
     renderHook(() => {
       const [state, setState, getState] = useGetState<T>(initialValue);
+
       return {
         state,
         setState,

@@ -1,6 +1,5 @@
 import React from 'react';
-import { renderHook, act } from '@testing-library/react-hooks';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, renderHook, act } from '@testing-library/react';
 import { useHover }  from '../src/index';
 
 describe('useHover', () => {
