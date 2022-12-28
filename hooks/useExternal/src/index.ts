@@ -73,4 +73,4 @@ export const useExternal = (path?: string, options?: Options) => {
   return status;
 }
 
-export default useExternal;
+export type { Options }

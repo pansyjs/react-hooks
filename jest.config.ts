@@ -19,6 +19,8 @@ const config: Config.InitialOptions = {
   ],
   collectCoverageFrom: [
     '<rootDir>/**/src/**/*.{js,jsx,ts,tsx}',
+    '!**/utils/src/**',
+    '!**/types.ts',
     '!**/demo/**',
     '!**/example/**',
     '!**/es/**',
