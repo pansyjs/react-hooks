@@ -18,11 +18,11 @@ export interface Options {
   /** 子协议 */
   protocols?: string | string[];
   /** 连接成功回调 */
-  onOpen?: (event: WebSocketEventMap['open']) => void;
+  onOpen?: (event: WebSocketEventMap['open'], ws: WebSocket) => void;
   /** 关闭回调 */
-  onClose?: (event: WebSocketEventMap['close']) => void;
+  onClose?: (event: WebSocketEventMap['close'], ws: WebSocket) => void;
   /** 收到消息回调 */
-  onMessage?: (message: WebSocketEventMap['message']) => void;
+  onMessage?: (message: WebSocketEventMap['message'], ws: WebSocket) => void;
   /** 错误回调 */
-  onError?: (event: WebSocketEventMap['error']) => void;
+  onError?: (event: WebSocketEventMap['error'], ws: WebSocket) => void;
 }
