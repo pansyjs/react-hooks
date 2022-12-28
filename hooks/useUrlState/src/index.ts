@@ -18,6 +18,8 @@ const baseStringifyConfig: StringifyOptions = {
   skipEmptyString: false,
 };
 
+export type { Options };
+
 export const useUrlState = <S extends UrlState = UrlState>(
   initialState?: S | (() => S),
   options?: Options,
@@ -79,5 +81,3 @@ export const useUrlState = <S extends UrlState = UrlState>(
 
   return [targetQuery, useMemoizedFn(setState)] as const;
 }
-
-export default useUrlState;
