@@ -1,6 +1,6 @@
 /**
  * title: Modal示例
- * desc: 与Antd Modal组件配合使用
+ * description: 与Antd Modal组件配合使用
  */
 import React from 'react';
 import { Modal, Button, Space } from 'antd';

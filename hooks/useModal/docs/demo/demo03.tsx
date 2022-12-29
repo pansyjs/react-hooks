@@ -1,6 +1,6 @@
 /**
  * title: data 使用
- * desc: 对话框组件需要传递一些数据时使用，例如修改对话框表单。
+ * description: 对话框组件需要传递一些数据时使用，例如修改对话框表单。
  */
 import React, { useState } from 'react';
 import { Modal, Button, Input, Space } from 'antd';

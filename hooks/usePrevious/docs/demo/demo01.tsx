@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 记录上次的 count 值
+ * description: 记录上次的 count 值
  */
 import { usePrevious } from '@pansy/react-hooks';
 import { Button } from 'antd';

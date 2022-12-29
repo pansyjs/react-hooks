@@ -1,10 +1,7 @@
 ---
 title: useSelections
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 场景
 ---
 
 # useSelections
@@ -13,17 +10,9 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 进阶用法
-
-<code src="./demo/demo02.tsx" />
-
-### 分页
-
-<code src="./demo/demo03.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 

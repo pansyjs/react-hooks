@@ -1,6 +1,6 @@
 /**
  * title: checkSuccess
- * desc:
+ * description:
  *   如果设置了 checkSuccess，通过返回结果决定是否执行 onSuccess 回调
  */
 import { Button, message } from 'antd';

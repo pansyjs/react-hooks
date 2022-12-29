@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 监听 document 的可见状态
+ * description: 监听 document 的可见状态
  */
 import React, { useEffect } from 'react';
 import { useDocumentVisibility } from '@pansy/react-hooks';

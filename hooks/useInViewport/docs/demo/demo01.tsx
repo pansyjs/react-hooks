@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 监听元素是否在可见区域内
+ * description: 监听元素是否在可见区域内
  */
 
 import React, { useRef } from 'react';

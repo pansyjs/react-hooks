@@ -1,6 +1,6 @@
 /**
  * title: 精确匹配
- * desc: 通过配置 exactMatch, 开启精确匹配。比如按 [shift + c] ，不会触发 [c]。
+ * description: 通过配置 exactMatch, 开启精确匹配。比如按 [shift + c] ，不会触发 [c]。
  */
 import CheckOutlined from '@ant-design/icons/CheckOutlined';
 import { useKeyPress } from '@pansy/react-hooks';

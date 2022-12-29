@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 每 1000ms 执行一次
+ * description: 每 1000ms 执行一次
  */
 import React, { useState } from 'react';
 import { useInterval } from '@pansy/react-hooks';

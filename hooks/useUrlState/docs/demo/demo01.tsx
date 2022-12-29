@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 将状态同步到 url query 中。通过设置值为 `undefind`, 可以从 url query 上彻底删除某个属性，从而使用默认值。
+ * description: 将状态同步到 url query 中。通过设置值为 `undefind`, 可以从 url query 上彻底删除某个属性，从而使用默认值。
  */
 import React from 'react';
 import { Button } from 'antd';

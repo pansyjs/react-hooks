@@ -1,10 +1,7 @@
 ---
 title: useExternal
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useExternal
@@ -13,13 +10,8 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 加载 CSS
-
-<code src="./demo/demo02.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
 
 ## API
 

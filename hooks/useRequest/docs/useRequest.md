@@ -25,25 +25,11 @@ group:
 
 ## 代码示例
 
-### 基本示例
-
-<code src="./demo/demo01.tsx" />
-
-### 手动触发
-
-<code src="./demo/demo02.tsx" />
-
-### Loading Delay
-
-<code src="./demo/demo03.tsx" />
-
-### 轮询
-
-<code src="./demo/demo04.tsx" />
-
-### checkSuccess
-
-<code src="./demo/demo05.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
+<code src="./demo/demo04.tsx"></code>
+<code src="./demo/demo05.tsx"></code>
 
 ## API
 

@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 尝试滚动一下文字内容。
+ * description: 尝试滚动一下文字内容。
  */
 import React, { useRef } from 'react';
 import { Button } from 'antd';

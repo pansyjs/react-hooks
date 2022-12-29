@@ -4,7 +4,7 @@ nav:
   title: Hooks
   path: /hooks
 group:
-  path: /
+  title: 生命周期
 ---
 
 # useUnmount
@@ -13,9 +13,7 @@ group:
 
 ## 代码演示
 
-### 基本示例
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

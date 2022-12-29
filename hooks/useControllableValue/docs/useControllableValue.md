@@ -1,10 +1,8 @@
 ---
 title: useControllableValue
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 先进
+  order: 80
 ---
 
 # useControllableValue
@@ -13,17 +11,9 @@ group:
 
 ## 代码演示
 
-### 非受控组件
-
-<code src="./demo/demo01.tsx" />
-
-### 受控组件
-
-<code src="./demo/demo02.tsx" />
-
-### 无 value，有 onChange 的组件
-
-<code src="./demo/demo03.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 

@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 3000ms 后执行一次
+ * description: 3000ms 后执行一次
  */
 import React, { useState } from 'react';
 import { useTimeout } from '@pansy/react-hooks';

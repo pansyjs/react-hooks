@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 设置页面标题
+ * description: 设置页面标题
  */
 
 import React from 'react';

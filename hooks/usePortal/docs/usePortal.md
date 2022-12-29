@@ -1,10 +1,7 @@
 ---
 title: usePortal
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 场景
 ---
 
 # usePortal
@@ -13,9 +10,7 @@ group:
 
 ## 代码演示
 
-### 高德地图 - 标记组件
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

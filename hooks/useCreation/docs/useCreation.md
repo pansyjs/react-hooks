@@ -1,10 +1,7 @@
 ---
 title: useCreation
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 先进
 ---
 
 # useCreation
@@ -13,9 +10,7 @@ useCreation 是 useMemo 或 useRef 的替代品。
 
 ## 代码演示
 
-### 基本示例
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

@@ -1,10 +1,7 @@
 ---
 title: useSessionStorageState
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 状态
 ---
 
 # useSessionStorageState

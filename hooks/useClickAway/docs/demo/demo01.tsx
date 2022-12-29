@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 请点击按钮或按钮外查看效果。
+ * description: 请点击按钮或按钮外查看效果。
  */
 import React, { useState, useRef } from 'react';
 import { Button } from 'antd';

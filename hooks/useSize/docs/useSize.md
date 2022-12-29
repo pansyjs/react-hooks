@@ -1,10 +1,7 @@
 ---
 title: useSize
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useSize
@@ -13,13 +10,8 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 传入 DOM 节点
-
-<code src="./demo/demo02.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
 
 ## API
 

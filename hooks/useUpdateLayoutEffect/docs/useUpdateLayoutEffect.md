@@ -1,10 +1,7 @@
 ---
 title: useUpdateLayoutEffect
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Effect
 ---
 
 # useUpdateLayoutEffect
@@ -13,9 +10,7 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

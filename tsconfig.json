@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@@/*": [".dumi/tmp/*"],
       "@pansy/hook-utils": ["./hooks/utils"],
       "@pansy/react-hooks": ["./hooks/hooks"]
     }

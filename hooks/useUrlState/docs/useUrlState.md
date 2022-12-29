@@ -1,10 +1,7 @@
 ---
 title: useUrlState
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 状态
 ---
 
 # useUrlState
@@ -14,18 +11,6 @@ group:
 > 注意: 本库需要单独安装
 
 ## 代码演示
-
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 多状态管理
-
-<code src="./demo/demo02.tsx" />
-
-### 自定义 query-string 配置
-
-<code src="./demo/demo03.tsx" />
 
 ## API
 

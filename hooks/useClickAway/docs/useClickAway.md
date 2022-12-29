@@ -1,31 +1,22 @@
 ---
-nav:
-  title: Hooks
-  path: /hooks
+title: useClickAway
+group:
+  title: Dom
+  order: 70
 ---
 
 # useClickAway
 
-监听目标元素外的点击事件。
+监听目标元素外的点击事件
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 自定义 DOM
-
-<code src="./demo/demo02.tsx" />
-
-### 支持多个 DOM 对象
-
-<code src="./demo/demo03.tsx" />
-
-### 监听其它事件
-
-<code src="./demo/demo04.tsx" />
-
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
+<code src="./demo/demo04.tsx"></code>
+<code src="./demo/demo05.tsx"></code>
+<code src="./demo/demo06.tsx"></code>
 
 ## API
 

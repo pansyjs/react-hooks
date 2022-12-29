@@ -1,21 +1,17 @@
 ---
 title: useBoolean
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 状态
+  order: 1
 ---
 
 # useBoolean
 
-优雅的管理 boolean 状态的 Hook。
+优雅的管理 boolean 状态的 Hook
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

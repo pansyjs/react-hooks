@@ -1,10 +1,7 @@
 ---
 title: useDocumentVisibility
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useDocumentVisibility
@@ -13,9 +10,7 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

@@ -1,24 +1,26 @@
 /**
- * title: 支持传入 DOM
- * description: 支持直接传入 DOM 对象或 function。
+ * title: 支持传入多个事件名称
+ * description: 设置了多个事件，你可以试试用鼠标左键或者右键。
  */
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button } from 'antd';
 import { useClickAway } from '@pansy/react-hooks';
 
 export default () => {
   const [counter, setCounter] = useState(0);
+  const ref = useRef(null);
 
   useClickAway(
     () => {
       setCounter((s) => s + 1);
     },
-    () => document.getElementById('use-click-away-button'),
+    ref,
+    ['click', 'contextmenu'],
   );
 
   return (
     <>
-      <Button id="use-click-away-button">
+      <Button ref={ref}>
         box
       </Button>
       <p>counter: {counter}</p>

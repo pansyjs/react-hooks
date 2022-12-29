@@ -1,6 +1,6 @@
 /**
  * title: 手动触发
- * desc:
+ * description:
  *  如果设置了 options.manual = true，则 useRequest 不会默认执行，需要通过 run 来触发执行
  */
 import React, { useState } from 'react';

@@ -1,6 +1,6 @@
 /**
  * title: 自定义更新
- * desc: 在垂直方向 100px 到 200px 的滚动范围内监听
+ * description: 在垂直方向 100px 到 200px 的滚动范围内监听
  */
 import React, { useRef } from 'react';
 import { useScroll } from '@pansy/react-hooks';

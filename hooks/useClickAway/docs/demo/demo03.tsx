@@ -1,6 +1,6 @@
 /**
  * title: 支持多个 DOM 对象
- * desc: 支持传入多个目标对象。
+ * description: 支持传入多个目标对象。
  */
 import React, { useState, useRef } from 'react';
 import { Button } from 'antd';

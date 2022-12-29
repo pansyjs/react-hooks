@@ -1,6 +1,6 @@
 /**
  * title: Drawer示例
- * desc: 与Antd Drawer组件配合使用
+ * description: 与Antd Drawer组件配合使用
  */
 import React from 'react';
 import { Drawer, Button, Space } from 'antd';

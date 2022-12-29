@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 强制组件重新渲染。
+ * description: 强制组件重新渲染。
  */
 import React from 'react';
 import { Button } from 'antd';

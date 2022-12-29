@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 在组件卸载时，执行函数。
+ * description: 在组件卸载时，执行函数。
  */
 import React from 'react';
 import { useBoolean, useUnmount } from '@pansy/react-hooks';

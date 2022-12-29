@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: useSize 可以接收 ref 参数
+ * description: useSize 可以接收 ref 参数
  */
 
  import React, { useRef } from 'react';

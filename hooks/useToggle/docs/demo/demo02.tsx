@@ -1,6 +1,6 @@
 /**
  * title: 在任意两个值之间切换
- * desc: 接受两个参数，在参数间进行切换。
+ * description: 接受两个参数，在参数间进行切换。
  */
 import React from 'react';
 import { Button, Space } from 'antd';

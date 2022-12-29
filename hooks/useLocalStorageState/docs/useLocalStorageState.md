@@ -1,10 +1,7 @@
 ---
 title: useLocalStorageState
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 状态
 ---
 
 # useLocalStorageState
@@ -13,17 +10,9 @@ group:
 
 ## 代码演示
 
-### 将 state 存储在 localStorage 中
-
-<code src="./demo/demo01.tsx" />
-
-### 存储复杂类型数据
-
-<code src="./demo/demo02.tsx" />
-
-### 自定义序列化和反序列化函数
-
-<code src="./demo/demo03.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 

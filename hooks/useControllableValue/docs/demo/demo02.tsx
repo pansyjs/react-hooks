@@ -1,6 +1,6 @@
 /**
  * title: 受控组件
- * desc: 如果 props 有 value 字段，则由父级接管控制 state
+ * description: 如果 props 有 value 字段，则由父级接管控制 state
  */
 import React, { useState } from 'react';
 import { Button, Input } from 'antd';

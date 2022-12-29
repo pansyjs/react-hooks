@@ -1,6 +1,6 @@
 /**
  * title: 自定义 shouldUpdate 函数
- * desc: 只有 shouldUpdate function 返回 true 时，才会记录值的变化。
+ * description: 只有 shouldUpdate function 返回 true 时，才会记录值的变化。
  */
 import React, { useState } from 'react';
 import { Button, Input } from 'antd';

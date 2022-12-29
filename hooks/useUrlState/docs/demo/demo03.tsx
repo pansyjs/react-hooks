@@ -1,6 +1,6 @@
 /**
  * title: 自定义 query-string 配置
- * desc: 可以通过传入 parseOptions 和 stringifyOptions 自定义转换规则。
+ * description: 可以通过传入 parseOptions 和 stringifyOptions 自定义转换规则。
  */
 import React from 'react';
 import { Button } from 'antd';

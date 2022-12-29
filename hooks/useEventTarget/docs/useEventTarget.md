@@ -1,10 +1,7 @@
 ---
 title: useEventTarget
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useEventTarget
@@ -13,13 +10,8 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 自定义转换函数
-
-<code src="./demo/demo02.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
 
 ## API
 

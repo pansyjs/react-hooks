@@ -1,6 +1,6 @@
 /**
  * title: 基础用法
- * desc: 设置 favicon
+ * description: 设置 favicon
  */
 
 import React, { useState } from 'react';

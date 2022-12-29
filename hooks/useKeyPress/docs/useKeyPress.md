@@ -1,10 +1,7 @@
 ---
 title: useKeyPress
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useKeyPress
@@ -13,29 +10,12 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 监听组合按键
-
-<code src="./demo/demo02.tsx" />
-
-### 精确匹配
-
-<code src="./demo/demo03.tsx" />
-
-### 监听多个按键
-
-<code src="./demo/demo04.tsx" />
-
-### 自定义监听方式
-
-<code src="./demo/demo05.tsx" />
-
-### 自定义 DOM
-
-<code src="./demo/demo06.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
+<code src="./demo/demo04.tsx"></code>
+<code src="./demo/demo05.tsx"></code>
+<code src="./demo/demo06.tsx"></code>
 
 ## API
 

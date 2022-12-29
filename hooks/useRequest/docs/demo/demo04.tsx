@@ -1,6 +1,6 @@
 /**
  * title: 轮询
- * desc: 通过设置 options.pollingInterval，进入轮询模式，useRequest 会定时触发 service 执行。
+ * description: 通过设置 options.pollingInterval，进入轮询模式，useRequest 会定时触发 service 执行。
  */
 import React from 'react';
 import Mock from 'mockjs';

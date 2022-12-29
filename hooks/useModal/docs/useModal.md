@@ -4,7 +4,7 @@ nav:
   title: Hooks
   path: /hooks
 group:
-  path: /
+  title: 状态
 ---
 
 # useModal
@@ -13,17 +13,9 @@ group:
 
 ## 代码演示
 
-### Modal
-
-<code src="./demo/demo01.tsx" />
-
-### Drawer
-
-<code src="./demo/demo02.tsx" />
-
-### data
-
-<code src="./demo/demo03.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 

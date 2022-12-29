@@ -1,10 +1,8 @@
 ---
 title: useMqtt
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: 场景
+  order: 100
 ---
 
 # useMqtt
@@ -13,9 +11,7 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
+<code src="./demo/demo01.tsx"></code>
 
 ## API
 

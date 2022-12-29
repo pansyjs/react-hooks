@@ -1,10 +1,7 @@
 ---
 title: useWatermark
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useWatermark
@@ -15,17 +12,9 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 多行水印
-
-<code src="./demo/demo02.tsx" />
-
-### 图片水印
-
-<code src="./demo/demo03.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 

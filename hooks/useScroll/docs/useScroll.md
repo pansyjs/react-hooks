@@ -1,10 +1,7 @@
 ---
 title: useScroll
-nav:
-  title: Hooks
-  path: /hooks
 group:
-  path: /
+  title: Dom
 ---
 
 # useScroll
@@ -13,17 +10,9 @@ group:
 
 ## 代码演示
 
-### 基础用法
-
-<code src="./demo/demo01.tsx" />
-
-### 监测整页的滚动
-
-<code src="./demo/demo02.tsx" />
-
-### 控制滚动状态的监听
-
-<code src="./demo/demo03.tsx" />
+<code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 
