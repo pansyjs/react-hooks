@@ -19,6 +19,7 @@
     "release": "walrus release",
     "prepare": "husky install && dumi setup",
     "tsc:check": "tsc --noEmit",
+    "clean": "rimraf ./**/node_modules",
     "clean:turbo": "rimraf .turbo"
   },
   "devDependencies": {
