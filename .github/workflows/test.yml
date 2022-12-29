@@ -1,49 +1,51 @@
-name: CI-Test
+name: Test CI
 
-env:
-  NODE_OPTIONS: --max-old-space-size=6144
-
-on:
-  push:
-    paths-ignore:
-      - 'docs/**'
-      - '**/demo/*'
-      - '**/*.md'
+on: [push, pull_request]
 
 jobs:
   test:
-    name: "Test"
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        mode: ['normal', 'strict']
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.4
         with:
-          node-version: 14
+          version: 7
 
-      - name: Cache pnpm modules
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - name: Setup pnpm cache
         uses: actions/cache@v3
         with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-
+            ${{ runner.os }}-pnpm-store-
 
-      - name: Pnpm action
-        uses: pnpm/action-setup@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          version: latest
-          run_install: true
+          node-version: ${{ matrix.node-version }}
 
-      - name: Build
-        run: pnpm build
+      - name: pnpm run intall, build
+        run: |
+          pnpm run init
 
-      - name: "Test"
-        run: pnpm test
-        env:
-          CI: true
-          NODE_ENV: test
+      - name: test with react normal mode
+        if: ${{ matrix.mode == 'normal' }}
+        run: |
+          pnpm run test
+
+      - name: test with react strict mode
+        if: ${{ matrix.mode == 'strict' }}
+        run: |
+          pnpm run test:strict
