@@ -37,6 +37,9 @@ jobs:
           run_install: true
 
       - name: Build
+        run: pnpm build
+
+      - name: Build Site
         run: pnpm site
 
       - name: Deploy
