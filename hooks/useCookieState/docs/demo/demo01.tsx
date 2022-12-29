@@ -1,3 +1,7 @@
+/**
+ * title: 将 state 存储在 Cookie 中
+ * description: 刷新页面后，可以看到输入框中的内容被从 Cookie 中恢复了
+ */
 import React from 'react';
 import { Input } from 'antd';
 import { useCookieState } from '@pansy/react-hooks';

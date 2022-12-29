@@ -6,11 +6,13 @@ group:
 
 # useCookieState
 
-一个可以将状态存储在 Cookie 中的 Hook 。
+一个可以将状态存储在 Cookie 中的 Hook
 
 ## 代码演示
 
 <code src="./demo/demo01.tsx"></code>
+<code src="./demo/demo02.tsx"></code>
+<code src="./demo/demo03.tsx"></code>
 
 ## API
 
