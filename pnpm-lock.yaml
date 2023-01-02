@@ -75,7 +75,7 @@ importers:
       dumi: 2.0.17
       eslint: 8.30.0
       eslint-config-alloy: 4.7.0
-      eslint-config-prettier: 8.5.0
+      eslint-config-prettier: 8.6.0
       eslint-plugin-react: 7.31.11
       eslint-plugin-react-hooks: 4.6.0
       hooks-scripts: workspace:*
@@ -172,7 +172,7 @@ importers:
       dumi: 2.0.17_4dqya6sq3inbyghqyswegqncnq
       eslint: 8.30.0
       eslint-config-alloy: 4.7.0_wal53rdr47yub3drpihbo2fkq4
-      eslint-config-prettier: 8.5.0_eslint@8.30.0
+      eslint-config-prettier: 8.6.0_eslint@8.30.0
       eslint-plugin-react: 7.31.11_eslint@8.30.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.30.0
       hooks-scripts: link:scripts
@@ -11095,6 +11095,7 @@ packages:
   /errno/0.1.8:
     resolution: {integrity: sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==}
     hasBin: true
+    requiresBuild: true
     dependencies:
       prr: 1.0.1
     dev: true
@@ -11880,8 +11881,8 @@ packages:
       typescript: 4.9.4
     dev: true
 
-  /eslint-config-prettier/8.5.0_eslint@8.30.0:
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+  /eslint-config-prettier/8.6.0_eslint@8.30.0:
+    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'

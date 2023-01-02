@@ -96,7 +96,7 @@
     "dumi": "2.0.17",
     "eslint": "8.30.0",
     "eslint-config-alloy": "4.7.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint-config-prettier": "8.6.0",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
     "hooks-scripts": "workspace:*",
