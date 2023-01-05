@@ -83,7 +83,7 @@ importers:
       jest: 29.3.1
       jest-environment-jsdom: 29.3.1
       jest-fetch-mock: 3.0.3
-      jest-localstorage-mock: 2.4.25
+      jest-localstorage-mock: 2.4.26
       jest-websocket-mock: 2.4.0
       lerna: 6.3.0
       mock-socket: 9.1.5
@@ -180,7 +180,7 @@ importers:
       jest: 29.3.1_zfha7dvnw4nti6zkbsmhmn6xo4
       jest-environment-jsdom: 29.3.1
       jest-fetch-mock: 3.0.3
-      jest-localstorage-mock: 2.4.25
+      jest-localstorage-mock: 2.4.26
       jest-websocket-mock: 2.4.0
       lerna: 6.3.0
       mock-socket: 9.1.5
@@ -11095,6 +11095,7 @@ packages:
   /errno/0.1.8:
     resolution: {integrity: sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==}
     hasBin: true
+    requiresBuild: true
     dependencies:
       prr: 1.0.1
     dev: true
@@ -14679,8 +14680,8 @@ packages:
       pretty-format: 29.3.1
     dev: true
 
-  /jest-localstorage-mock/2.4.25:
-    resolution: {integrity: sha512-VdQ8PTpNzUJDx/KY3hBrTwxqVMzMS+LccngC15EZSFdxJ+VeeCYmyW7BSzubk9FUKCVeXPjYPibzXe6swXYA+g==}
+  /jest-localstorage-mock/2.4.26:
+    resolution: {integrity: sha512-owAJrYnjulVlMIXOYQIPRCCn3MmqI3GzgfZCXdD3/pmwrIvFMXcKVWZ+aMc44IzaASapg0Z4SEFxR+v5qxDA2w==}
     engines: {node: '>=6.16.0'}
     dev: true
 
