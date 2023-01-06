@@ -7,20 +7,17 @@
 
 <h1 align="center">@pansy/react-hooks</h1>
 
-<p align="center">
-  <a href="https://github.com/pansyjs/react-hooks/network">
-    <img src="https://img.shields.io/github/forks/pansyjs/react-hooks.svg" alt="Forks">
-  </a>
-  <a href="https://github.com/pansyjs/react-hooks/stargazers">
-    <img src="https://img.shields.io/github/stars/pansyjs/react-hooks.svg" alt="Stars">
-  </a>
-  <a href="https://www.npmjs.com/package/@pansy/react-hooks">
-    <img src="https://img.shields.io/npm/v/@pansy/react-hooks.svg" alt="npm version">
-  </a>
-  <a href="https://packagephobia.com/result?p=@pansy/react-hooks">
-    <img src="https://packagephobia.com/badge?p=@pansy/react-hooks" alt="npm version">
-  </a>
-</p>
+<div align="center">
+
+[![NPM version][image-1]][npm-url]
+[![NPM downloads][image-2]][npm-url]
+[![codecov][codecov-1]][codecov-2]
+[![license][license-1]][npm-url]
+[![issues](https://img.shields.io/github/issues/pansyjs/react-hooks)](https://github.com/pansyjs/react-hooks/issues)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/pansyjs/react-hooks.svg)](http://isitmaintained.com/project/pansyjs/react-hooks 'Percentage of issues still open')
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/pansyjs/react-hooks.svg)](http://isitmaintained.com/project/pansyjs/react-hooks 'Average time to resolve an issue')
+
+</div>
 
 ## 📚 文档
 
@@ -73,3 +70,10 @@ $ pnpm start
 pnpm run hooks:create
 ```
 
+[image-1]: https://img.shields.io/npm/v/@pansy/react-hooks.svg?style=flat
+[image-2]: https://img.shields.io/npm/dw/@pansy/react-hooks.svg?style=flat
+[codecov-1]: https://codecov.io/github/pansyjs/react-hooks/branch/master/graph/badge.svg?token=EKYDUW28H0
+[codecov-2]: https://codecov.io/github/pansyjs/react-hooks
+[license-1]: https://badgen.net/npm/license/@pansy/react-hooks
+[npm-url]: https://www.npmjs.com/package/@pansy/react-hooks
+[issues-1]: https://www.npmjs.com/package/@pansy/react-hooks
