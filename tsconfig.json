@@ -7,5 +7,9 @@
       "@pansy/hook-utils": ["./hooks/utils"],
       "@pansy/react-hooks": ["./hooks/hooks"]
     }
-  }
+  },
+  "include": [
+    ".dumi/**/*",
+    ".dumirc.ts"
+  ]
 }
