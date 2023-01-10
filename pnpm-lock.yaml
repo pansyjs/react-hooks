@@ -74,7 +74,7 @@ importers:
       cross-env: 7.0.3
       dumi: 2.0.18
       eslint: 8.31.0
-      eslint-config-alloy: 4.8.0
+      eslint-config-alloy: 4.9.0
       eslint-config-prettier: 8.6.0
       eslint-plugin-react: 7.31.11
       eslint-plugin-react-hooks: 4.6.0
@@ -171,7 +171,7 @@ importers:
       cross-env: 7.0.3
       dumi: 2.0.18_4r6xhczwtmrbwyp6enxepcfwoq
       eslint: 8.31.0
-      eslint-config-alloy: 4.8.0_zlp4whk3dinboaaxewuz4ksuj4
+      eslint-config-alloy: 4.9.0_zlp4whk3dinboaaxewuz4ksuj4
       eslint-config-prettier: 8.6.0_eslint@8.31.0
       eslint-plugin-react: 7.31.11_eslint@8.31.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.31.0
@@ -12092,8 +12092,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-alloy/4.8.0_zlp4whk3dinboaaxewuz4ksuj4:
-    resolution: {integrity: sha512-y1uGAFSUA7i7ytLRIYFxGFvI1CvQRaTWp0T5QwBhGL0r/EG246aAGcWNJl6iP8Yw14mMgOJXmCzMFN3Md2E0MQ==}
+  /eslint-config-alloy/4.9.0_zlp4whk3dinboaaxewuz4ksuj4:
+    resolution: {integrity: sha512-4DfiN0sXByf5WuXioZrrZJdfzZw+lgdoQfFTuQyFenJ2XeIKrsXYctArLiZAoAsTxyZnmUFYqrgwUIXx26q0gg==}
     peerDependencies:
       '@babel/eslint-parser': 7.x
       '@babel/preset-react': 7.x
