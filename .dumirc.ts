@@ -18,6 +18,9 @@ export default defineConfig({
   themeConfig: {
     name: 'PHooks',
     logo,
+    socialLinks: {
+      github: 'https://github.com/pansyjs/smart-captcha',
+    },
   },
   resolve: {
     atomDirs: tailPkgList.map((dir) => {
