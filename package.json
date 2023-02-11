@@ -114,7 +114,7 @@
     "react-shadow": "20.0.0",
     "react-router": "^6.8.0",
     "react-test-renderer": "18.2.0",
-    "redbud": "1.5.0",
+    "redbud": "1.6.0",
     "rimraf": "3.0.2",
     "tsx": "^3.12.2",
     "turbo": "^1.7.3",
