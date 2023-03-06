@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Card from '@ant-design/pro-card';
 import { Button, Space, Form, Input, Row, Col, Divider, Select } from 'antd';
 import { useMqtt, useBoolean } from '@pansy/react-hooks';
-import type { Options } from '@pansy/use-mqtt';
 
 const spans = {
   xs: 12,
@@ -20,18 +19,10 @@ export default () => {
   const [subscribeForm] = Form.useForm();
   const [publishForm] = Form.useForm();
 
-  const [url, setUrl] = useState<string>('');
   const [topicList, setTopicList] = useState(defaultTopicList);
   const [subscribeLoading, subscribeLoadingAction] = useBoolean(false);
   const [unsubscribeLoading, unsubscribeLoadingAction] = useBoolean(false);
   const [isSubscribe, isSubscribeAction] = useBoolean(false);
-  const [opts, setOpts] = useState<Options>({
-    manual: true,
-    onMessage: (topic, payload) => {
-      console.log(topic);
-      console.log(payload.toString());
-    }
-  });
 
   const {
     mqttIns,
@@ -41,27 +32,20 @@ export default () => {
     subscribe,
     unsubscribe,
     disconnect,
-  } = useMqtt(url, opts);
+  } = useMqtt('', {
+    manual: true,
+  });
 
   const handlerConnect = () => {
     form.validateFields()
       .then((values) => {
         const { host, clientId, port, username, password } = values;
 
-        Promise.resolve()
-          .then(() => {
-            setUrl(`ws://${host}${port ? ':' + port : ''}/mqtt`);
-
-            setOpts((prev) => ({
-              ...prev,
-              clientId,
-              username,
-              password
-            }))
-          })
-          .then(() => {
-            connect();
-          })
+        connect(`ws://${host}${port ? ':' + port : ''}/mqtt`, {
+          clientId,
+          username,
+          password,
+        })
       })
   }
 
