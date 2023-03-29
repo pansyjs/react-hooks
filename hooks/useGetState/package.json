@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-get-state",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

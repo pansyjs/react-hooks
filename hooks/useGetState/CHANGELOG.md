@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-get-state@0.3.0...@pansy/use-get-state@0.4.0) (2023-03-29)
+
+
+### Bug Fixes
+
+* 修正 useGetState 不传递初始参数时的 ts 报错问题 ([c3987b7](https://github.com/pansyjs/react-hooks/commit/c3987b7f96838ae43e3fc6ea0c96aa81b492e3e8))
+
+
+### Features
+
+* **useGetState:** 支持 set 后立马 get 获取最新值 ([ac32726](https://github.com/pansyjs/react-hooks/commit/ac3272671c2cde210498260d01a430dbe1fafe46))
+
+
+
+
+
 # [0.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-get-state@0.2.5...@pansy/use-get-state@0.3.0) (2022-12-28)
 
 
