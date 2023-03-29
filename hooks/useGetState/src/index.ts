@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback } from 'react';
+import { resolveHookState } from './utils';
 import type { Dispatch, SetStateAction } from 'react';
 
 type GetStateAction<S> = () => S;
@@ -16,9 +17,14 @@ function useGetState<S>(initialState?: S) {
   const stateRef = useRef<S>(state);
   stateRef.current = state;
 
+  const _setState = useCallback<Dispatch<SetStateAction<S>>>((state) => {
+    stateRef.current = resolveHookState(state, stateRef.current);
+    setState(stateRef.current);
+  }, []);
+
   const getState = useCallback<GetStateAction<S>>(() => stateRef.current, []);
 
-  return [state, setState, getState];
+  return [state, _setState, getState];
 }
 
 export { useGetState };
