@@ -1,7 +1,7 @@
 /* eslint-disable max-params */
 /* eslint-disable prefer-promise-reject-errors */
 import { useRef, useState, useEffect } from 'react';
-import mqtt from 'mqtt';
+import * as mqtt from 'mqtt/dist/mqtt';
 import { useUnmount } from '@pansy/use-unmount';
 import { useLatest } from '@pansy/use-latest';
 import { useBoolean } from '@pansy/use-boolean';
