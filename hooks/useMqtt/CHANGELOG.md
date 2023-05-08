@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.4.0...@pansy/use-mqtt@0.4.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* **useMqtt:** vite Buffer error ([298283e](https://github.com/pansyjs/react-hooks/commit/298283e4516abda4784ad4eed3904b0ead7bc535))
+
+
+
+
+
 # [0.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-mqtt@0.3.3...@pansy/use-mqtt@0.4.0) (2022-12-28)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/react-hooks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -42,7 +42,7 @@
     "@pansy/use-modal": "1.0.1",
     "@pansy/use-mount": "0.2.0",
     "@pansy/use-mouse": "0.3.0",
-    "@pansy/use-mqtt": "0.4.0",
+    "@pansy/use-mqtt": "0.4.1",
     "@pansy/use-portal": "0.2.1",
     "@pansy/use-previous": "0.2.5",
     "@pansy/use-raf-state": "0.2.6",
