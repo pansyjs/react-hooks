@@ -21,4 +21,7 @@ esnext
 .dumi/tmp-test
 .dumi/tmp-production
 
+# IDE
+.idea
+
 .pnpm-debug.log
