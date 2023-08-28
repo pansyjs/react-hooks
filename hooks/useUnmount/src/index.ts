@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { isDev } from '@pansy/shared';
 import { useLatest } from '@pansy/use-latest';
 
 /**
@@ -7,10 +6,8 @@ import { useLatest } from '@pansy/use-latest';
  * @param fn 组件卸载时执行的函数
  */
 export function useUnmount(fn: () => void) {
-  if (isDev) {
-    if (typeof fn !== 'function') {
-      console.error(`useUnmount expected parameter is a function, got ${typeof fn}`);
-    }
+  if (typeof fn !== 'function') {
+    console.error(`useUnmount expected parameter is a function, got ${typeof fn}`);
   }
 
   const fnRef = useLatest(fn);
