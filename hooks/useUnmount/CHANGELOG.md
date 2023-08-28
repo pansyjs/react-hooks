@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/pansyjs/react-hooks/compare/@pansy/use-unmount@0.2.6...@pansy/use-unmount@0.2.7) (2023-08-28)
+
+
+### Bug Fixes
+
+* 修复底层依赖包升级报错 ([081b9f7](https://github.com/pansyjs/react-hooks/commit/081b9f737db7178fe6248b862b69234e336e1e8f))
+
+
+
+
+
 ## [0.2.6](https://github.com/pansyjs/react-hooks/compare/@pansy/use-unmount@0.2.5...@pansy/use-unmount@0.2.6) (2022-12-28)
 
 **Note:** Version bump only for package @pansy/use-unmount

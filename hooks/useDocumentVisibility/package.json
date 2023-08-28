@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-document-visibility",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "监听页面是否可见",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -18,9 +18,9 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.5.0",
+    "@pansy/hook-utils": "0.5.1",
     "@pansy/shared": "^1.9.0",
-    "@pansy/use-event-listener": "0.3.1"
+    "@pansy/use-event-listener": "0.3.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

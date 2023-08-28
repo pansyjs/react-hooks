@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/pansyjs/react-hooks/compare/@pansy/use-raf-state@0.2.6...@pansy/use-raf-state@0.2.7) (2023-08-28)
+
+**Note:** Version bump only for package @pansy/use-raf-state
+
+
+
+
+
 ## [0.2.6](https://github.com/pansyjs/react-hooks/compare/@pansy/use-raf-state@0.2.5...@pansy/use-raf-state@0.2.6) (2022-12-28)
 
 **Note:** Version bump only for package @pansy/use-raf-state
