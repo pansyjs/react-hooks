@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.1.0...@pansy/react-hooks@2.2.0) (2023-11-07)
+
+
+### Features
+
+* **react-hooks:** remove useMqtt ([4cc728c](https://github.com/pansyjs/react-hooks/commit/4cc728c5ed72584ea6c902a87265d97cbd43b07e))
+
+
+
+
+
 # [2.1.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@1.0.6...@pansy/react-hooks@2.1.0) (2023-11-06)
 
 
