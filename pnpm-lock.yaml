@@ -95,6 +95,9 @@ importers:
       '@pansy/use-mqtt':
         specifier: workspace:*
         version: link:hooks/useMqtt
+      '@pansy/use-pagination':
+        specifier: workspace:*
+        version: link:hooks/usePagination
       '@pansy/use-portal':
         specifier: workspace:*
         version: link:hooks/usePortal
@@ -716,6 +719,18 @@ importers:
       mqtt:
         specifier: ^4.3.7
         version: 4.3.7
+      react:
+        specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
+        version: 18.2.0
+
+  hooks/usePagination:
+    dependencies:
+      '@pansy/use-memoized-fn':
+        specifier: ^0.3.1
+        version: link:../useMemoizedFn
+      '@pansy/use-request':
+        specifier: ^0.3.1
+        version: link:../useRequest
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
         version: 18.2.0

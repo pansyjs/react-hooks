@@ -57,6 +57,7 @@
     "@pansy/use-mqtt": "workspace:*",
     "@pansy/use-previous": "workspace:*",
     "@pansy/use-raf-state": "workspace:*",
+    "@pansy/use-pagination": "workspace:*",
     "@pansy/use-request": "workspace:*",
     "@pansy/use-scroll": "workspace:*",
     "@pansy/use-scroll-lock": "workspace:*",

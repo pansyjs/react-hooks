@@ -1,0 +1,28 @@
+{
+  "name": "@pansy/use-pagination",
+  "description": "封装分页逻辑",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "redbud dev",
+    "build": "redbud build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@pansy/use-request": "^0.3.1",
+    "@pansy/use-memoized-fn": "^0.3.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
