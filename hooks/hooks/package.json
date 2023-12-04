@@ -1,6 +1,6 @@
 {
   "name": "@pansy/react-hooks",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -40,9 +40,9 @@
     "@pansy/use-lock-fn": "1.0.6",
     "@pansy/use-memoized-fn": "0.3.1",
     "@pansy/use-modal": "1.0.1",
-    "@pansy/use-pagination": "^0.1.0",
     "@pansy/use-mount": "0.2.0",
     "@pansy/use-mouse": "0.3.1",
+    "@pansy/use-pagination": "^0.1.0",
     "@pansy/use-portal": "0.2.1",
     "@pansy/use-previous": "0.2.5",
     "@pansy/use-raf-state": "0.2.7",

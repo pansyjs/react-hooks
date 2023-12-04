@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.2.0...@pansy/react-hooks@2.3.0) (2023-12-04)
+
+
+### Features
+
+* add usePagination ([6c5e643](https://github.com/pansyjs/react-hooks/commit/6c5e6437b56273abac7d8f8a2ad10eda83810d02))
+
+
+
+
+
 # [2.2.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.1.0...@pansy/react-hooks@2.2.0) (2023-11-07)
 
 
