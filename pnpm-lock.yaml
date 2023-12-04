@@ -374,6 +374,9 @@ importers:
       '@pansy/use-mouse':
         specifier: 0.3.1
         version: link:../useMouse
+      '@pansy/use-pagination':
+        specifier: ^0.1.0
+        version: link:../usePagination
       '@pansy/use-portal':
         specifier: 0.2.1
         version: link:../usePortal
