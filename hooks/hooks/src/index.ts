@@ -40,5 +40,6 @@ export { useMount } from '@pansy/use-mount';
 export { useCreation } from '@pansy/use-creation';
 export { useRequest } from '@pansy/use-request';
 export { usePortal } from '@pansy/use-portal';
+export { usePagination } from '@pansy/use-pagination';
 
 export type { UseModalResult } from '@pansy/use-modal'
