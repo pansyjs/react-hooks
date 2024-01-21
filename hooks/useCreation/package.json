@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-creation",
   "description": "useCreation 是 useMemo 或 useRef 的替代品",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.5.1",
+    "@pansy/hook-utils": "0.5.2",
     "@pansy/shared": "^1.15.0"
   },
   "publishConfig": {

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-memoized-fn",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "持久化 function 的 Hook",
   "main": "lib/index.js",
   "module": "es/index.js",

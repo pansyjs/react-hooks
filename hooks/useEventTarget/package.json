@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-event-target",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

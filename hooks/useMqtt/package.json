@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-mqtt",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -17,10 +17,10 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-boolean": "^0.3.0",
+    "@pansy/use-boolean": "0.3.1",
     "@pansy/use-latest": "^0.2.5",
-    "@pansy/use-memoized-fn": "^0.3.1",
-    "@pansy/use-unmount": "^0.2.7",
+    "@pansy/use-memoized-fn": "0.3.2",
+    "@pansy/use-unmount": "0.2.8",
     "mqtt": "^4.3.7"
   },
   "publishConfig": {

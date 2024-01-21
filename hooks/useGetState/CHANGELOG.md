@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-get-state@0.4.0...@pansy/use-get-state@0.4.1) (2024-01-21)
+
+**Note:** Version bump only for package @pansy/use-get-state
+
+
+
+
+
 # [0.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/use-get-state@0.3.0...@pansy/use-get-state@0.4.0) (2023-03-29)
 
 

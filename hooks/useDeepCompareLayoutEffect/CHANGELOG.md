@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/pansyjs/react-hooks/compare/@pansy/use-deep-compare-layout-effect@1.1.0...@pansy/use-deep-compare-layout-effect@1.1.1) (2024-01-21)
+
+**Note:** Version bump only for package @pansy/use-deep-compare-layout-effect
+
+
+
+
+
 # 1.1.0 (2022-12-28)
 
 
