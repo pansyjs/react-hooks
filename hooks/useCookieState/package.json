@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/shared": "^1.9.0",
+    "@pansy/shared": "^1.15.0",
     "@pansy/use-memoized-fn": "0.3.1",
     "@types/js-cookie": "^2.x.x",
     "js-cookie": "^2.x.x"

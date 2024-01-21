@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@pansy/hook-utils": "0.5.1",
-    "@pansy/shared": "^1.9.0",
+    "@pansy/shared": "^1.15.0",
     "@pansy/use-latest": "0.2.5"
   },
   "publishConfig": {

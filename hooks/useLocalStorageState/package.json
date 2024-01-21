@@ -17,8 +17,8 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.5.1",
-    "@pansy/shared": "^1.9.0"
+    "@pansy/hook-utils": "^0.5.1",
+    "@pansy/shared": "^1.15.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
