@@ -303,34 +303,34 @@ importers:
   hooks/hooks:
     dependencies:
       '@pansy/use-boolean':
-        specifier: ^0.3.0
+        specifier: 0.3.1
         version: link:../useBoolean
       '@pansy/use-click-away':
-        specifier: ^0.4.1
+        specifier: 0.4.2
         version: link:../useClickAway
       '@pansy/use-controllable-value':
-        specifier: ^0.4.0
+        specifier: 0.4.1
         version: link:../useControllableValue
       '@pansy/use-cookie-state':
-        specifier: ^0.2.1
+        specifier: 0.2.2
         version: link:../useCookieState
       '@pansy/use-creation':
-        specifier: ^0.2.2
+        specifier: 0.2.3
         version: link:../useCreation
       '@pansy/use-deep-compare-effect':
-        specifier: ^1.3.1
+        specifier: 1.3.2
         version: link:../useDeepCompareEffect
       '@pansy/use-deep-compare-layout-effect':
-        specifier: ^1.1.0
+        specifier: 1.1.1
         version: link:../useDeepCompareLayoutEffect
       '@pansy/use-document-visibility':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useDocumentVisibility
       '@pansy/use-event-listener':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useEventListener
       '@pansy/use-event-target':
-        specifier: ^0.2.6
+        specifier: 0.2.7
         version: link:../useEventTarget
       '@pansy/use-external':
         specifier: ^0.1.5
@@ -339,43 +339,43 @@ importers:
         specifier: ^0.2.5
         version: link:../useFavicon
       '@pansy/use-get-state':
-        specifier: ^0.4.0
+        specifier: 0.4.1
         version: link:../useGetState
       '@pansy/use-hover':
-        specifier: ^0.4.1
+        specifier: 0.4.2
         version: link:../useHover
       '@pansy/use-in-viewport':
-        specifier: ^0.4.1
+        specifier: 0.4.2
         version: link:../useInViewport
       '@pansy/use-interval':
-        specifier: ^0.3.0
+        specifier: 0.3.1
         version: link:../useInterval
       '@pansy/use-key-press':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useKeyPress
       '@pansy/use-latest':
         specifier: ^0.2.5
         version: link:../useLatest
       '@pansy/use-local-storage-state':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useLocalStorageState
       '@pansy/use-lock-fn':
         specifier: ^1.0.6
         version: link:../useLockFn
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-modal':
-        specifier: ^1.0.1
+        specifier: 1.0.2
         version: link:../useModal
       '@pansy/use-mount':
         specifier: ^0.2.0
         version: link:../useMount
       '@pansy/use-mouse':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMouse
       '@pansy/use-pagination':
-        specifier: ^0.1.0
+        specifier: 0.1.1
         version: link:../usePagination
       '@pansy/use-portal':
         specifier: ^0.2.1
@@ -384,37 +384,37 @@ importers:
         specifier: ^0.2.5
         version: link:../usePrevious
       '@pansy/use-raf-state':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useRafState
       '@pansy/use-request':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useRequest
       '@pansy/use-scroll':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useScroll
       '@pansy/use-scroll-lock':
-        specifier: ^1.3.2
+        specifier: 1.3.3
         version: link:../useScrollLock
       '@pansy/use-selections':
-        specifier: ^0.4.0
+        specifier: 0.4.1
         version: link:../useSelections
       '@pansy/use-session-storage-state':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useSessionStorageState
       '@pansy/use-size':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useSize
       '@pansy/use-timeout':
-        specifier: ^0.2.6
+        specifier: 0.2.7
         version: link:../useTimeout
       '@pansy/use-title':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useTitle
       '@pansy/use-toggle':
         specifier: ^0.2.5
         version: link:../useToggle
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       '@pansy/use-update':
         specifier: ^0.2.5
@@ -423,13 +423,13 @@ importers:
         specifier: ^0.2.5
         version: link:../useUpdateEffect
       '@pansy/use-update-layout-effect':
-        specifier: ^0.2.11
+        specifier: 0.2.12
         version: link:../useUpdateLayoutEffect
       '@pansy/use-watermark':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useWatermark
       '@pansy/use-web-socket':
-        specifier: ^0.2.1
+        specifier: 0.2.2
         version: link:../useWebSocket
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -447,13 +447,13 @@ importers:
   hooks/useClickAway:
     dependencies:
       '@pansy/hook-utils':
-        specifier: 0.5.1
+        specifier: ^0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-latest':
-        specifier: 0.2.5
+        specifier: ^0.2.5
         version: link:../useLatest
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -465,7 +465,7 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-memoized-fn':
-        specifier: 0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-update':
         specifier: 0.2.5
@@ -480,7 +480,7 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-memoized-fn':
-        specifier: 0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@types/js-cookie':
         specifier: ^2.x.x
@@ -495,7 +495,7 @@ importers:
   hooks/useCreation:
     dependencies:
       '@pansy/hook-utils':
-        specifier: 0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -525,13 +525,13 @@ importers:
   hooks/useDocumentVisibility:
     dependencies:
       '@pansy/hook-utils':
-        specifier: 0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-event-listener':
-        specifier: 0.3.2
+        specifier: 0.3.3
         version: link:../useEventListener
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -540,7 +540,7 @@ importers:
   hooks/useEventListener:
     dependencies:
       '@pansy/hook-utils':
-        specifier: 0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -588,10 +588,10 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-boolean':
-        specifier: 0.3.0
+        specifier: 0.3.1
         version: link:../useBoolean
       '@pansy/use-event-listener':
-        specifier: 0.3.2
+        specifier: 0.3.3
         version: link:../useEventListener
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -600,7 +600,7 @@ importers:
   hooks/useInViewport:
     dependencies:
       '@pansy/hook-utils':
-        specifier: 0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -627,7 +627,7 @@ importers:
   hooks/useKeyPress:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -648,7 +648,7 @@ importers:
   hooks/useLocalStorageState:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -675,10 +675,10 @@ importers:
   hooks/useModal:
     dependencies:
       '@pansy/use-boolean':
-        specifier: ^0.3.0
+        specifier: 0.3.1
         version: link:../useBoolean
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -696,10 +696,10 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-event-listener':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useEventListener
       '@pansy/use-raf-state':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useRafState
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -708,16 +708,16 @@ importers:
   hooks/useMqtt:
     dependencies:
       '@pansy/use-boolean':
-        specifier: ^0.3.0
+        specifier: 0.3.1
         version: link:../useBoolean
       '@pansy/use-latest':
         specifier: ^0.2.5
         version: link:../useLatest
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       mqtt:
         specifier: ^4.3.7
@@ -729,10 +729,10 @@ importers:
   hooks/usePagination:
     dependencies:
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-request':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useRequest
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -753,7 +753,7 @@ importers:
   hooks/useRafState:
     dependencies:
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -762,25 +762,25 @@ importers:
   hooks/useRequest:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-creation':
-        specifier: ^0.2.2
+        specifier: 0.2.3
         version: link:../useCreation
       '@pansy/use-latest':
         specifier: ^0.2.5
         version: link:../useLatest
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-mount':
         specifier: ^0.2.0
         version: link:../useMount
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       '@pansy/use-update':
         specifier: ^0.2.5
@@ -795,7 +795,7 @@ importers:
   hooks/useScroll:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -804,7 +804,7 @@ importers:
         specifier: ^0.2.5
         version: link:../useLatest
       '@pansy/use-raf-state':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useRafState
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -816,10 +816,10 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-event-listener':
-        specifier: ^0.3.2
+        specifier: 0.3.3
         version: link:../useEventListener
       '@pansy/use-get-state':
-        specifier: ^0.4.0
+        specifier: 0.4.1
         version: link:../useGetState
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -828,7 +828,7 @@ importers:
   hooks/useSelections:
     dependencies:
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -837,7 +837,7 @@ importers:
   hooks/useSessionStorageState:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
@@ -849,13 +849,13 @@ importers:
   hooks/useSize:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-raf-state':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useRafState
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -879,13 +879,13 @@ importers:
   hooks/useTitle:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -924,7 +924,7 @@ importers:
   hooks/useUpdateLayoutEffect:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -933,7 +933,7 @@ importers:
   hooks/useUrlState:
     dependencies:
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-update':
         specifier: ^0.2.5
@@ -951,16 +951,16 @@ importers:
   hooks/useWatermark:
     dependencies:
       '@pansy/hook-utils':
-        specifier: ^0.5.1
+        specifier: 0.5.2
         version: link:../utils
       '@pansy/shared':
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       '@pansy/watermark':
         specifier: ^2.2.1
@@ -975,10 +975,10 @@ importers:
         specifier: ^0.2.5
         version: link:../useLatest
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -990,10 +990,10 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0
       '@pansy/use-memoized-fn':
-        specifier: ^0.3.1
+        specifier: 0.3.2
         version: link:../useMemoizedFn
       '@pansy/use-unmount':
-        specifier: ^0.2.7
+        specifier: 0.2.8
         version: link:../useUnmount
       '@pansy/use-update-effect':
         specifier: ^0.2.5
