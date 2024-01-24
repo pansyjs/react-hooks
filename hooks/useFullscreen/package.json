@@ -1,0 +1,28 @@
+{
+  "name": "@pansy/use-fullscreen",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "redbud dev",
+    "build": "redbud build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@pansy/shared": "^1.15.0",
+    "@pansy/use-boolean": "^0.3.1",
+    "screenfull": "^5.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}

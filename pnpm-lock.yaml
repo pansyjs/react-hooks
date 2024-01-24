@@ -56,6 +56,9 @@ importers:
       '@pansy/use-favicon':
         specifier: workspace:*
         version: link:hooks/useFavicon
+      '@pansy/use-fullscreen':
+        specifier: workspace:*
+        version: link:hooks/useFullscreen
       '@pansy/use-get-state':
         specifier: workspace:*
         version: link:hooks/useGetState
@@ -572,6 +575,21 @@ importers:
       react:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
         version: 18.2.0
+
+  hooks/useFullscreen:
+    dependencies:
+      '@pansy/shared':
+        specifier: ^1.15.0
+        version: 1.15.0
+      '@pansy/use-boolean':
+        specifier: ^0.3.1
+        version: link:../useBoolean
+      react:
+        specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
+        version: 18.2.0
+      screenfull:
+        specifier: ^5.0.2
+        version: 5.2.0
 
   hooks/useGetState:
     dependencies:
@@ -20143,7 +20161,6 @@ packages:
   /screenfull@5.2.0:
     resolution: {integrity: sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /scroll-into-view-if-needed@3.0.6:
     resolution: {integrity: sha512-x+CW0kOzlFNOnseF0DBr0AJ5m+TgGmSOdEZwyiZW0gV87XBvxQKw5A8DvFFgabznA68XqLgVX+PwPX8OzsFvRA==}

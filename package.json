@@ -42,6 +42,7 @@
     "@pansy/use-event-target": "workspace:*",
     "@pansy/use-external": "workspace:*",
     "@pansy/use-favicon": "workspace:*",
+    "@pansy/use-fullscreen": "workspace:*",
     "@pansy/use-get-state": "workspace:*",
     "@pansy/use-hover": "workspace:*",
     "@pansy/use-in-viewport": "workspace:*",
