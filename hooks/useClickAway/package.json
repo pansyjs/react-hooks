@@ -2,6 +2,7 @@
   "name": "@pansy/use-click-away",
   "version": "0.4.2",
   "description": "监听目标元素外的点击事件",
+  "sideEffects": false,
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

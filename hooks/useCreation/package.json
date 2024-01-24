@@ -1,6 +1,7 @@
 {
   "name": "@pansy/use-creation",
   "description": "useCreation 是 useMemo 或 useRef 的替代品",
+  "sideEffects": false,
   "version": "0.2.3",
   "main": "lib/index.js",
   "module": "es/index.js",
