@@ -48,6 +48,7 @@
     "@pansy/use-raf-state": "0.2.8",
     "@pansy/use-request": "0.3.2",
     "@pansy/use-scroll": "0.3.3",
+    "@pansy/use-fullscreen": "^0.0.1",
     "@pansy/use-scroll-lock": "1.3.3",
     "@pansy/use-selections": "0.4.1",
     "@pansy/use-session-storage-state": "0.3.3",
