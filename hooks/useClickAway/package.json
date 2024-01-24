@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-click-away",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "监听目标元素外的点击事件",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -19,9 +19,9 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "^0.5.2",
+    "@pansy/hook-utils": "0.5.3",
     "@pansy/shared": "^1.15.0",
-    "@pansy/use-latest": "^0.2.5"
+    "@pansy/use-latest": "0.2.6"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

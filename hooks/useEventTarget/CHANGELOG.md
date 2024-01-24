@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.8](https://github.com/pansyjs/react-hooks/compare/@pansy/use-event-target@0.2.7...@pansy/use-event-target@0.2.8) (2024-01-24)
+
+**Note:** Version bump only for package @pansy/use-event-target
+
+
+
+
+
 ## [0.2.7](https://github.com/pansyjs/react-hooks/compare/@pansy/use-event-target@0.2.6...@pansy/use-event-target@0.2.7) (2024-01-21)
 
 **Note:** Version bump only for package @pansy/use-event-target

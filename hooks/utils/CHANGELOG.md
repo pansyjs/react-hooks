@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.3](https://github.com/pansyjs/react-hooks/compare/@pansy/hook-utils@0.5.2...@pansy/hook-utils@0.5.3) (2024-01-24)
+
+**Note:** Version bump only for package @pansy/hook-utils
+
+
+
+
+
 ## [0.5.2](https://github.com/pansyjs/react-hooks/compare/@pansy/hook-utils@0.5.1...@pansy/hook-utils@0.5.2) (2024-01-21)
 
 **Note:** Version bump only for package @pansy/hook-utils

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-event-target",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-latest": "^0.2.5"
+    "@pansy/use-latest": "0.2.6"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

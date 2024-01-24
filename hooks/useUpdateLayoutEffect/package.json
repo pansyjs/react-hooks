@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-update-layout-effect",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/hook-utils": "0.5.2"
+    "@pansy/hook-utils": "0.5.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-get-state",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -18,7 +18,7 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-toggle": "^0.2.5"
+    "@pansy/use-toggle": "0.2.6"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-unmount",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.15.0",
-    "@pansy/use-latest": "^0.2.5"
+    "@pansy/use-latest": "0.2.6"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

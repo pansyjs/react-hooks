@@ -2,7 +2,7 @@
   "name": "@pansy/use-cookie-state",
   "description": "一个可以将状态存储在 Cookie 中的 Hook",
   "sideEffects": false,
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.15.0",
-    "@pansy/use-memoized-fn": "0.3.2",
+    "@pansy/use-memoized-fn": "0.3.3",
     "@types/js-cookie": "^2.x.x",
     "js-cookie": "^2.x.x"
   },

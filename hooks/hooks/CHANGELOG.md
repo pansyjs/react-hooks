@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.3.1...@pansy/react-hooks@2.4.0) (2024-01-24)
+
+
+### Features
+
+* export @pansy/use-fullscreen ([021fa3f](https://github.com/pansyjs/react-hooks/commit/021fa3f43e40fd7fcf19ef0bbb78215e0e9ac3be))
+
+
+
+
+
 ## [2.3.1](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.3.0...@pansy/react-hooks@2.3.1) (2024-01-21)
 
 **Note:** Version bump only for package @pansy/react-hooks

@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-pagination",
   "description": "封装分页逻辑",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -19,8 +19,8 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-memoized-fn": "0.3.2",
-    "@pansy/use-request": "0.3.2"
+    "@pansy/use-memoized-fn": "0.3.3",
+    "@pansy/use-request": "0.3.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

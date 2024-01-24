@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-portal",
   "description": "提供了一种将子节点渲染到已有 DOM 节点中的方式，主要用于地图类服务的封装。",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

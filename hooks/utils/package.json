@@ -1,6 +1,6 @@
 {
   "name": "@pansy/hook-utils",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@pansy/shared": "^1.15.0",
-    "@pansy/use-memoized-fn": "0.3.2",
-    "@pansy/use-unmount": "0.2.8",
-    "@pansy/use-update-effect": "^0.2.5",
+    "@pansy/use-memoized-fn": "0.3.3",
+    "@pansy/use-unmount": "0.2.9",
+    "@pansy/use-update-effect": "0.2.6",
     "lodash": "^4.17.21"
   },
   "publishConfig": {

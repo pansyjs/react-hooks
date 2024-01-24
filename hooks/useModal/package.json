@@ -1,6 +1,6 @@
 {
   "name": "@pansy/use-modal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "优雅的使用 Modal、Drawer 弹层类组件的 Hook",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -19,8 +19,8 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@pansy/use-boolean": "0.3.1",
-    "@pansy/use-memoized-fn": "0.3.2"
+    "@pansy/use-boolean": "0.3.2",
+    "@pansy/use-memoized-fn": "0.3.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
