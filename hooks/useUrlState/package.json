@@ -22,7 +22,7 @@
   "dependencies": {
     "@pansy/use-memoized-fn": "0.3.3",
     "@pansy/use-update": "0.2.6",
-    "query-string": "^7.1.1"
+    "query-string": "^8.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
