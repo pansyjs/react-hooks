@@ -96,7 +96,7 @@
     "conventional-changelog-cli": "2.2.2",
     "conventional-changelog-gitmoji-config": "1.4.7",
     "dumi": "2.1.17",
-    "eslint": "8.37.0",
+    "eslint": "8.57.0",
     "eslint-config-alloy": "4.9.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-react": "7.32.2",
