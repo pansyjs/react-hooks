@@ -1,0 +1,24 @@
+{
+  "name": "@pansy/use-drag",
+  "description": "useDrag 允许一个 DOM 节点被拖拽，需要配合 useDrop 使用。",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "redbud dev",
+    "build": "redbud build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
