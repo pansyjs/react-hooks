@@ -329,6 +329,12 @@ importers:
       '@pansy/use-document-visibility':
         specifier: 0.3.4
         version: link:../useDocumentVisibility
+      '@pansy/use-drag':
+        specifier: 1.0.0
+        version: link:../useDrag
+      '@pansy/use-drop':
+        specifier: 1.0.0
+        version: link:../useDrop
       '@pansy/use-event-listener':
         specifier: 0.3.4
         version: link:../useEventListener

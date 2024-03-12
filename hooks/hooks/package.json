@@ -61,7 +61,9 @@
     "@pansy/use-update-effect": "0.2.6",
     "@pansy/use-update-layout-effect": "0.2.13",
     "@pansy/use-watermark": "0.3.4",
-    "@pansy/use-web-socket": "0.2.3"
+    "@pansy/use-web-socket": "0.2.3",
+    "@pansy/use-drag": "1.0.0",
+    "@pansy/use-drop": "1.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

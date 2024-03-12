@@ -42,6 +42,8 @@ export { useRequest } from '@pansy/use-request';
 export { usePortal } from '@pansy/use-portal';
 export { usePagination } from '@pansy/use-pagination';
 export { useFullscreen } from '@pansy/use-fullscreen';
+export { useDrag } from '@pansy/use-drag';
+export { useDrop } from '@pansy/use-drop';
 
 export type { UseModalResult } from '@pansy/use-modal';
 export type { Options as UseFullscreenOptions } from '@pansy/use-fullscreen';
