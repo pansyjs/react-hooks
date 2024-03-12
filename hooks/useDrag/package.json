@@ -1,7 +1,7 @@
 {
   "name": "@pansy/use-drag",
   "description": "useDrag 允许一个 DOM 节点被拖拽，需要配合 useDrop 使用。",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",

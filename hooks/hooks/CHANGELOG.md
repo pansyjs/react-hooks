@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.4.0...@pansy/react-hooks@2.5.0) (2024-03-12)
+
+
+### Features
+
+* **hooks:** export useDrag、useDrop ([9dba7a4](https://github.com/pansyjs/react-hooks/commit/9dba7a48b9256b5dc82130567c89383060b57211))
+
+
+
+
+
 # [2.4.0](https://github.com/pansyjs/react-hooks/compare/@pansy/react-hooks@2.3.1...@pansy/react-hooks@2.4.0) (2024-01-24)
 
 
