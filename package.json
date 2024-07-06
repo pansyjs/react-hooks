@@ -117,7 +117,7 @@
     "react-router": "^6.9.0",
     "react-test-renderer": "18.2.0",
     "redbud": "1.6.0",
-    "rimraf": "3.0.2",
+    "rimraf": "5.0.8",
     "tsx": "^3.12.6",
     "turbo": "^1.8.6",
     "ts-node": "^10.9.1",
