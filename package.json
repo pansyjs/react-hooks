@@ -95,7 +95,7 @@
     "cross-env": "7.0.3",
     "conventional-changelog-cli": "2.2.2",
     "conventional-changelog-gitmoji-config": "1.4.7",
-    "dumi": "2.1.17",
+    "dumi": "2.4.13",
     "eslint": "8.37.0",
     "eslint-config-alloy": "4.9.0",
     "eslint-config-prettier": "8.8.0",
