@@ -91,7 +91,7 @@
     "@walrus/cli-utils": "2.2.1",
     "@walrus/package": "^1.1.0",
     "@walrus/plugin-release": "1.14.3",
-    "antd": "5.3.3",
+    "antd": "5.21.5",
     "cross-env": "7.0.3",
     "conventional-changelog-cli": "2.2.2",
     "conventional-changelog-gitmoji-config": "1.4.7",
