@@ -27,7 +27,7 @@
   "devDependencies": {
     "@ant-design/icons": "5.0.1",
     "@ant-design/pro-card": "^2.3.2",
-    "@babel/plugin-transform-modules-commonjs": "7.21.2",
+    "@babel/plugin-transform-modules-commonjs": "7.25.9",
     "@pansy/hook-utils": "workspace:*",
     "@pansy/use-portal": "workspace:*",
     "@pansy/react-hooks": "workspace:*",
