@@ -225,8 +225,8 @@ importers:
         specifier: 8.37.0
         version: 8.37.0
       eslint-config-alloy:
-        specifier: 4.9.0
-        version: 4.9.0(@typescript-eslint/eslint-plugin@5.57.0)(@typescript-eslint/parser@5.57.0)(eslint-plugin-react@7.32.2)(eslint@8.37.0)(typescript@5.0.2)
+        specifier: 5.1.2
+        version: 5.1.2(@typescript-eslint/eslint-plugin@5.57.0)(@typescript-eslint/parser@5.57.0)(eslint-plugin-react@7.32.2)(eslint@8.37.0)(typescript@5.0.2)
       eslint-config-prettier:
         specifier: 8.8.0
         version: 8.8.0(eslint@8.37.0)
@@ -330,10 +330,10 @@ importers:
         specifier: 0.3.4
         version: link:../useDocumentVisibility
       '@pansy/use-drag':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../useDrag
       '@pansy/use-drop':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../useDrop
       '@pansy/use-event-listener':
         specifier: 0.3.4
@@ -7691,6 +7691,7 @@ packages:
 
   /acorn-import-assertions@1.8.0(acorn@8.8.2):
     resolution: {integrity: sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -11227,17 +11228,17 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-alloy@4.9.0(@typescript-eslint/eslint-plugin@5.57.0)(@typescript-eslint/parser@5.57.0)(eslint-plugin-react@7.32.2)(eslint@8.37.0)(typescript@5.0.2):
-    resolution: {integrity: sha512-4DfiN0sXByf5WuXioZrrZJdfzZw+lgdoQfFTuQyFenJ2XeIKrsXYctArLiZAoAsTxyZnmUFYqrgwUIXx26q0gg==}
+  /eslint-config-alloy@5.1.2(@typescript-eslint/eslint-plugin@5.57.0)(@typescript-eslint/parser@5.57.0)(eslint-plugin-react@7.32.2)(eslint@8.37.0)(typescript@5.0.2):
+    resolution: {integrity: sha512-jppzCxNqlhvMYPgfUzvPq4f9fEu070+m3CRIjWdUx/GJLZ6dXHARzMIrIhFuIvzYI5Qo40ht1gunguLnRhIB7A==}
     peerDependencies:
       '@babel/eslint-parser': 7.x
       '@babel/preset-react': 7.x
-      '@typescript-eslint/eslint-plugin': '>=5.38.1'
-      '@typescript-eslint/parser': 5.x
+      '@typescript-eslint/eslint-plugin': '>=5.55.0'
+      '@typescript-eslint/parser': '>=5.0.0'
       eslint: '>=8.24.0'
       eslint-plugin-react: '>=7.31.8'
       eslint-plugin-vue: '>=9.5.1'
-      typescript: 4.x
+      typescript: 5.x
       vue-eslint-parser: 9.x
     peerDependenciesMeta:
       '@babel/eslint-parser':
